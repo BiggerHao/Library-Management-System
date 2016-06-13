@@ -37,44 +37,39 @@ namespace LibraryManagementSystem
             Application.Exit();
         }
 
-        private void loginPwText_Enter(object sender, EventArgs e)
-        {
-            loginButton_Click(sender, e);
-        }
-
         private void loginButton_Click(object sender, EventArgs e)
         {
-            if (loginNameText.Text.Equals("user") &&
-                loginPwText.Text.Equals("user"))
+            string id = loginNameText.Text;
+            string pwd = loginPwText.Text;
+            string name = null;
+
+            SQLiteCommand comm = new SQLiteCommand("select user_name from User where user_id = '" +
+                id + "' and user_pwd = '" + pwd + "';", conn);
+            SQLiteDataReader read = comm.ExecuteReader();
+
+            while (read.Read()) name = read["user_name"].ToString();
+
+            comm.Dispose();
+            read.Dispose();
+
+            if (name != null)
             {
                 Hide();
                 new UserForm().Show();
             }
-            else if (loginNameText.Text.Equals("root") &&
-                loginPwText.Text.Equals("root"))
-            {
-                Hide();
-                new AdminForm().Show();
-            }
+            else
+                MessageBox.Show("用户名或密码错误！", "提示", MessageBoxButtons.OK,
+                MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
         }
 
         private void loginPwText_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                if (loginNameText.Text.Equals("user") &&
-                loginPwText.Text.Equals("user"))
-                {
-                    Hide();
-                    new UserForm().Show();
-                }
-                else if (loginNameText.Text.Equals("root") &&
-                loginPwText.Text.Equals("root"))
-                {
-                    Hide();
-                    new AdminForm().Show();
-                }
-            }
+            if (e.KeyCode == Keys.Enter) loginButton_Click(null, null);
+        }
+
+        private void loginNameText_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) SendKeys.Send("{tab}");
         }
     }
 }

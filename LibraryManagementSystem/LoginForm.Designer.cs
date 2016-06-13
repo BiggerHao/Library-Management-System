@@ -78,6 +78,7 @@
             this.loginNameText.TabIndex = 2;
             this.loginNameText.TabStop = false;
             this.loginNameText.UseSystemPasswordChar = false;
+            this.loginNameText.KeyDown += new System.Windows.Forms.KeyEventHandler(this.loginNameText_KeyDown);
             // 
             // loginPwText
             // 
@@ -88,7 +89,7 @@
             this.loginPwText.MaxLength = 32767;
             this.loginPwText.MouseState = MaterialSkin.MouseState.HOVER;
             this.loginPwText.Name = "loginPwText";
-            this.loginPwText.PasswordChar = '\0';
+            this.loginPwText.PasswordChar = '·';
             this.loginPwText.SelectedText = "";
             this.loginPwText.SelectionLength = 0;
             this.loginPwText.SelectionStart = 0;
