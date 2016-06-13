@@ -33,62 +33,62 @@ namespace LibraryManagementSystem
         {
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.materialRaisedButton6 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialSingleLineTextField2 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialRadioButton2 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton1 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.materialRaisedButton9 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton8 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialSingleLineTextField9 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialSingleLineTextField8 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialSingleLineTextField7 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialSingleLineTextField6 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialSingleLineTextField5 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialSingleLineTextField4 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.bookBorrowReturnTab = new System.Windows.Forms.TabPage();
+            this.runButton = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.bookEPCText = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.bookEPCLAbel = new MaterialSkin.Controls.MaterialLabel();
+            this.userNameText = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.userNameLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.returnRadioButton = new MaterialSkin.Controls.MaterialRadioButton();
+            this.borrowRadioButton = new MaterialSkin.Controls.MaterialRadioButton();
+            this.borrowTypeLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.bookManTab = new System.Windows.Forms.TabPage();
+            this.bookUpdateButton = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.bookDeleteButton = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.yearText = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.publisherText = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.authorText = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.typeText = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.titleText = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.ISBNLabelText = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialRaisedButton7 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.materialRaisedButton12 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton11 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton10 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialSingleLineTextField14 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialSingleLineTextField13 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialSingleLineTextField12 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialSingleLineTextField11 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialSingleLineTextField10 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialSingleLineTextField3 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.ISBNLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.bookSearchButton = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.userManTab = new System.Windows.Forms.TabPage();
+            this.usrUpdateButton = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.usrDeleteButton = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.usrSearchButton = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.usrTypeText = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.usrPwText = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.usrAddressText = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.usrGenderText = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.usrNameText = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.usrIDText = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel17 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel16 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel12 = new MaterialSkin.Controls.MaterialLabel();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.materialRaisedButton15 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton14 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton13 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialSingleLineTextField16 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialSingleLineTextField15 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.shelfManTab = new System.Windows.Forms.TabPage();
+            this.shelfUpdateButton = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.shelfDeleteButton = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.shelfSearchButton = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.shelfLocationText = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.shelfIDText = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel19 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel18 = new MaterialSkin.Controls.MaterialLabel();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.materialListView1 = new MaterialSkin.Controls.MaterialListView();
+            this.statusTab = new System.Windows.Forms.TabPage();
+            this.borrowReturnList = new MaterialSkin.Controls.MaterialListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.setTheme = new System.Windows.Forms.TabPage();
             this.materialRaisedButton5 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton4 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -97,12 +97,12 @@ namespace LibraryManagementSystem
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialTabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.tabPage6.SuspendLayout();
+            this.bookBorrowReturnTab.SuspendLayout();
+            this.bookManTab.SuspendLayout();
+            this.userManTab.SuspendLayout();
+            this.shelfManTab.SuspendLayout();
+            this.statusTab.SuspendLayout();
+            this.setTheme.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialTabSelector1
@@ -123,12 +123,12 @@ namespace LibraryManagementSystem
             this.materialTabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialTabControl1.Controls.Add(this.tabPage1);
-            this.materialTabControl1.Controls.Add(this.tabPage2);
-            this.materialTabControl1.Controls.Add(this.tabPage3);
-            this.materialTabControl1.Controls.Add(this.tabPage4);
-            this.materialTabControl1.Controls.Add(this.tabPage5);
-            this.materialTabControl1.Controls.Add(this.tabPage6);
+            this.materialTabControl1.Controls.Add(this.bookBorrowReturnTab);
+            this.materialTabControl1.Controls.Add(this.bookManTab);
+            this.materialTabControl1.Controls.Add(this.userManTab);
+            this.materialTabControl1.Controls.Add(this.shelfManTab);
+            this.materialTabControl1.Controls.Add(this.statusTab);
+            this.materialTabControl1.Controls.Add(this.setTheme);
             this.materialTabControl1.Depth = 0;
             this.materialTabControl1.Location = new System.Drawing.Point(14, 109);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -137,301 +137,301 @@ namespace LibraryManagementSystem
             this.materialTabControl1.Size = new System.Drawing.Size(776, 379);
             this.materialTabControl1.TabIndex = 18;
             // 
-            // tabPage1
+            // bookBorrowReturnTab
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.White;
-            this.tabPage1.Controls.Add(this.materialRaisedButton6);
-            this.tabPage1.Controls.Add(this.materialSingleLineTextField2);
-            this.tabPage1.Controls.Add(this.materialLabel5);
-            this.tabPage1.Controls.Add(this.materialSingleLineTextField1);
-            this.tabPage1.Controls.Add(this.materialLabel4);
-            this.tabPage1.Controls.Add(this.materialRadioButton2);
-            this.tabPage1.Controls.Add(this.materialRadioButton1);
-            this.tabPage1.Controls.Add(this.materialLabel3);
-            this.tabPage1.Location = new System.Drawing.Point(4, 26);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(768, 349);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "图书借还";
+            this.bookBorrowReturnTab.BackColor = System.Drawing.Color.White;
+            this.bookBorrowReturnTab.Controls.Add(this.runButton);
+            this.bookBorrowReturnTab.Controls.Add(this.bookEPCText);
+            this.bookBorrowReturnTab.Controls.Add(this.bookEPCLAbel);
+            this.bookBorrowReturnTab.Controls.Add(this.userNameText);
+            this.bookBorrowReturnTab.Controls.Add(this.userNameLabel);
+            this.bookBorrowReturnTab.Controls.Add(this.returnRadioButton);
+            this.bookBorrowReturnTab.Controls.Add(this.borrowRadioButton);
+            this.bookBorrowReturnTab.Controls.Add(this.borrowTypeLabel);
+            this.bookBorrowReturnTab.Location = new System.Drawing.Point(4, 26);
+            this.bookBorrowReturnTab.Name = "bookBorrowReturnTab";
+            this.bookBorrowReturnTab.Padding = new System.Windows.Forms.Padding(3);
+            this.bookBorrowReturnTab.Size = new System.Drawing.Size(768, 349);
+            this.bookBorrowReturnTab.TabIndex = 0;
+            this.bookBorrowReturnTab.Text = "图书借还";
             // 
-            // materialRaisedButton6
+            // runButton
             // 
-            this.materialRaisedButton6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialRaisedButton6.Depth = 0;
-            this.materialRaisedButton6.Location = new System.Drawing.Point(360, 224);
-            this.materialRaisedButton6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton6.Name = "materialRaisedButton6";
-            this.materialRaisedButton6.Primary = true;
-            this.materialRaisedButton6.Size = new System.Drawing.Size(80, 30);
-            this.materialRaisedButton6.TabIndex = 10;
-            this.materialRaisedButton6.Text = "执行";
-            this.materialRaisedButton6.UseVisualStyleBackColor = true;
+            this.runButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.runButton.Depth = 0;
+            this.runButton.Location = new System.Drawing.Point(360, 224);
+            this.runButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.runButton.Name = "runButton";
+            this.runButton.Primary = true;
+            this.runButton.Size = new System.Drawing.Size(80, 30);
+            this.runButton.TabIndex = 10;
+            this.runButton.Text = "执行";
+            this.runButton.UseVisualStyleBackColor = true;
             // 
-            // materialSingleLineTextField2
+            // bookEPCText
             // 
-            this.materialSingleLineTextField2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialSingleLineTextField2.Depth = 0;
-            this.materialSingleLineTextField2.Hint = "请输入图书EPC";
-            this.materialSingleLineTextField2.Location = new System.Drawing.Point(314, 169);
-            this.materialSingleLineTextField2.MaxLength = 32767;
-            this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
-            this.materialSingleLineTextField2.PasswordChar = '\0';
-            this.materialSingleLineTextField2.SelectedText = "";
-            this.materialSingleLineTextField2.SelectionLength = 0;
-            this.materialSingleLineTextField2.SelectionStart = 0;
-            this.materialSingleLineTextField2.Size = new System.Drawing.Size(287, 25);
-            this.materialSingleLineTextField2.TabIndex = 9;
-            this.materialSingleLineTextField2.TabStop = false;
-            this.materialSingleLineTextField2.UseSystemPasswordChar = false;
+            this.bookEPCText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.bookEPCText.Depth = 0;
+            this.bookEPCText.Hint = "请输入图书EPC";
+            this.bookEPCText.Location = new System.Drawing.Point(314, 169);
+            this.bookEPCText.MaxLength = 32767;
+            this.bookEPCText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.bookEPCText.Name = "bookEPCText";
+            this.bookEPCText.PasswordChar = '\0';
+            this.bookEPCText.SelectedText = "";
+            this.bookEPCText.SelectionLength = 0;
+            this.bookEPCText.SelectionStart = 0;
+            this.bookEPCText.Size = new System.Drawing.Size(287, 25);
+            this.bookEPCText.TabIndex = 9;
+            this.bookEPCText.TabStop = false;
+            this.bookEPCText.UseSystemPasswordChar = false;
             // 
-            // materialLabel5
+            // bookEPCLAbel
             // 
-            this.materialLabel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialLabel5.AutoSize = true;
-            this.materialLabel5.Depth = 0;
-            this.materialLabel5.Font = new System.Drawing.Font("微软雅黑", 11F);
-            this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel5.Location = new System.Drawing.Point(237, 169);
-            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel5.Name = "materialLabel5";
-            this.materialLabel5.Size = new System.Drawing.Size(66, 20);
-            this.materialLabel5.TabIndex = 8;
-            this.materialLabel5.Text = "图书EPC";
+            this.bookEPCLAbel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.bookEPCLAbel.AutoSize = true;
+            this.bookEPCLAbel.Depth = 0;
+            this.bookEPCLAbel.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.bookEPCLAbel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.bookEPCLAbel.Location = new System.Drawing.Point(237, 169);
+            this.bookEPCLAbel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.bookEPCLAbel.Name = "bookEPCLAbel";
+            this.bookEPCLAbel.Size = new System.Drawing.Size(66, 20);
+            this.bookEPCLAbel.TabIndex = 8;
+            this.bookEPCLAbel.Text = "图书EPC";
             // 
-            // materialSingleLineTextField1
+            // userNameText
             // 
-            this.materialSingleLineTextField1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialSingleLineTextField1.Depth = 0;
-            this.materialSingleLineTextField1.Hint = "请输入用户名";
-            this.materialSingleLineTextField1.Location = new System.Drawing.Point(314, 119);
-            this.materialSingleLineTextField1.MaxLength = 32767;
-            this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
-            this.materialSingleLineTextField1.PasswordChar = '\0';
-            this.materialSingleLineTextField1.SelectedText = "";
-            this.materialSingleLineTextField1.SelectionLength = 0;
-            this.materialSingleLineTextField1.SelectionStart = 0;
-            this.materialSingleLineTextField1.Size = new System.Drawing.Size(162, 25);
-            this.materialSingleLineTextField1.TabIndex = 7;
-            this.materialSingleLineTextField1.TabStop = false;
-            this.materialSingleLineTextField1.UseSystemPasswordChar = false;
+            this.userNameText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.userNameText.Depth = 0;
+            this.userNameText.Hint = "请输入用户名";
+            this.userNameText.Location = new System.Drawing.Point(314, 119);
+            this.userNameText.MaxLength = 32767;
+            this.userNameText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.userNameText.Name = "userNameText";
+            this.userNameText.PasswordChar = '\0';
+            this.userNameText.SelectedText = "";
+            this.userNameText.SelectionLength = 0;
+            this.userNameText.SelectionStart = 0;
+            this.userNameText.Size = new System.Drawing.Size(162, 25);
+            this.userNameText.TabIndex = 7;
+            this.userNameText.TabStop = false;
+            this.userNameText.UseSystemPasswordChar = false;
             // 
-            // materialLabel4
+            // userNameLabel
             // 
-            this.materialLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialLabel4.AutoSize = true;
-            this.materialLabel4.Depth = 0;
-            this.materialLabel4.Font = new System.Drawing.Font("微软雅黑", 11F);
-            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(237, 119);
-            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(54, 20);
-            this.materialLabel4.TabIndex = 6;
-            this.materialLabel4.Text = "用户名";
+            this.userNameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.userNameLabel.AutoSize = true;
+            this.userNameLabel.Depth = 0;
+            this.userNameLabel.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.userNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.userNameLabel.Location = new System.Drawing.Point(237, 119);
+            this.userNameLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.userNameLabel.Name = "userNameLabel";
+            this.userNameLabel.Size = new System.Drawing.Size(54, 20);
+            this.userNameLabel.TabIndex = 6;
+            this.userNameLabel.Text = "用户名";
             // 
-            // materialRadioButton2
+            // returnRadioButton
             // 
-            this.materialRadioButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialRadioButton2.AutoSize = true;
-            this.materialRadioButton2.Depth = 0;
-            this.materialRadioButton2.Font = new System.Drawing.Font("微软雅黑", 10F);
-            this.materialRadioButton2.Location = new System.Drawing.Point(379, 64);
-            this.materialRadioButton2.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton2.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton2.Name = "materialRadioButton2";
-            this.materialRadioButton2.Ripple = true;
-            this.materialRadioButton2.Size = new System.Drawing.Size(56, 30);
-            this.materialRadioButton2.TabIndex = 5;
-            this.materialRadioButton2.TabStop = true;
-            this.materialRadioButton2.Text = "还书";
-            this.materialRadioButton2.UseVisualStyleBackColor = true;
+            this.returnRadioButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.returnRadioButton.AutoSize = true;
+            this.returnRadioButton.Depth = 0;
+            this.returnRadioButton.Font = new System.Drawing.Font("微软雅黑", 10F);
+            this.returnRadioButton.Location = new System.Drawing.Point(379, 64);
+            this.returnRadioButton.Margin = new System.Windows.Forms.Padding(0);
+            this.returnRadioButton.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.returnRadioButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.returnRadioButton.Name = "returnRadioButton";
+            this.returnRadioButton.Ripple = true;
+            this.returnRadioButton.Size = new System.Drawing.Size(56, 30);
+            this.returnRadioButton.TabIndex = 5;
+            this.returnRadioButton.TabStop = true;
+            this.returnRadioButton.Text = "还书";
+            this.returnRadioButton.UseVisualStyleBackColor = true;
             // 
-            // materialRadioButton1
+            // borrowRadioButton
             // 
-            this.materialRadioButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialRadioButton1.AutoSize = true;
-            this.materialRadioButton1.Depth = 0;
-            this.materialRadioButton1.Font = new System.Drawing.Font("微软雅黑", 10F);
-            this.materialRadioButton1.Location = new System.Drawing.Point(294, 64);
-            this.materialRadioButton1.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton1.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton1.Name = "materialRadioButton1";
-            this.materialRadioButton1.Ripple = true;
-            this.materialRadioButton1.Size = new System.Drawing.Size(56, 30);
-            this.materialRadioButton1.TabIndex = 4;
-            this.materialRadioButton1.TabStop = true;
-            this.materialRadioButton1.Text = "借书";
-            this.materialRadioButton1.UseVisualStyleBackColor = true;
+            this.borrowRadioButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.borrowRadioButton.AutoSize = true;
+            this.borrowRadioButton.Depth = 0;
+            this.borrowRadioButton.Font = new System.Drawing.Font("微软雅黑", 10F);
+            this.borrowRadioButton.Location = new System.Drawing.Point(294, 64);
+            this.borrowRadioButton.Margin = new System.Windows.Forms.Padding(0);
+            this.borrowRadioButton.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.borrowRadioButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.borrowRadioButton.Name = "borrowRadioButton";
+            this.borrowRadioButton.Ripple = true;
+            this.borrowRadioButton.Size = new System.Drawing.Size(56, 30);
+            this.borrowRadioButton.TabIndex = 4;
+            this.borrowRadioButton.TabStop = true;
+            this.borrowRadioButton.Text = "借书";
+            this.borrowRadioButton.UseVisualStyleBackColor = true;
             // 
-            // materialLabel3
+            // borrowTypeLabel
             // 
-            this.materialLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialLabel3.AutoSize = true;
-            this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("微软雅黑", 11F);
-            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(237, 69);
-            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(39, 20);
-            this.materialLabel3.TabIndex = 3;
-            this.materialLabel3.Text = "类型";
+            this.borrowTypeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.borrowTypeLabel.AutoSize = true;
+            this.borrowTypeLabel.Depth = 0;
+            this.borrowTypeLabel.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.borrowTypeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.borrowTypeLabel.Location = new System.Drawing.Point(237, 69);
+            this.borrowTypeLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.borrowTypeLabel.Name = "borrowTypeLabel";
+            this.borrowTypeLabel.Size = new System.Drawing.Size(39, 20);
+            this.borrowTypeLabel.TabIndex = 3;
+            this.borrowTypeLabel.Text = "类型";
             // 
-            // tabPage2
+            // bookManTab
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.White;
-            this.tabPage2.Controls.Add(this.materialRaisedButton9);
-            this.tabPage2.Controls.Add(this.materialRaisedButton8);
-            this.tabPage2.Controls.Add(this.materialSingleLineTextField9);
-            this.tabPage2.Controls.Add(this.materialSingleLineTextField8);
-            this.tabPage2.Controls.Add(this.materialSingleLineTextField7);
-            this.tabPage2.Controls.Add(this.materialSingleLineTextField6);
-            this.tabPage2.Controls.Add(this.materialSingleLineTextField5);
-            this.tabPage2.Controls.Add(this.materialSingleLineTextField4);
-            this.tabPage2.Controls.Add(this.materialLabel11);
-            this.tabPage2.Controls.Add(this.materialLabel10);
-            this.tabPage2.Controls.Add(this.materialLabel9);
-            this.tabPage2.Controls.Add(this.materialLabel8);
-            this.tabPage2.Controls.Add(this.materialLabel7);
-            this.tabPage2.Controls.Add(this.materialLabel6);
-            this.tabPage2.Controls.Add(this.materialRaisedButton7);
-            this.tabPage2.Location = new System.Drawing.Point(4, 26);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(768, 349);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "图书管理";
+            this.bookManTab.BackColor = System.Drawing.Color.White;
+            this.bookManTab.Controls.Add(this.bookUpdateButton);
+            this.bookManTab.Controls.Add(this.bookDeleteButton);
+            this.bookManTab.Controls.Add(this.yearText);
+            this.bookManTab.Controls.Add(this.publisherText);
+            this.bookManTab.Controls.Add(this.authorText);
+            this.bookManTab.Controls.Add(this.typeText);
+            this.bookManTab.Controls.Add(this.titleText);
+            this.bookManTab.Controls.Add(this.ISBNLabelText);
+            this.bookManTab.Controls.Add(this.materialLabel11);
+            this.bookManTab.Controls.Add(this.materialLabel10);
+            this.bookManTab.Controls.Add(this.materialLabel9);
+            this.bookManTab.Controls.Add(this.materialLabel8);
+            this.bookManTab.Controls.Add(this.materialLabel7);
+            this.bookManTab.Controls.Add(this.ISBNLabel);
+            this.bookManTab.Controls.Add(this.bookSearchButton);
+            this.bookManTab.Location = new System.Drawing.Point(4, 26);
+            this.bookManTab.Name = "bookManTab";
+            this.bookManTab.Padding = new System.Windows.Forms.Padding(3);
+            this.bookManTab.Size = new System.Drawing.Size(768, 349);
+            this.bookManTab.TabIndex = 1;
+            this.bookManTab.Text = "图书管理";
             // 
-            // materialRaisedButton9
+            // bookUpdateButton
             // 
-            this.materialRaisedButton9.Depth = 0;
-            this.materialRaisedButton9.Location = new System.Drawing.Point(438, 285);
-            this.materialRaisedButton9.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton9.Name = "materialRaisedButton9";
-            this.materialRaisedButton9.Primary = true;
-            this.materialRaisedButton9.Size = new System.Drawing.Size(75, 30);
-            this.materialRaisedButton9.TabIndex = 16;
-            this.materialRaisedButton9.Text = "更新";
-            this.materialRaisedButton9.UseVisualStyleBackColor = true;
+            this.bookUpdateButton.Depth = 0;
+            this.bookUpdateButton.Location = new System.Drawing.Point(438, 285);
+            this.bookUpdateButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.bookUpdateButton.Name = "bookUpdateButton";
+            this.bookUpdateButton.Primary = true;
+            this.bookUpdateButton.Size = new System.Drawing.Size(75, 30);
+            this.bookUpdateButton.TabIndex = 16;
+            this.bookUpdateButton.Text = "更新";
+            this.bookUpdateButton.UseVisualStyleBackColor = true;
             // 
-            // materialRaisedButton8
+            // bookDeleteButton
             // 
-            this.materialRaisedButton8.Depth = 0;
-            this.materialRaisedButton8.Location = new System.Drawing.Point(258, 285);
-            this.materialRaisedButton8.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton8.Name = "materialRaisedButton8";
-            this.materialRaisedButton8.Primary = true;
-            this.materialRaisedButton8.Size = new System.Drawing.Size(75, 30);
-            this.materialRaisedButton8.TabIndex = 15;
-            this.materialRaisedButton8.Text = "删除";
-            this.materialRaisedButton8.UseVisualStyleBackColor = true;
+            this.bookDeleteButton.Depth = 0;
+            this.bookDeleteButton.Location = new System.Drawing.Point(258, 285);
+            this.bookDeleteButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.bookDeleteButton.Name = "bookDeleteButton";
+            this.bookDeleteButton.Primary = true;
+            this.bookDeleteButton.Size = new System.Drawing.Size(75, 30);
+            this.bookDeleteButton.TabIndex = 15;
+            this.bookDeleteButton.Text = "删除";
+            this.bookDeleteButton.UseVisualStyleBackColor = true;
             // 
-            // materialSingleLineTextField9
+            // yearText
             // 
-            this.materialSingleLineTextField9.Depth = 0;
-            this.materialSingleLineTextField9.Hint = "";
-            this.materialSingleLineTextField9.Location = new System.Drawing.Point(258, 242);
-            this.materialSingleLineTextField9.MaxLength = 32767;
-            this.materialSingleLineTextField9.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField9.Name = "materialSingleLineTextField9";
-            this.materialSingleLineTextField9.PasswordChar = '\0';
-            this.materialSingleLineTextField9.SelectedText = "";
-            this.materialSingleLineTextField9.SelectionLength = 0;
-            this.materialSingleLineTextField9.SelectionStart = 0;
-            this.materialSingleLineTextField9.Size = new System.Drawing.Size(255, 25);
-            this.materialSingleLineTextField9.TabIndex = 14;
-            this.materialSingleLineTextField9.TabStop = false;
-            this.materialSingleLineTextField9.UseSystemPasswordChar = false;
+            this.yearText.Depth = 0;
+            this.yearText.Hint = "";
+            this.yearText.Location = new System.Drawing.Point(258, 242);
+            this.yearText.MaxLength = 32767;
+            this.yearText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.yearText.Name = "yearText";
+            this.yearText.PasswordChar = '\0';
+            this.yearText.SelectedText = "";
+            this.yearText.SelectionLength = 0;
+            this.yearText.SelectionStart = 0;
+            this.yearText.Size = new System.Drawing.Size(255, 25);
+            this.yearText.TabIndex = 14;
+            this.yearText.TabStop = false;
+            this.yearText.UseSystemPasswordChar = false;
             // 
-            // materialSingleLineTextField8
+            // publisherText
             // 
-            this.materialSingleLineTextField8.Depth = 0;
-            this.materialSingleLineTextField8.Hint = "";
-            this.materialSingleLineTextField8.Location = new System.Drawing.Point(258, 202);
-            this.materialSingleLineTextField8.MaxLength = 32767;
-            this.materialSingleLineTextField8.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField8.Name = "materialSingleLineTextField8";
-            this.materialSingleLineTextField8.PasswordChar = '\0';
-            this.materialSingleLineTextField8.SelectedText = "";
-            this.materialSingleLineTextField8.SelectionLength = 0;
-            this.materialSingleLineTextField8.SelectionStart = 0;
-            this.materialSingleLineTextField8.Size = new System.Drawing.Size(255, 25);
-            this.materialSingleLineTextField8.TabIndex = 13;
-            this.materialSingleLineTextField8.TabStop = false;
-            this.materialSingleLineTextField8.UseSystemPasswordChar = false;
+            this.publisherText.Depth = 0;
+            this.publisherText.Hint = "";
+            this.publisherText.Location = new System.Drawing.Point(258, 202);
+            this.publisherText.MaxLength = 32767;
+            this.publisherText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.publisherText.Name = "publisherText";
+            this.publisherText.PasswordChar = '\0';
+            this.publisherText.SelectedText = "";
+            this.publisherText.SelectionLength = 0;
+            this.publisherText.SelectionStart = 0;
+            this.publisherText.Size = new System.Drawing.Size(255, 25);
+            this.publisherText.TabIndex = 13;
+            this.publisherText.TabStop = false;
+            this.publisherText.UseSystemPasswordChar = false;
             // 
-            // materialSingleLineTextField7
+            // authorText
             // 
-            this.materialSingleLineTextField7.Depth = 0;
-            this.materialSingleLineTextField7.Hint = "";
-            this.materialSingleLineTextField7.Location = new System.Drawing.Point(258, 162);
-            this.materialSingleLineTextField7.MaxLength = 32767;
-            this.materialSingleLineTextField7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField7.Name = "materialSingleLineTextField7";
-            this.materialSingleLineTextField7.PasswordChar = '\0';
-            this.materialSingleLineTextField7.SelectedText = "";
-            this.materialSingleLineTextField7.SelectionLength = 0;
-            this.materialSingleLineTextField7.SelectionStart = 0;
-            this.materialSingleLineTextField7.Size = new System.Drawing.Size(255, 25);
-            this.materialSingleLineTextField7.TabIndex = 12;
-            this.materialSingleLineTextField7.TabStop = false;
-            this.materialSingleLineTextField7.UseSystemPasswordChar = false;
+            this.authorText.Depth = 0;
+            this.authorText.Hint = "";
+            this.authorText.Location = new System.Drawing.Point(258, 162);
+            this.authorText.MaxLength = 32767;
+            this.authorText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.authorText.Name = "authorText";
+            this.authorText.PasswordChar = '\0';
+            this.authorText.SelectedText = "";
+            this.authorText.SelectionLength = 0;
+            this.authorText.SelectionStart = 0;
+            this.authorText.Size = new System.Drawing.Size(255, 25);
+            this.authorText.TabIndex = 12;
+            this.authorText.TabStop = false;
+            this.authorText.UseSystemPasswordChar = false;
             // 
-            // materialSingleLineTextField6
+            // typeText
             // 
-            this.materialSingleLineTextField6.Depth = 0;
-            this.materialSingleLineTextField6.Hint = "";
-            this.materialSingleLineTextField6.Location = new System.Drawing.Point(258, 122);
-            this.materialSingleLineTextField6.MaxLength = 32767;
-            this.materialSingleLineTextField6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField6.Name = "materialSingleLineTextField6";
-            this.materialSingleLineTextField6.PasswordChar = '\0';
-            this.materialSingleLineTextField6.SelectedText = "";
-            this.materialSingleLineTextField6.SelectionLength = 0;
-            this.materialSingleLineTextField6.SelectionStart = 0;
-            this.materialSingleLineTextField6.Size = new System.Drawing.Size(255, 25);
-            this.materialSingleLineTextField6.TabIndex = 11;
-            this.materialSingleLineTextField6.TabStop = false;
-            this.materialSingleLineTextField6.UseSystemPasswordChar = false;
+            this.typeText.Depth = 0;
+            this.typeText.Hint = "";
+            this.typeText.Location = new System.Drawing.Point(258, 122);
+            this.typeText.MaxLength = 32767;
+            this.typeText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.typeText.Name = "typeText";
+            this.typeText.PasswordChar = '\0';
+            this.typeText.SelectedText = "";
+            this.typeText.SelectionLength = 0;
+            this.typeText.SelectionStart = 0;
+            this.typeText.Size = new System.Drawing.Size(255, 25);
+            this.typeText.TabIndex = 11;
+            this.typeText.TabStop = false;
+            this.typeText.UseSystemPasswordChar = false;
             // 
-            // materialSingleLineTextField5
+            // titleText
             // 
-            this.materialSingleLineTextField5.Depth = 0;
-            this.materialSingleLineTextField5.Hint = "";
-            this.materialSingleLineTextField5.Location = new System.Drawing.Point(258, 82);
-            this.materialSingleLineTextField5.MaxLength = 32767;
-            this.materialSingleLineTextField5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField5.Name = "materialSingleLineTextField5";
-            this.materialSingleLineTextField5.PasswordChar = '\0';
-            this.materialSingleLineTextField5.SelectedText = "";
-            this.materialSingleLineTextField5.SelectionLength = 0;
-            this.materialSingleLineTextField5.SelectionStart = 0;
-            this.materialSingleLineTextField5.Size = new System.Drawing.Size(255, 25);
-            this.materialSingleLineTextField5.TabIndex = 10;
-            this.materialSingleLineTextField5.TabStop = false;
-            this.materialSingleLineTextField5.UseSystemPasswordChar = false;
+            this.titleText.Depth = 0;
+            this.titleText.Hint = "";
+            this.titleText.Location = new System.Drawing.Point(258, 82);
+            this.titleText.MaxLength = 32767;
+            this.titleText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.titleText.Name = "titleText";
+            this.titleText.PasswordChar = '\0';
+            this.titleText.SelectedText = "";
+            this.titleText.SelectionLength = 0;
+            this.titleText.SelectionStart = 0;
+            this.titleText.Size = new System.Drawing.Size(255, 25);
+            this.titleText.TabIndex = 10;
+            this.titleText.TabStop = false;
+            this.titleText.UseSystemPasswordChar = false;
             // 
-            // materialSingleLineTextField4
+            // ISBNLabelText
             // 
-            this.materialSingleLineTextField4.Depth = 0;
-            this.materialSingleLineTextField4.Hint = "";
-            this.materialSingleLineTextField4.Location = new System.Drawing.Point(258, 42);
-            this.materialSingleLineTextField4.MaxLength = 32767;
-            this.materialSingleLineTextField4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField4.Name = "materialSingleLineTextField4";
-            this.materialSingleLineTextField4.PasswordChar = '\0';
-            this.materialSingleLineTextField4.SelectedText = "";
-            this.materialSingleLineTextField4.SelectionLength = 0;
-            this.materialSingleLineTextField4.SelectionStart = 0;
-            this.materialSingleLineTextField4.Size = new System.Drawing.Size(255, 25);
-            this.materialSingleLineTextField4.TabIndex = 9;
-            this.materialSingleLineTextField4.TabStop = false;
-            this.materialSingleLineTextField4.UseSystemPasswordChar = false;
+            this.ISBNLabelText.Depth = 0;
+            this.ISBNLabelText.Hint = "";
+            this.ISBNLabelText.Location = new System.Drawing.Point(258, 42);
+            this.ISBNLabelText.MaxLength = 32767;
+            this.ISBNLabelText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ISBNLabelText.Name = "ISBNLabelText";
+            this.ISBNLabelText.PasswordChar = '\0';
+            this.ISBNLabelText.SelectedText = "";
+            this.ISBNLabelText.SelectionLength = 0;
+            this.ISBNLabelText.SelectionStart = 0;
+            this.ISBNLabelText.Size = new System.Drawing.Size(255, 25);
+            this.ISBNLabelText.TabIndex = 9;
+            this.ISBNLabelText.TabStop = false;
+            this.ISBNLabelText.UseSystemPasswordChar = false;
             // 
             // materialLabel11
             // 
@@ -498,192 +498,192 @@ namespace LibraryManagementSystem
             this.materialLabel7.TabIndex = 4;
             this.materialLabel7.Text = "题名";
             // 
-            // materialLabel6
+            // ISBNLabel
             // 
-            this.materialLabel6.AutoSize = true;
-            this.materialLabel6.Depth = 0;
-            this.materialLabel6.Font = new System.Drawing.Font("微软雅黑", 11F);
-            this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel6.Location = new System.Drawing.Point(188, 42);
-            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel6.Name = "materialLabel6";
-            this.materialLabel6.Size = new System.Drawing.Size(43, 20);
-            this.materialLabel6.TabIndex = 3;
-            this.materialLabel6.Text = "ISBN";
+            this.ISBNLabel.AutoSize = true;
+            this.ISBNLabel.Depth = 0;
+            this.ISBNLabel.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.ISBNLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ISBNLabel.Location = new System.Drawing.Point(188, 42);
+            this.ISBNLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ISBNLabel.Name = "ISBNLabel";
+            this.ISBNLabel.Size = new System.Drawing.Size(43, 20);
+            this.ISBNLabel.TabIndex = 3;
+            this.ISBNLabel.Text = "ISBN";
             // 
-            // materialRaisedButton7
+            // bookSearchButton
             // 
-            this.materialRaisedButton7.Depth = 0;
-            this.materialRaisedButton7.Location = new System.Drawing.Point(555, 38);
-            this.materialRaisedButton7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton7.Name = "materialRaisedButton7";
-            this.materialRaisedButton7.Primary = true;
-            this.materialRaisedButton7.Size = new System.Drawing.Size(75, 30);
-            this.materialRaisedButton7.TabIndex = 2;
-            this.materialRaisedButton7.Text = "搜索";
-            this.materialRaisedButton7.UseVisualStyleBackColor = true;
+            this.bookSearchButton.Depth = 0;
+            this.bookSearchButton.Location = new System.Drawing.Point(555, 38);
+            this.bookSearchButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.bookSearchButton.Name = "bookSearchButton";
+            this.bookSearchButton.Primary = true;
+            this.bookSearchButton.Size = new System.Drawing.Size(75, 30);
+            this.bookSearchButton.TabIndex = 2;
+            this.bookSearchButton.Text = "搜索";
+            this.bookSearchButton.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
+            // userManTab
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.White;
-            this.tabPage3.Controls.Add(this.materialRaisedButton12);
-            this.tabPage3.Controls.Add(this.materialRaisedButton11);
-            this.tabPage3.Controls.Add(this.materialRaisedButton10);
-            this.tabPage3.Controls.Add(this.materialSingleLineTextField14);
-            this.tabPage3.Controls.Add(this.materialSingleLineTextField13);
-            this.tabPage3.Controls.Add(this.materialSingleLineTextField12);
-            this.tabPage3.Controls.Add(this.materialSingleLineTextField11);
-            this.tabPage3.Controls.Add(this.materialSingleLineTextField10);
-            this.tabPage3.Controls.Add(this.materialSingleLineTextField3);
-            this.tabPage3.Controls.Add(this.materialLabel17);
-            this.tabPage3.Controls.Add(this.materialLabel16);
-            this.tabPage3.Controls.Add(this.materialLabel15);
-            this.tabPage3.Controls.Add(this.materialLabel14);
-            this.tabPage3.Controls.Add(this.materialLabel13);
-            this.tabPage3.Controls.Add(this.materialLabel12);
-            this.tabPage3.Location = new System.Drawing.Point(4, 26);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(768, 349);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "用户管理";
+            this.userManTab.BackColor = System.Drawing.Color.White;
+            this.userManTab.Controls.Add(this.usrUpdateButton);
+            this.userManTab.Controls.Add(this.usrDeleteButton);
+            this.userManTab.Controls.Add(this.usrSearchButton);
+            this.userManTab.Controls.Add(this.usrTypeText);
+            this.userManTab.Controls.Add(this.usrPwText);
+            this.userManTab.Controls.Add(this.usrAddressText);
+            this.userManTab.Controls.Add(this.usrGenderText);
+            this.userManTab.Controls.Add(this.usrNameText);
+            this.userManTab.Controls.Add(this.usrIDText);
+            this.userManTab.Controls.Add(this.materialLabel17);
+            this.userManTab.Controls.Add(this.materialLabel16);
+            this.userManTab.Controls.Add(this.materialLabel15);
+            this.userManTab.Controls.Add(this.materialLabel14);
+            this.userManTab.Controls.Add(this.materialLabel13);
+            this.userManTab.Controls.Add(this.materialLabel12);
+            this.userManTab.Location = new System.Drawing.Point(4, 26);
+            this.userManTab.Name = "userManTab";
+            this.userManTab.Size = new System.Drawing.Size(768, 349);
+            this.userManTab.TabIndex = 2;
+            this.userManTab.Text = "用户管理";
             // 
-            // materialRaisedButton12
+            // usrUpdateButton
             // 
-            this.materialRaisedButton12.Depth = 0;
-            this.materialRaisedButton12.Location = new System.Drawing.Point(438, 285);
-            this.materialRaisedButton12.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton12.Name = "materialRaisedButton12";
-            this.materialRaisedButton12.Primary = true;
-            this.materialRaisedButton12.Size = new System.Drawing.Size(75, 30);
-            this.materialRaisedButton12.TabIndex = 14;
-            this.materialRaisedButton12.Text = "更新";
-            this.materialRaisedButton12.UseVisualStyleBackColor = true;
+            this.usrUpdateButton.Depth = 0;
+            this.usrUpdateButton.Location = new System.Drawing.Point(438, 285);
+            this.usrUpdateButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.usrUpdateButton.Name = "usrUpdateButton";
+            this.usrUpdateButton.Primary = true;
+            this.usrUpdateButton.Size = new System.Drawing.Size(75, 30);
+            this.usrUpdateButton.TabIndex = 14;
+            this.usrUpdateButton.Text = "更新";
+            this.usrUpdateButton.UseVisualStyleBackColor = true;
             // 
-            // materialRaisedButton11
+            // usrDeleteButton
             // 
-            this.materialRaisedButton11.Depth = 0;
-            this.materialRaisedButton11.Location = new System.Drawing.Point(258, 285);
-            this.materialRaisedButton11.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton11.Name = "materialRaisedButton11";
-            this.materialRaisedButton11.Primary = true;
-            this.materialRaisedButton11.Size = new System.Drawing.Size(75, 30);
-            this.materialRaisedButton11.TabIndex = 13;
-            this.materialRaisedButton11.Text = "删除";
-            this.materialRaisedButton11.UseVisualStyleBackColor = true;
+            this.usrDeleteButton.Depth = 0;
+            this.usrDeleteButton.Location = new System.Drawing.Point(258, 285);
+            this.usrDeleteButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.usrDeleteButton.Name = "usrDeleteButton";
+            this.usrDeleteButton.Primary = true;
+            this.usrDeleteButton.Size = new System.Drawing.Size(75, 30);
+            this.usrDeleteButton.TabIndex = 13;
+            this.usrDeleteButton.Text = "删除";
+            this.usrDeleteButton.UseVisualStyleBackColor = true;
             // 
-            // materialRaisedButton10
+            // usrSearchButton
             // 
-            this.materialRaisedButton10.Depth = 0;
-            this.materialRaisedButton10.Location = new System.Drawing.Point(555, 38);
-            this.materialRaisedButton10.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton10.Name = "materialRaisedButton10";
-            this.materialRaisedButton10.Primary = true;
-            this.materialRaisedButton10.Size = new System.Drawing.Size(75, 30);
-            this.materialRaisedButton10.TabIndex = 12;
-            this.materialRaisedButton10.Text = "搜索";
-            this.materialRaisedButton10.UseVisualStyleBackColor = true;
+            this.usrSearchButton.Depth = 0;
+            this.usrSearchButton.Location = new System.Drawing.Point(555, 38);
+            this.usrSearchButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.usrSearchButton.Name = "usrSearchButton";
+            this.usrSearchButton.Primary = true;
+            this.usrSearchButton.Size = new System.Drawing.Size(75, 30);
+            this.usrSearchButton.TabIndex = 12;
+            this.usrSearchButton.Text = "搜索";
+            this.usrSearchButton.UseVisualStyleBackColor = true;
             // 
-            // materialSingleLineTextField14
+            // usrTypeText
             // 
-            this.materialSingleLineTextField14.Depth = 0;
-            this.materialSingleLineTextField14.Hint = "";
-            this.materialSingleLineTextField14.Location = new System.Drawing.Point(258, 242);
-            this.materialSingleLineTextField14.MaxLength = 32767;
-            this.materialSingleLineTextField14.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField14.Name = "materialSingleLineTextField14";
-            this.materialSingleLineTextField14.PasswordChar = '\0';
-            this.materialSingleLineTextField14.SelectedText = "";
-            this.materialSingleLineTextField14.SelectionLength = 0;
-            this.materialSingleLineTextField14.SelectionStart = 0;
-            this.materialSingleLineTextField14.Size = new System.Drawing.Size(255, 25);
-            this.materialSingleLineTextField14.TabIndex = 11;
-            this.materialSingleLineTextField14.TabStop = false;
-            this.materialSingleLineTextField14.UseSystemPasswordChar = false;
+            this.usrTypeText.Depth = 0;
+            this.usrTypeText.Hint = "";
+            this.usrTypeText.Location = new System.Drawing.Point(258, 242);
+            this.usrTypeText.MaxLength = 32767;
+            this.usrTypeText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.usrTypeText.Name = "usrTypeText";
+            this.usrTypeText.PasswordChar = '\0';
+            this.usrTypeText.SelectedText = "";
+            this.usrTypeText.SelectionLength = 0;
+            this.usrTypeText.SelectionStart = 0;
+            this.usrTypeText.Size = new System.Drawing.Size(255, 25);
+            this.usrTypeText.TabIndex = 11;
+            this.usrTypeText.TabStop = false;
+            this.usrTypeText.UseSystemPasswordChar = false;
             // 
-            // materialSingleLineTextField13
+            // usrPwText
             // 
-            this.materialSingleLineTextField13.Depth = 0;
-            this.materialSingleLineTextField13.Hint = "";
-            this.materialSingleLineTextField13.Location = new System.Drawing.Point(258, 202);
-            this.materialSingleLineTextField13.MaxLength = 32767;
-            this.materialSingleLineTextField13.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField13.Name = "materialSingleLineTextField13";
-            this.materialSingleLineTextField13.PasswordChar = '\0';
-            this.materialSingleLineTextField13.SelectedText = "";
-            this.materialSingleLineTextField13.SelectionLength = 0;
-            this.materialSingleLineTextField13.SelectionStart = 0;
-            this.materialSingleLineTextField13.Size = new System.Drawing.Size(255, 25);
-            this.materialSingleLineTextField13.TabIndex = 10;
-            this.materialSingleLineTextField13.TabStop = false;
-            this.materialSingleLineTextField13.UseSystemPasswordChar = false;
+            this.usrPwText.Depth = 0;
+            this.usrPwText.Hint = "";
+            this.usrPwText.Location = new System.Drawing.Point(258, 202);
+            this.usrPwText.MaxLength = 32767;
+            this.usrPwText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.usrPwText.Name = "usrPwText";
+            this.usrPwText.PasswordChar = '\0';
+            this.usrPwText.SelectedText = "";
+            this.usrPwText.SelectionLength = 0;
+            this.usrPwText.SelectionStart = 0;
+            this.usrPwText.Size = new System.Drawing.Size(255, 25);
+            this.usrPwText.TabIndex = 10;
+            this.usrPwText.TabStop = false;
+            this.usrPwText.UseSystemPasswordChar = false;
             // 
-            // materialSingleLineTextField12
+            // usrAddressText
             // 
-            this.materialSingleLineTextField12.Depth = 0;
-            this.materialSingleLineTextField12.Hint = "";
-            this.materialSingleLineTextField12.Location = new System.Drawing.Point(258, 162);
-            this.materialSingleLineTextField12.MaxLength = 32767;
-            this.materialSingleLineTextField12.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField12.Name = "materialSingleLineTextField12";
-            this.materialSingleLineTextField12.PasswordChar = '\0';
-            this.materialSingleLineTextField12.SelectedText = "";
-            this.materialSingleLineTextField12.SelectionLength = 0;
-            this.materialSingleLineTextField12.SelectionStart = 0;
-            this.materialSingleLineTextField12.Size = new System.Drawing.Size(255, 25);
-            this.materialSingleLineTextField12.TabIndex = 9;
-            this.materialSingleLineTextField12.TabStop = false;
-            this.materialSingleLineTextField12.UseSystemPasswordChar = false;
+            this.usrAddressText.Depth = 0;
+            this.usrAddressText.Hint = "";
+            this.usrAddressText.Location = new System.Drawing.Point(258, 162);
+            this.usrAddressText.MaxLength = 32767;
+            this.usrAddressText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.usrAddressText.Name = "usrAddressText";
+            this.usrAddressText.PasswordChar = '\0';
+            this.usrAddressText.SelectedText = "";
+            this.usrAddressText.SelectionLength = 0;
+            this.usrAddressText.SelectionStart = 0;
+            this.usrAddressText.Size = new System.Drawing.Size(255, 25);
+            this.usrAddressText.TabIndex = 9;
+            this.usrAddressText.TabStop = false;
+            this.usrAddressText.UseSystemPasswordChar = false;
             // 
-            // materialSingleLineTextField11
+            // usrGenderText
             // 
-            this.materialSingleLineTextField11.Depth = 0;
-            this.materialSingleLineTextField11.Hint = "";
-            this.materialSingleLineTextField11.Location = new System.Drawing.Point(258, 122);
-            this.materialSingleLineTextField11.MaxLength = 32767;
-            this.materialSingleLineTextField11.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField11.Name = "materialSingleLineTextField11";
-            this.materialSingleLineTextField11.PasswordChar = '\0';
-            this.materialSingleLineTextField11.SelectedText = "";
-            this.materialSingleLineTextField11.SelectionLength = 0;
-            this.materialSingleLineTextField11.SelectionStart = 0;
-            this.materialSingleLineTextField11.Size = new System.Drawing.Size(255, 25);
-            this.materialSingleLineTextField11.TabIndex = 8;
-            this.materialSingleLineTextField11.TabStop = false;
-            this.materialSingleLineTextField11.UseSystemPasswordChar = false;
+            this.usrGenderText.Depth = 0;
+            this.usrGenderText.Hint = "";
+            this.usrGenderText.Location = new System.Drawing.Point(258, 122);
+            this.usrGenderText.MaxLength = 32767;
+            this.usrGenderText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.usrGenderText.Name = "usrGenderText";
+            this.usrGenderText.PasswordChar = '\0';
+            this.usrGenderText.SelectedText = "";
+            this.usrGenderText.SelectionLength = 0;
+            this.usrGenderText.SelectionStart = 0;
+            this.usrGenderText.Size = new System.Drawing.Size(255, 25);
+            this.usrGenderText.TabIndex = 8;
+            this.usrGenderText.TabStop = false;
+            this.usrGenderText.UseSystemPasswordChar = false;
             // 
-            // materialSingleLineTextField10
+            // usrNameText
             // 
-            this.materialSingleLineTextField10.Depth = 0;
-            this.materialSingleLineTextField10.Hint = "";
-            this.materialSingleLineTextField10.Location = new System.Drawing.Point(258, 82);
-            this.materialSingleLineTextField10.MaxLength = 32767;
-            this.materialSingleLineTextField10.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField10.Name = "materialSingleLineTextField10";
-            this.materialSingleLineTextField10.PasswordChar = '\0';
-            this.materialSingleLineTextField10.SelectedText = "";
-            this.materialSingleLineTextField10.SelectionLength = 0;
-            this.materialSingleLineTextField10.SelectionStart = 0;
-            this.materialSingleLineTextField10.Size = new System.Drawing.Size(255, 25);
-            this.materialSingleLineTextField10.TabIndex = 7;
-            this.materialSingleLineTextField10.TabStop = false;
-            this.materialSingleLineTextField10.UseSystemPasswordChar = false;
+            this.usrNameText.Depth = 0;
+            this.usrNameText.Hint = "";
+            this.usrNameText.Location = new System.Drawing.Point(258, 82);
+            this.usrNameText.MaxLength = 32767;
+            this.usrNameText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.usrNameText.Name = "usrNameText";
+            this.usrNameText.PasswordChar = '\0';
+            this.usrNameText.SelectedText = "";
+            this.usrNameText.SelectionLength = 0;
+            this.usrNameText.SelectionStart = 0;
+            this.usrNameText.Size = new System.Drawing.Size(255, 25);
+            this.usrNameText.TabIndex = 7;
+            this.usrNameText.TabStop = false;
+            this.usrNameText.UseSystemPasswordChar = false;
             // 
-            // materialSingleLineTextField3
+            // usrIDText
             // 
-            this.materialSingleLineTextField3.Depth = 0;
-            this.materialSingleLineTextField3.Hint = "";
-            this.materialSingleLineTextField3.Location = new System.Drawing.Point(258, 42);
-            this.materialSingleLineTextField3.MaxLength = 32767;
-            this.materialSingleLineTextField3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField3.Name = "materialSingleLineTextField3";
-            this.materialSingleLineTextField3.PasswordChar = '\0';
-            this.materialSingleLineTextField3.SelectedText = "";
-            this.materialSingleLineTextField3.SelectionLength = 0;
-            this.materialSingleLineTextField3.SelectionStart = 0;
-            this.materialSingleLineTextField3.Size = new System.Drawing.Size(255, 25);
-            this.materialSingleLineTextField3.TabIndex = 6;
-            this.materialSingleLineTextField3.TabStop = false;
-            this.materialSingleLineTextField3.UseSystemPasswordChar = false;
+            this.usrIDText.Depth = 0;
+            this.usrIDText.Hint = "";
+            this.usrIDText.Location = new System.Drawing.Point(258, 42);
+            this.usrIDText.MaxLength = 32767;
+            this.usrIDText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.usrIDText.Name = "usrIDText";
+            this.usrIDText.PasswordChar = '\0';
+            this.usrIDText.SelectedText = "";
+            this.usrIDText.SelectionLength = 0;
+            this.usrIDText.SelectionStart = 0;
+            this.usrIDText.Size = new System.Drawing.Size(255, 25);
+            this.usrIDText.TabIndex = 6;
+            this.usrIDText.TabStop = false;
+            this.usrIDText.UseSystemPasswordChar = false;
             // 
             // materialLabel17
             // 
@@ -764,91 +764,91 @@ namespace LibraryManagementSystem
             this.materialLabel12.TabIndex = 0;
             this.materialLabel12.Text = "用户ID";
             // 
-            // tabPage4
+            // shelfManTab
             // 
-            this.tabPage4.BackColor = System.Drawing.Color.White;
-            this.tabPage4.Controls.Add(this.materialRaisedButton15);
-            this.tabPage4.Controls.Add(this.materialRaisedButton14);
-            this.tabPage4.Controls.Add(this.materialRaisedButton13);
-            this.tabPage4.Controls.Add(this.materialSingleLineTextField16);
-            this.tabPage4.Controls.Add(this.materialSingleLineTextField15);
-            this.tabPage4.Controls.Add(this.materialLabel19);
-            this.tabPage4.Controls.Add(this.materialLabel18);
-            this.tabPage4.Location = new System.Drawing.Point(4, 26);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(768, 349);
-            this.tabPage4.TabIndex = 4;
-            this.tabPage4.Text = "书架管理";
+            this.shelfManTab.BackColor = System.Drawing.Color.White;
+            this.shelfManTab.Controls.Add(this.shelfUpdateButton);
+            this.shelfManTab.Controls.Add(this.shelfDeleteButton);
+            this.shelfManTab.Controls.Add(this.shelfSearchButton);
+            this.shelfManTab.Controls.Add(this.shelfLocationText);
+            this.shelfManTab.Controls.Add(this.shelfIDText);
+            this.shelfManTab.Controls.Add(this.materialLabel19);
+            this.shelfManTab.Controls.Add(this.materialLabel18);
+            this.shelfManTab.Location = new System.Drawing.Point(4, 26);
+            this.shelfManTab.Name = "shelfManTab";
+            this.shelfManTab.Size = new System.Drawing.Size(768, 349);
+            this.shelfManTab.TabIndex = 4;
+            this.shelfManTab.Text = "书架管理";
             // 
-            // materialRaisedButton15
+            // shelfUpdateButton
             // 
-            this.materialRaisedButton15.Depth = 0;
-            this.materialRaisedButton15.Location = new System.Drawing.Point(438, 127);
-            this.materialRaisedButton15.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton15.Name = "materialRaisedButton15";
-            this.materialRaisedButton15.Primary = true;
-            this.materialRaisedButton15.Size = new System.Drawing.Size(75, 30);
-            this.materialRaisedButton15.TabIndex = 6;
-            this.materialRaisedButton15.Text = "更新";
-            this.materialRaisedButton15.UseVisualStyleBackColor = true;
+            this.shelfUpdateButton.Depth = 0;
+            this.shelfUpdateButton.Location = new System.Drawing.Point(438, 127);
+            this.shelfUpdateButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.shelfUpdateButton.Name = "shelfUpdateButton";
+            this.shelfUpdateButton.Primary = true;
+            this.shelfUpdateButton.Size = new System.Drawing.Size(75, 30);
+            this.shelfUpdateButton.TabIndex = 6;
+            this.shelfUpdateButton.Text = "更新";
+            this.shelfUpdateButton.UseVisualStyleBackColor = true;
             // 
-            // materialRaisedButton14
+            // shelfDeleteButton
             // 
-            this.materialRaisedButton14.Depth = 0;
-            this.materialRaisedButton14.Location = new System.Drawing.Point(258, 127);
-            this.materialRaisedButton14.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton14.Name = "materialRaisedButton14";
-            this.materialRaisedButton14.Primary = true;
-            this.materialRaisedButton14.Size = new System.Drawing.Size(75, 30);
-            this.materialRaisedButton14.TabIndex = 5;
-            this.materialRaisedButton14.Text = "删除";
-            this.materialRaisedButton14.UseVisualStyleBackColor = true;
+            this.shelfDeleteButton.Depth = 0;
+            this.shelfDeleteButton.Location = new System.Drawing.Point(258, 127);
+            this.shelfDeleteButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.shelfDeleteButton.Name = "shelfDeleteButton";
+            this.shelfDeleteButton.Primary = true;
+            this.shelfDeleteButton.Size = new System.Drawing.Size(75, 30);
+            this.shelfDeleteButton.TabIndex = 5;
+            this.shelfDeleteButton.Text = "删除";
+            this.shelfDeleteButton.UseVisualStyleBackColor = true;
             // 
-            // materialRaisedButton13
+            // shelfSearchButton
             // 
-            this.materialRaisedButton13.Depth = 0;
-            this.materialRaisedButton13.Location = new System.Drawing.Point(555, 38);
-            this.materialRaisedButton13.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton13.Name = "materialRaisedButton13";
-            this.materialRaisedButton13.Primary = true;
-            this.materialRaisedButton13.Size = new System.Drawing.Size(75, 30);
-            this.materialRaisedButton13.TabIndex = 4;
-            this.materialRaisedButton13.Text = "搜索";
-            this.materialRaisedButton13.UseVisualStyleBackColor = true;
+            this.shelfSearchButton.Depth = 0;
+            this.shelfSearchButton.Location = new System.Drawing.Point(555, 38);
+            this.shelfSearchButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.shelfSearchButton.Name = "shelfSearchButton";
+            this.shelfSearchButton.Primary = true;
+            this.shelfSearchButton.Size = new System.Drawing.Size(75, 30);
+            this.shelfSearchButton.TabIndex = 4;
+            this.shelfSearchButton.Text = "搜索";
+            this.shelfSearchButton.UseVisualStyleBackColor = true;
             // 
-            // materialSingleLineTextField16
+            // shelfLocationText
             // 
-            this.materialSingleLineTextField16.Depth = 0;
-            this.materialSingleLineTextField16.Hint = "";
-            this.materialSingleLineTextField16.Location = new System.Drawing.Point(258, 87);
-            this.materialSingleLineTextField16.MaxLength = 32767;
-            this.materialSingleLineTextField16.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField16.Name = "materialSingleLineTextField16";
-            this.materialSingleLineTextField16.PasswordChar = '\0';
-            this.materialSingleLineTextField16.SelectedText = "";
-            this.materialSingleLineTextField16.SelectionLength = 0;
-            this.materialSingleLineTextField16.SelectionStart = 0;
-            this.materialSingleLineTextField16.Size = new System.Drawing.Size(255, 25);
-            this.materialSingleLineTextField16.TabIndex = 3;
-            this.materialSingleLineTextField16.TabStop = false;
-            this.materialSingleLineTextField16.UseSystemPasswordChar = false;
+            this.shelfLocationText.Depth = 0;
+            this.shelfLocationText.Hint = "";
+            this.shelfLocationText.Location = new System.Drawing.Point(258, 87);
+            this.shelfLocationText.MaxLength = 32767;
+            this.shelfLocationText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.shelfLocationText.Name = "shelfLocationText";
+            this.shelfLocationText.PasswordChar = '\0';
+            this.shelfLocationText.SelectedText = "";
+            this.shelfLocationText.SelectionLength = 0;
+            this.shelfLocationText.SelectionStart = 0;
+            this.shelfLocationText.Size = new System.Drawing.Size(255, 25);
+            this.shelfLocationText.TabIndex = 3;
+            this.shelfLocationText.TabStop = false;
+            this.shelfLocationText.UseSystemPasswordChar = false;
             // 
-            // materialSingleLineTextField15
+            // shelfIDText
             // 
-            this.materialSingleLineTextField15.Depth = 0;
-            this.materialSingleLineTextField15.Hint = "";
-            this.materialSingleLineTextField15.Location = new System.Drawing.Point(258, 42);
-            this.materialSingleLineTextField15.MaxLength = 32767;
-            this.materialSingleLineTextField15.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField15.Name = "materialSingleLineTextField15";
-            this.materialSingleLineTextField15.PasswordChar = '\0';
-            this.materialSingleLineTextField15.SelectedText = "";
-            this.materialSingleLineTextField15.SelectionLength = 0;
-            this.materialSingleLineTextField15.SelectionStart = 0;
-            this.materialSingleLineTextField15.Size = new System.Drawing.Size(255, 25);
-            this.materialSingleLineTextField15.TabIndex = 2;
-            this.materialSingleLineTextField15.TabStop = false;
-            this.materialSingleLineTextField15.UseSystemPasswordChar = false;
+            this.shelfIDText.Depth = 0;
+            this.shelfIDText.Hint = "";
+            this.shelfIDText.Location = new System.Drawing.Point(258, 42);
+            this.shelfIDText.MaxLength = 32767;
+            this.shelfIDText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.shelfIDText.Name = "shelfIDText";
+            this.shelfIDText.PasswordChar = '\0';
+            this.shelfIDText.SelectedText = "";
+            this.shelfIDText.SelectionLength = 0;
+            this.shelfIDText.SelectionStart = 0;
+            this.shelfIDText.Size = new System.Drawing.Size(255, 25);
+            this.shelfIDText.TabIndex = 2;
+            this.shelfIDText.TabStop = false;
+            this.shelfIDText.UseSystemPasswordChar = false;
             // 
             // materialLabel19
             // 
@@ -876,38 +876,38 @@ namespace LibraryManagementSystem
             this.materialLabel18.TabIndex = 0;
             this.materialLabel18.Text = "书架ID";
             // 
-            // tabPage5
+            // statusTab
             // 
-            this.tabPage5.BackColor = System.Drawing.Color.White;
-            this.tabPage5.Controls.Add(this.materialListView1);
-            this.tabPage5.Location = new System.Drawing.Point(4, 26);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(768, 349);
-            this.tabPage5.TabIndex = 5;
-            this.tabPage5.Text = "实时借还状态";
+            this.statusTab.BackColor = System.Drawing.Color.White;
+            this.statusTab.Controls.Add(this.borrowReturnList);
+            this.statusTab.Location = new System.Drawing.Point(4, 26);
+            this.statusTab.Name = "statusTab";
+            this.statusTab.Size = new System.Drawing.Size(768, 349);
+            this.statusTab.TabIndex = 5;
+            this.statusTab.Text = "实时借还状态";
             // 
-            // materialListView1
+            // borrowReturnList
             // 
-            this.materialListView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.borrowReturnList.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.borrowReturnList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4});
-            this.materialListView1.Depth = 0;
-            this.materialListView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialListView1.Font = new System.Drawing.Font("微软雅黑", 24F);
-            this.materialListView1.FullRowSelect = true;
-            this.materialListView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.materialListView1.Location = new System.Drawing.Point(0, 0);
-            this.materialListView1.MouseLocation = new System.Drawing.Point(0, 0);
-            this.materialListView1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialListView1.Name = "materialListView1";
-            this.materialListView1.OwnerDraw = true;
-            this.materialListView1.Size = new System.Drawing.Size(768, 349);
-            this.materialListView1.TabIndex = 0;
-            this.materialListView1.UseCompatibleStateImageBehavior = false;
-            this.materialListView1.View = System.Windows.Forms.View.Details;
+            this.borrowReturnList.Depth = 0;
+            this.borrowReturnList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.borrowReturnList.Font = new System.Drawing.Font("微软雅黑", 24F);
+            this.borrowReturnList.FullRowSelect = true;
+            this.borrowReturnList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.borrowReturnList.Location = new System.Drawing.Point(0, 0);
+            this.borrowReturnList.MouseLocation = new System.Drawing.Point(0, 0);
+            this.borrowReturnList.MouseState = MaterialSkin.MouseState.HOVER;
+            this.borrowReturnList.Name = "borrowReturnList";
+            this.borrowReturnList.OwnerDraw = true;
+            this.borrowReturnList.Size = new System.Drawing.Size(768, 349);
+            this.borrowReturnList.TabIndex = 0;
+            this.borrowReturnList.UseCompatibleStateImageBehavior = false;
+            this.borrowReturnList.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
@@ -929,21 +929,21 @@ namespace LibraryManagementSystem
             this.columnHeader4.Text = "时间";
             this.columnHeader4.Width = 200;
             // 
-            // tabPage6
+            // setTheme
             // 
-            this.tabPage6.BackColor = System.Drawing.Color.White;
-            this.tabPage6.Controls.Add(this.materialRaisedButton5);
-            this.tabPage6.Controls.Add(this.materialRaisedButton4);
-            this.tabPage6.Controls.Add(this.materialRaisedButton3);
-            this.tabPage6.Controls.Add(this.materialLabel2);
-            this.tabPage6.Controls.Add(this.materialRaisedButton2);
-            this.tabPage6.Controls.Add(this.materialLabel1);
-            this.tabPage6.Controls.Add(this.materialRaisedButton1);
-            this.tabPage6.Location = new System.Drawing.Point(4, 26);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(768, 349);
-            this.tabPage6.TabIndex = 6;
-            this.tabPage6.Text = "主题设置";
+            this.setTheme.BackColor = System.Drawing.Color.White;
+            this.setTheme.Controls.Add(this.materialRaisedButton5);
+            this.setTheme.Controls.Add(this.materialRaisedButton4);
+            this.setTheme.Controls.Add(this.materialRaisedButton3);
+            this.setTheme.Controls.Add(this.materialLabel2);
+            this.setTheme.Controls.Add(this.materialRaisedButton2);
+            this.setTheme.Controls.Add(this.materialLabel1);
+            this.setTheme.Controls.Add(this.materialRaisedButton1);
+            this.setTheme.Location = new System.Drawing.Point(4, 26);
+            this.setTheme.Name = "setTheme";
+            this.setTheme.Size = new System.Drawing.Size(768, 349);
+            this.setTheme.TabIndex = 6;
+            this.setTheme.Text = "主题设置";
             // 
             // materialRaisedButton5
             // 
@@ -1050,17 +1050,17 @@ namespace LibraryManagementSystem
             this.Text = "图书馆管理系统-管理员模式";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AdminForm_FormClosed);
             this.materialTabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
+            this.bookBorrowReturnTab.ResumeLayout(false);
+            this.bookBorrowReturnTab.PerformLayout();
+            this.bookManTab.ResumeLayout(false);
+            this.bookManTab.PerformLayout();
+            this.userManTab.ResumeLayout(false);
+            this.userManTab.PerformLayout();
+            this.shelfManTab.ResumeLayout(false);
+            this.shelfManTab.PerformLayout();
+            this.statusTab.ResumeLayout(false);
+            this.setTheme.ResumeLayout(false);
+            this.setTheme.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1069,12 +1069,12 @@ namespace LibraryManagementSystem
 
         private MaterialSkin.Controls.MaterialTabSelector materialTabSelector1;
         private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.TabPage bookBorrowReturnTab;
+        private System.Windows.Forms.TabPage bookManTab;
+        private System.Windows.Forms.TabPage userManTab;
+        private System.Windows.Forms.TabPage shelfManTab;
+        private System.Windows.Forms.TabPage statusTab;
+        private System.Windows.Forms.TabPage setTheme;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
@@ -1082,52 +1082,52 @@ namespace LibraryManagementSystem
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton3;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton5;
-        private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton1;
-        private MaterialSkin.Controls.MaterialLabel materialLabel4;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton2;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField1;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField2;
-        private MaterialSkin.Controls.MaterialLabel materialLabel5;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton6;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton7;
+        private MaterialSkin.Controls.MaterialLabel borrowTypeLabel;
+        private MaterialSkin.Controls.MaterialRadioButton borrowRadioButton;
+        private MaterialSkin.Controls.MaterialLabel userNameLabel;
+        private MaterialSkin.Controls.MaterialRadioButton returnRadioButton;
+        private MaterialSkin.Controls.MaterialSingleLineTextField userNameText;
+        private MaterialSkin.Controls.MaterialSingleLineTextField bookEPCText;
+        private MaterialSkin.Controls.MaterialLabel bookEPCLAbel;
+        private MaterialSkin.Controls.MaterialRaisedButton runButton;
+        private MaterialSkin.Controls.MaterialRaisedButton bookSearchButton;
         private MaterialSkin.Controls.MaterialLabel materialLabel8;
         private MaterialSkin.Controls.MaterialLabel materialLabel7;
-        private MaterialSkin.Controls.MaterialLabel materialLabel6;
+        private MaterialSkin.Controls.MaterialLabel ISBNLabel;
         private MaterialSkin.Controls.MaterialLabel materialLabel11;
         private MaterialSkin.Controls.MaterialLabel materialLabel10;
         private MaterialSkin.Controls.MaterialLabel materialLabel9;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField9;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField8;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField7;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField6;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField5;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField4;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton9;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton8;
+        private MaterialSkin.Controls.MaterialSingleLineTextField yearText;
+        private MaterialSkin.Controls.MaterialSingleLineTextField publisherText;
+        private MaterialSkin.Controls.MaterialSingleLineTextField authorText;
+        private MaterialSkin.Controls.MaterialSingleLineTextField typeText;
+        private MaterialSkin.Controls.MaterialSingleLineTextField titleText;
+        private MaterialSkin.Controls.MaterialSingleLineTextField ISBNLabelText;
+        private MaterialSkin.Controls.MaterialRaisedButton bookUpdateButton;
+        private MaterialSkin.Controls.MaterialRaisedButton bookDeleteButton;
         private MaterialSkin.Controls.MaterialLabel materialLabel13;
         private MaterialSkin.Controls.MaterialLabel materialLabel12;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField3;
+        private MaterialSkin.Controls.MaterialSingleLineTextField usrIDText;
         private MaterialSkin.Controls.MaterialLabel materialLabel17;
         private MaterialSkin.Controls.MaterialLabel materialLabel16;
         private MaterialSkin.Controls.MaterialLabel materialLabel15;
         private MaterialSkin.Controls.MaterialLabel materialLabel14;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton12;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton11;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton10;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField14;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField13;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField12;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField11;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField10;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton15;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton14;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton13;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField16;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField15;
+        private MaterialSkin.Controls.MaterialRaisedButton usrUpdateButton;
+        private MaterialSkin.Controls.MaterialRaisedButton usrDeleteButton;
+        private MaterialSkin.Controls.MaterialRaisedButton usrSearchButton;
+        private MaterialSkin.Controls.MaterialSingleLineTextField usrTypeText;
+        private MaterialSkin.Controls.MaterialSingleLineTextField usrPwText;
+        private MaterialSkin.Controls.MaterialSingleLineTextField usrAddressText;
+        private MaterialSkin.Controls.MaterialSingleLineTextField usrGenderText;
+        private MaterialSkin.Controls.MaterialSingleLineTextField usrNameText;
+        private MaterialSkin.Controls.MaterialRaisedButton shelfUpdateButton;
+        private MaterialSkin.Controls.MaterialRaisedButton shelfDeleteButton;
+        private MaterialSkin.Controls.MaterialRaisedButton shelfSearchButton;
+        private MaterialSkin.Controls.MaterialSingleLineTextField shelfLocationText;
+        private MaterialSkin.Controls.MaterialSingleLineTextField shelfIDText;
         private MaterialSkin.Controls.MaterialLabel materialLabel19;
         private MaterialSkin.Controls.MaterialLabel materialLabel18;
-        private MaterialListView materialListView1;
+        private MaterialListView borrowReturnList;
         private ColumnHeader columnHeader1;
         private ColumnHeader columnHeader2;
         private ColumnHeader columnHeader3;

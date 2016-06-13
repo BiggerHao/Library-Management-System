@@ -28,99 +28,99 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialSingleLineTextField2 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.nameLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.pwLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.loginNameText = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.loginPwText = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.loginButton = new MaterialSkin.Controls.MaterialRaisedButton();
             this.SuspendLayout();
             // 
-            // materialLabel1
+            // nameLabel
             // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("微软雅黑", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(46, 109);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(39, 20);
-            this.materialLabel1.TabIndex = 0;
-            this.materialLabel1.Text = "账号";
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.Depth = 0;
+            this.nameLabel.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.nameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.nameLabel.Location = new System.Drawing.Point(46, 109);
+            this.nameLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(39, 20);
+            this.nameLabel.TabIndex = 0;
+            this.nameLabel.Text = "账号";
             // 
-            // materialLabel2
+            // pwLabel
             // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("微软雅黑", 11F);
-            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(46, 174);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(39, 20);
-            this.materialLabel2.TabIndex = 1;
-            this.materialLabel2.Text = "密码";
+            this.pwLabel.AutoSize = true;
+            this.pwLabel.Depth = 0;
+            this.pwLabel.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.pwLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.pwLabel.Location = new System.Drawing.Point(46, 174);
+            this.pwLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.pwLabel.Name = "pwLabel";
+            this.pwLabel.Size = new System.Drawing.Size(39, 20);
+            this.pwLabel.TabIndex = 1;
+            this.pwLabel.Text = "密码";
             // 
-            // materialSingleLineTextField1
+            // loginNameText
             // 
-            this.materialSingleLineTextField1.Depth = 0;
-            this.materialSingleLineTextField1.Hint = "请输入账号";
-            this.materialSingleLineTextField1.ImeMode = System.Windows.Forms.ImeMode.Alpha;
-            this.materialSingleLineTextField1.Location = new System.Drawing.Point(91, 109);
-            this.materialSingleLineTextField1.MaxLength = 32767;
-            this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
-            this.materialSingleLineTextField1.PasswordChar = '\0';
-            this.materialSingleLineTextField1.SelectedText = "";
-            this.materialSingleLineTextField1.SelectionLength = 0;
-            this.materialSingleLineTextField1.SelectionStart = 0;
-            this.materialSingleLineTextField1.Size = new System.Drawing.Size(150, 25);
-            this.materialSingleLineTextField1.TabIndex = 2;
-            this.materialSingleLineTextField1.TabStop = false;
-            this.materialSingleLineTextField1.UseSystemPasswordChar = false;
+            this.loginNameText.Depth = 0;
+            this.loginNameText.Hint = "请输入账号";
+            this.loginNameText.ImeMode = System.Windows.Forms.ImeMode.Alpha;
+            this.loginNameText.Location = new System.Drawing.Point(91, 109);
+            this.loginNameText.MaxLength = 32767;
+            this.loginNameText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.loginNameText.Name = "loginNameText";
+            this.loginNameText.PasswordChar = '\0';
+            this.loginNameText.SelectedText = "";
+            this.loginNameText.SelectionLength = 0;
+            this.loginNameText.SelectionStart = 0;
+            this.loginNameText.Size = new System.Drawing.Size(150, 25);
+            this.loginNameText.TabIndex = 2;
+            this.loginNameText.TabStop = false;
+            this.loginNameText.UseSystemPasswordChar = false;
             // 
-            // materialSingleLineTextField2
+            // loginPwText
             // 
-            this.materialSingleLineTextField2.Depth = 0;
-            this.materialSingleLineTextField2.Hint = "请输入密码";
-            this.materialSingleLineTextField2.ImeMode = System.Windows.Forms.ImeMode.Alpha;
-            this.materialSingleLineTextField2.Location = new System.Drawing.Point(91, 174);
-            this.materialSingleLineTextField2.MaxLength = 32767;
-            this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
-            this.materialSingleLineTextField2.PasswordChar = '·';
-            this.materialSingleLineTextField2.SelectedText = "";
-            this.materialSingleLineTextField2.SelectionLength = 0;
-            this.materialSingleLineTextField2.SelectionStart = 0;
-            this.materialSingleLineTextField2.Size = new System.Drawing.Size(150, 25);
-            this.materialSingleLineTextField2.TabIndex = 3;
-            this.materialSingleLineTextField2.TabStop = false;
-            this.materialSingleLineTextField2.UseSystemPasswordChar = false;
-            this.materialSingleLineTextField2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.materialSingleLineTextField2_KeyDown);
+            this.loginPwText.Depth = 0;
+            this.loginPwText.Hint = "请输入密码";
+            this.loginPwText.ImeMode = System.Windows.Forms.ImeMode.Alpha;
+            this.loginPwText.Location = new System.Drawing.Point(91, 174);
+            this.loginPwText.MaxLength = 32767;
+            this.loginPwText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.loginPwText.Name = "loginPwText";
+            this.loginPwText.PasswordChar = '\0';
+            this.loginPwText.SelectedText = "";
+            this.loginPwText.SelectionLength = 0;
+            this.loginPwText.SelectionStart = 0;
+            this.loginPwText.Size = new System.Drawing.Size(150, 25);
+            this.loginPwText.TabIndex = 3;
+            this.loginPwText.TabStop = false;
+            this.loginPwText.UseSystemPasswordChar = false;
+            this.loginPwText.KeyDown += new System.Windows.Forms.KeyEventHandler(this.loginPwText_KeyDown);
             // 
-            // materialRaisedButton1
+            // loginButton
             // 
-            this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(110, 237);
-            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton1.Name = "materialRaisedButton1";
-            this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(80, 32);
-            this.materialRaisedButton1.TabIndex = 4;
-            this.materialRaisedButton1.Text = "登陆";
-            this.materialRaisedButton1.UseVisualStyleBackColor = true;
-            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            this.loginButton.Depth = 0;
+            this.loginButton.Location = new System.Drawing.Point(110, 237);
+            this.loginButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.loginButton.Name = "loginButton";
+            this.loginButton.Primary = true;
+            this.loginButton.Size = new System.Drawing.Size(80, 32);
+            this.loginButton.TabIndex = 4;
+            this.loginButton.Text = "登陆";
+            this.loginButton.UseVisualStyleBackColor = true;
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(300, 300);
-            this.Controls.Add(this.materialRaisedButton1);
-            this.Controls.Add(this.materialSingleLineTextField2);
-            this.Controls.Add(this.materialSingleLineTextField1);
-            this.Controls.Add(this.materialLabel2);
-            this.Controls.Add(this.materialLabel1);
+            this.Controls.Add(this.loginButton);
+            this.Controls.Add(this.loginPwText);
+            this.Controls.Add(this.loginNameText);
+            this.Controls.Add(this.pwLabel);
+            this.Controls.Add(this.nameLabel);
             this.MaximizeBox = false;
             this.Name = "LoginForm";
             this.Text = "用户登录";
@@ -132,10 +132,10 @@
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private MaterialSkin.Controls.MaterialLabel materialLabel2;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField1;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField2;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
+        private MaterialSkin.Controls.MaterialLabel nameLabel;
+        private MaterialSkin.Controls.MaterialLabel pwLabel;
+        private MaterialSkin.Controls.MaterialSingleLineTextField loginNameText;
+        private MaterialSkin.Controls.MaterialSingleLineTextField loginPwText;
+        private MaterialSkin.Controls.MaterialRaisedButton loginButton;
     }
 }

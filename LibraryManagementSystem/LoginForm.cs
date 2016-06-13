@@ -26,27 +26,10 @@ namespace LibraryManagementSystem
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.LightBlue700, Primary.LightBlue900, Primary.LightBlue500, Accent.LightBlue200, TextShade.WHITE);
         
-            // Connect the database
-            string dbPath = "Data Source = ..//..//craman.sqlite";
-            conn = new SQLiteConnection(dbPath);
+            // Connect to the database
+            conn = new SQLiteConnection("Data Source = ..//..//SQL.db");
             conn.Open();
         
-        }
-
-        private void materialRaisedButton1_Click(object sender, EventArgs e)
-        {
-            if (materialSingleLineTextField1.Text.Equals("user") &&
-                materialSingleLineTextField2.Text.Equals("user"))
-            {
-                Hide();
-                new UserForm().Show();
-            }
-            else if (materialSingleLineTextField1.Text.Equals("root") &&
-                materialSingleLineTextField2.Text.Equals("root"))
-            {
-                Hide();
-                new AdminForm().Show();
-            }
         }
 
         private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
@@ -54,23 +37,39 @@ namespace LibraryManagementSystem
             Application.Exit();
         }
 
-        private void materialSingleLineTextField2_Enter(object sender, EventArgs e)
+        private void loginPwText_Enter(object sender, EventArgs e)
         {
-            materialRaisedButton1_Click(sender, e);
+            loginButton_Click(sender, e);
         }
 
-        private void materialSingleLineTextField2_KeyDown(object sender, KeyEventArgs e)
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+            if (loginNameText.Text.Equals("user") &&
+                loginPwText.Text.Equals("user"))
+            {
+                Hide();
+                new UserForm().Show();
+            }
+            else if (loginNameText.Text.Equals("root") &&
+                loginPwText.Text.Equals("root"))
+            {
+                Hide();
+                new AdminForm().Show();
+            }
+        }
+
+        private void loginPwText_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                if (materialSingleLineTextField1.Text.Equals("user") &&
-                materialSingleLineTextField2.Text.Equals("user"))
+                if (loginNameText.Text.Equals("user") &&
+                loginPwText.Text.Equals("user"))
                 {
                     Hide();
                     new UserForm().Show();
                 }
-                else if (materialSingleLineTextField1.Text.Equals("root") &&
-                materialSingleLineTextField2.Text.Equals("root"))
+                else if (loginNameText.Text.Equals("root") &&
+                loginPwText.Text.Equals("root"))
                 {
                     Hide();
                     new AdminForm().Show();
