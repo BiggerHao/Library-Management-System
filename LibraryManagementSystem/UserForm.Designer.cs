@@ -56,6 +56,14 @@ namespace LibraryManagementSystem
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialRaisedButton4 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton5 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton6 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -63,6 +71,7 @@ namespace LibraryManagementSystem
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialTabSelector1
@@ -87,6 +96,7 @@ namespace LibraryManagementSystem
             this.materialTabControl1.Controls.Add(this.tabPage1);
             this.materialTabControl1.Controls.Add(this.tabPage2);
             this.materialTabControl1.Controls.Add(this.tabPage3);
+            this.materialTabControl1.Controls.Add(this.tabPage4);
             this.materialTabControl1.Depth = 0;
             this.materialTabControl1.Location = new System.Drawing.Point(14, 109);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -180,11 +190,11 @@ namespace LibraryManagementSystem
             // materialRaisedButton1
             // 
             this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(634, 26);
+            this.materialRaisedButton1.Location = new System.Drawing.Point(634, 20);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton1.Name = "materialRaisedButton1";
             this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(75, 23);
+            this.materialRaisedButton1.Size = new System.Drawing.Size(75, 30);
             this.materialRaisedButton1.TabIndex = 2;
             this.materialRaisedButton1.Text = "搜索";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
@@ -311,6 +321,113 @@ namespace LibraryManagementSystem
             this.textBox4.Size = new System.Drawing.Size(724, 513);
             this.textBox4.TabIndex = 0;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.materialRaisedButton6);
+            this.tabPage4.Controls.Add(this.materialRaisedButton5);
+            this.tabPage4.Controls.Add(this.materialRaisedButton4);
+            this.tabPage4.Controls.Add(this.materialLabel2);
+            this.tabPage4.Controls.Add(this.materialRaisedButton3);
+            this.tabPage4.Controls.Add(this.materialRaisedButton2);
+            this.tabPage4.Controls.Add(this.materialLabel1);
+            this.tabPage4.Location = new System.Drawing.Point(4, 26);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(768, 568);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "主题设置";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(14, 14);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(69, 20);
+            this.materialLabel1.TabIndex = 3;
+            this.materialLabel1.Text = "更换主题";
+            // 
+            // materialRaisedButton2
+            // 
+            this.materialRaisedButton2.Depth = 0;
+            this.materialRaisedButton2.Location = new System.Drawing.Point(100, 5);
+            this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton2.Name = "materialRaisedButton2";
+            this.materialRaisedButton2.Primary = true;
+            this.materialRaisedButton2.Size = new System.Drawing.Size(130, 40);
+            this.materialRaisedButton2.TabIndex = 4;
+            this.materialRaisedButton2.Text = "日间模式";
+            this.materialRaisedButton2.UseVisualStyleBackColor = true;
+            this.materialRaisedButton2.Click += new System.EventHandler(this.materialRaisedButton2_Click);
+            // 
+            // materialRaisedButton3
+            // 
+            this.materialRaisedButton3.Depth = 0;
+            this.materialRaisedButton3.Location = new System.Drawing.Point(255, 5);
+            this.materialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton3.Name = "materialRaisedButton3";
+            this.materialRaisedButton3.Primary = true;
+            this.materialRaisedButton3.Size = new System.Drawing.Size(130, 40);
+            this.materialRaisedButton3.TabIndex = 5;
+            this.materialRaisedButton3.Text = "夜间模式";
+            this.materialRaisedButton3.UseVisualStyleBackColor = true;
+            this.materialRaisedButton3.Click += new System.EventHandler(this.materialRaisedButton3_Click);
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel2.Location = new System.Drawing.Point(14, 70);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(69, 20);
+            this.materialLabel2.TabIndex = 6;
+            this.materialLabel2.Text = "更换配色";
+            // 
+            // materialRaisedButton4
+            // 
+            this.materialRaisedButton4.Depth = 0;
+            this.materialRaisedButton4.Location = new System.Drawing.Point(100, 60);
+            this.materialRaisedButton4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton4.Name = "materialRaisedButton4";
+            this.materialRaisedButton4.Primary = true;
+            this.materialRaisedButton4.Size = new System.Drawing.Size(130, 40);
+            this.materialRaisedButton4.TabIndex = 7;
+            this.materialRaisedButton4.Text = "蓝色";
+            this.materialRaisedButton4.UseVisualStyleBackColor = true;
+            this.materialRaisedButton4.Click += new System.EventHandler(this.materialRaisedButton4_Click);
+            // 
+            // materialRaisedButton5
+            // 
+            this.materialRaisedButton5.Depth = 0;
+            this.materialRaisedButton5.Location = new System.Drawing.Point(255, 60);
+            this.materialRaisedButton5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton5.Name = "materialRaisedButton5";
+            this.materialRaisedButton5.Primary = true;
+            this.materialRaisedButton5.Size = new System.Drawing.Size(130, 40);
+            this.materialRaisedButton5.TabIndex = 8;
+            this.materialRaisedButton5.Text = "绿色";
+            this.materialRaisedButton5.UseVisualStyleBackColor = true;
+            this.materialRaisedButton5.Click += new System.EventHandler(this.materialRaisedButton5_Click);
+            // 
+            // materialRaisedButton6
+            // 
+            this.materialRaisedButton6.Depth = 0;
+            this.materialRaisedButton6.Location = new System.Drawing.Point(410, 60);
+            this.materialRaisedButton6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton6.Name = "materialRaisedButton6";
+            this.materialRaisedButton6.Primary = true;
+            this.materialRaisedButton6.Size = new System.Drawing.Size(130, 40);
+            this.materialRaisedButton6.TabIndex = 9;
+            this.materialRaisedButton6.Text = "蓝灰色";
+            this.materialRaisedButton6.UseVisualStyleBackColor = true;
+            this.materialRaisedButton6.Click += new System.EventHandler(this.materialRaisedButton6_Click);
+            // 
             // UserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -322,6 +439,7 @@ namespace LibraryManagementSystem
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UserForm";
             this.Text = "图书馆管理系统-用户模式";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UserForm_FormClosed);
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -331,6 +449,8 @@ namespace LibraryManagementSystem
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -359,6 +479,14 @@ namespace LibraryManagementSystem
         private ColumnHeader columnHeader3;
         private ColumnHeader columnHeader4;
         private ColumnHeader columnHeader5;
+        private TabPage tabPage4;
+        private MaterialLabel materialLabel1;
+        private MaterialRaisedButton materialRaisedButton2;
+        private MaterialRaisedButton materialRaisedButton3;
+        private MaterialLabel materialLabel2;
+        private MaterialRaisedButton materialRaisedButton4;
+        private MaterialRaisedButton materialRaisedButton5;
+        private MaterialRaisedButton materialRaisedButton6;
     }
 }
 

@@ -954,7 +954,7 @@ namespace LibraryManagementSystem
             this.materialRaisedButton5.Primary = true;
             this.materialRaisedButton5.Size = new System.Drawing.Size(130, 40);
             this.materialRaisedButton5.TabIndex = 7;
-            this.materialRaisedButton5.Text = "粉色";
+            this.materialRaisedButton5.Text = "蓝灰色";
             this.materialRaisedButton5.UseVisualStyleBackColor = true;
             this.materialRaisedButton5.Click += new System.EventHandler(this.materialRaisedButton5_Click);
             // 

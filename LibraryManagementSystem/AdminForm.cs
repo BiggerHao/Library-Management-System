@@ -79,7 +79,7 @@ namespace LibraryManagementSystem
 
         private void materialRaisedButton5_Click(object sender, EventArgs e)
         {
-            materialSkinManager.ColorScheme = new ColorScheme(Primary.Pink600, Primary.Pink700, Primary.Pink200, Accent.Orange100, TextShade.WHITE);
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
             materialRaisedButton3.Enabled = true;
             materialRaisedButton4.Enabled = true;
             materialRaisedButton5.Enabled = false;

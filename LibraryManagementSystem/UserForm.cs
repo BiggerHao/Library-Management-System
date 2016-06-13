@@ -23,7 +23,9 @@ namespace LibraryManagementSystem
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialRaisedButton1.Enabled = false;
+            materialRaisedButton2.Enabled = false;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.LightBlue700, Primary.LightBlue900, Primary.LightBlue500, Accent.LightBlue200, TextShade.WHITE);
+            materialRaisedButton4.Enabled = false;
 
             // Add dummy data to the listview
             seedListView();
@@ -63,6 +65,44 @@ namespace LibraryManagementSystem
         private void UserForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void materialRaisedButton2_Click(object sender, EventArgs e)
+        {
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialRaisedButton2.Enabled = false;
+            materialRaisedButton3.Enabled = true;
+        }
+
+        private void materialRaisedButton3_Click(object sender, EventArgs e)
+        {
+            materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
+            materialRaisedButton2.Enabled = true;
+            materialRaisedButton3.Enabled = false;
+        }
+
+        private void materialRaisedButton4_Click(object sender, EventArgs e)
+        {
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.LightBlue700, Primary.LightBlue900, Primary.LightBlue500, Accent.LightBlue200, TextShade.WHITE);
+            materialRaisedButton4.Enabled = false;
+            materialRaisedButton5.Enabled = true;
+            materialRaisedButton6.Enabled = true;
+        }
+
+        private void materialRaisedButton5_Click(object sender, EventArgs e)
+        {
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Green600, Primary.Green700, Primary.Green200, Accent.Red100, TextShade.WHITE);
+            materialRaisedButton4.Enabled = true;
+            materialRaisedButton5.Enabled = false;
+            materialRaisedButton6.Enabled = true;
+        }
+
+        private void materialRaisedButton6_Click(object sender, EventArgs e)
+        {
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
+            materialRaisedButton4.Enabled = true;
+            materialRaisedButton5.Enabled = true;
+            materialRaisedButton6.Enabled = false;
         }
     }
 }
