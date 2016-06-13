@@ -59,7 +59,9 @@ namespace LibraryManagementSystem
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
-
+            materialRaisedButton7.Visible = true;
+            materialRaisedButton8.Visible = true;
+            textBox5.Visible = true;
         }
 
         private void UserForm_FormClosed(object sender, FormClosedEventArgs e)
@@ -103,6 +105,11 @@ namespace LibraryManagementSystem
             materialRaisedButton4.Enabled = true;
             materialRaisedButton5.Enabled = true;
             materialRaisedButton6.Enabled = false;
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
