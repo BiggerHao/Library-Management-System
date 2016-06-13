@@ -26,14 +26,14 @@ namespace LibraryManagementSystem
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
-            if (materialSingleLineTextField1.Text.Equals("user") &&
-                materialSingleLineTextField2.Text.Equals("user"))
+            if (loginNameText.Text.Equals("user") &&
+                loginPwText.Text.Equals("user"))
             {
                 Hide();
                 new UserForm().Show();
             }
-            else if (materialSingleLineTextField1.Text.Equals("root") &&
-                materialSingleLineTextField2.Text.Equals("root"))
+            else if (loginNameText.Text.Equals("root") &&
+                loginPwText.Text.Equals("root"))
             {
                 Hide();
                 new AdminForm().Show();
@@ -54,19 +54,24 @@ namespace LibraryManagementSystem
         {
             if (e.KeyCode == Keys.Enter)
             {
-                if (materialSingleLineTextField1.Text.Equals("user") &&
-                materialSingleLineTextField2.Text.Equals("user"))
+                if (loginNameText.Text.Equals("user") &&
+                loginPwText.Text.Equals("user"))
                 {
                     Hide();
                     new UserForm().Show();
                 }
-                else if (materialSingleLineTextField1.Text.Equals("root") &&
-                materialSingleLineTextField2.Text.Equals("root"))
+                else if (loginNameText.Text.Equals("root") &&
+                loginPwText.Text.Equals("root"))
                 {
                     Hide();
                     new AdminForm().Show();
                 }
             }
+        }
+
+        private void pwText_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

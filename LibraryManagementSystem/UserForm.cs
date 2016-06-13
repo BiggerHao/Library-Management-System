@@ -22,7 +22,7 @@ namespace LibraryManagementSystem
             materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialRaisedButton1.Enabled = false;
+            searchButton.Enabled = false;
             materialRaisedButton2.Enabled = false;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.LightBlue700, Primary.LightBlue900, Primary.LightBlue500, Accent.LightBlue200, TextShade.WHITE);
             materialRaisedButton4.Enabled = false;
@@ -43,7 +43,7 @@ namespace LibraryManagementSystem
             foreach (string[] version in data)
             {
                 var item = new ListViewItem(version);
-                materialListView1.Items.Add(item);
+                borrowmentList.Items.Add(item);
             }
         }
 
@@ -59,9 +59,9 @@ namespace LibraryManagementSystem
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
-            materialRaisedButton7.Visible = true;
-            materialRaisedButton8.Visible = true;
-            textBox5.Visible = true;
+            lastPageButton.Visible = true;
+            nextPageButton.Visible = true;
+            showPageInfoText.Visible = true;
         }
 
         private void UserForm_FormClosed(object sender, FormClosedEventArgs e)
@@ -108,6 +108,166 @@ namespace LibraryManagementSystem
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void myProfile_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialTabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bookQuery_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nextPageButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lastPageButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bookInfo3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bookInfo2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bookInfo1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void searchText_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void searchCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void myBorrow_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void borrowmentList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialSingleLineTextField10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialRaisedButton12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userTypeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userAddressLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userPwLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userGenderLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userNameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userTypeText_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userPwText_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userAddressText_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userGenderText_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialSingleLineTextField3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userIdLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void setTheme_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
         }
