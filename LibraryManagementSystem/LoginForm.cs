@@ -42,20 +42,25 @@ namespace LibraryManagementSystem
             string id = loginNameText.Text;
             string pwd = loginPwText.Text;
             string name = null;
+            string type = null;
 
-            SQLiteCommand comm = new SQLiteCommand("select user_name from User where user_id = '" +
+            SQLiteCommand comm = new SQLiteCommand("select user_name, user_type from User where user_id = '" +
                 id + "' and user_pwd = '" + pwd + "';", conn);
             SQLiteDataReader read = comm.ExecuteReader();
 
-            while (read.Read()) name = read["user_name"].ToString();
+            while (read.Read())
+            {
+                name = read["user_name"].ToString();
+                type = read["user_type"].ToString();
+            }
 
             comm.Dispose();
             read.Dispose();
 
             if (name != null)
             {
-                Hide();
-                new UserForm().Show();
+                if (type.Equals("管理员")) { Hide(); new AdminForm().Show(); }
+                else if (type.Equals("读者")) { Hide(); new UserForm().Show(); }
             }
             else
                 MessageBox.Show("用户名或密码错误！", "提示", MessageBoxButtons.OK,
