@@ -23,5 +23,14 @@ namespace LibraryManagementSystem
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.LightBlue700, Primary.LightBlue900, Primary.LightBlue500, Accent.LightBlue200, TextShade.WHITE);
         }
+
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
+        {
+            if (materialSingleLineTextField1.Text.Equals("user") && 
+                materialSingleLineTextField2.Text.Equals("user"))
+            {
+                new UserForm().ShowDialog();
+            }
+        }
     }
 }

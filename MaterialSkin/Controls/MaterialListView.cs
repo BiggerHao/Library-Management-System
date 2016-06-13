@@ -120,7 +120,7 @@ namespace MaterialSkin.Controls
 			//This is a hax for the needed padding.
 			//Another way would be intercepting all ListViewItems and changing the sizes, but really, that will be a lot of work
 			//This will do for now.
-			Font = new Font(SkinManager.ROBOTO_MEDIUM_12.FontFamily, 24);
+			Font = new Font("微软雅黑", 24);
 		}
 	}
 }
