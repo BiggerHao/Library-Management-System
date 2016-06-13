@@ -65,6 +65,7 @@
             // 
             this.materialSingleLineTextField1.Depth = 0;
             this.materialSingleLineTextField1.Hint = "请输入账号";
+            this.materialSingleLineTextField1.ImeMode = System.Windows.Forms.ImeMode.Alpha;
             this.materialSingleLineTextField1.Location = new System.Drawing.Point(91, 109);
             this.materialSingleLineTextField1.MaxLength = 32767;
             this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -82,6 +83,7 @@
             // 
             this.materialSingleLineTextField2.Depth = 0;
             this.materialSingleLineTextField2.Hint = "请输入密码";
+            this.materialSingleLineTextField2.ImeMode = System.Windows.Forms.ImeMode.Alpha;
             this.materialSingleLineTextField2.Location = new System.Drawing.Point(91, 174);
             this.materialSingleLineTextField2.MaxLength = 32767;
             this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
@@ -94,6 +96,7 @@
             this.materialSingleLineTextField2.TabIndex = 3;
             this.materialSingleLineTextField2.TabStop = false;
             this.materialSingleLineTextField2.UseSystemPasswordChar = false;
+            this.materialSingleLineTextField2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.materialSingleLineTextField2_KeyDown);
             // 
             // materialRaisedButton1
             // 
@@ -118,8 +121,10 @@
             this.Controls.Add(this.materialSingleLineTextField1);
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.materialLabel1);
+            this.MaximizeBox = false;
             this.Name = "LoginForm";
             this.Text = "用户登录";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoginForm_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

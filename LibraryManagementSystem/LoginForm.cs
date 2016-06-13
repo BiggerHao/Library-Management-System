@@ -18,8 +18,6 @@ namespace LibraryManagementSystem
         {
             InitializeComponent();
 
-            // Here comes a test sentence from Max, delete later
-
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
@@ -28,10 +26,46 @@ namespace LibraryManagementSystem
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
-            if (materialSingleLineTextField1.Text.Equals("user") && 
+            if (materialSingleLineTextField1.Text.Equals("user") &&
                 materialSingleLineTextField2.Text.Equals("user"))
             {
-                new UserForm().ShowDialog();
+                Hide();
+                new UserForm().Show();
+            }
+            else if (materialSingleLineTextField1.Text.Equals("root") &&
+                materialSingleLineTextField2.Text.Equals("root"))
+            {
+                Hide();
+                new AdminForm().Show();
+            }
+        }
+
+        private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void materialSingleLineTextField2_Enter(object sender, EventArgs e)
+        {
+            materialRaisedButton1_Click(sender, e);
+        }
+
+        private void materialSingleLineTextField2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (materialSingleLineTextField1.Text.Equals("user") &&
+                materialSingleLineTextField2.Text.Equals("user"))
+                {
+                    Hide();
+                    new UserForm().Show();
+                }
+                else if (materialSingleLineTextField1.Text.Equals("root") &&
+                materialSingleLineTextField2.Text.Equals("root"))
+                {
+                    Hide();
+                    new AdminForm().Show();
+                }
             }
         }
     }

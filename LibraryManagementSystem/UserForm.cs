@@ -34,7 +34,7 @@ namespace LibraryManagementSystem
             //Define
             var data = new[]
             {
-                new []{"C1798399", "程序设计与算法语言:C++程序设计基础", "孔丽英, 夏艳, 徐勇编著", "2015-07-06", "2015-08-06"},
+                new []{"C1798399", "程序设计与算法语言:C++程序设计基础", "孔丽英, 夏艳, 徐勇编著", "2015-07-06", "2015-08-06"}
             };
 
             //Add
@@ -58,6 +58,11 @@ namespace LibraryManagementSystem
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void UserForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -26,6 +26,25 @@ namespace LibraryManagementSystem
             materialSkinManager.ColorScheme = new ColorScheme(Primary.LightBlue700, Primary.LightBlue900, Primary.LightBlue500, Accent.LightBlue200, TextShade.WHITE);
             materialRaisedButton3.Enabled = false;
 
+            // Add dummy data to the listview
+            seedListView();
+        }
+
+        private void seedListView()
+        {
+            //Define
+            var data = new[]
+            {
+                new []{"13061050", "C1798399", "管理员前台", "2016-06-13 19:55:20"},
+                new []{"13066666", "C6666666", "大门门禁", "2016-06-13 20:01:48"}
+            };
+
+            //Add
+            foreach (string[] version in data)
+            {
+                var item = new ListViewItem(version);
+                materialListView1.Items.Add(item);
+            }
         }
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)
@@ -64,6 +83,21 @@ namespace LibraryManagementSystem
             materialRaisedButton3.Enabled = true;
             materialRaisedButton4.Enabled = true;
             materialRaisedButton5.Enabled = false;
+        }
+
+        private void AdminForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void materialContextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void materialLabel13_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
