@@ -9,11 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MaterialSkin;
 using MaterialSkin.Controls;
+using System.Data.SQLite;
 
 namespace LibraryManagementSystem
 {
     public partial class LoginForm : MaterialForm
     {
+        public static SQLiteConnection conn;
+
         public LoginForm()
         {
             InitializeComponent();
@@ -22,6 +25,12 @@ namespace LibraryManagementSystem
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.LightBlue700, Primary.LightBlue900, Primary.LightBlue500, Accent.LightBlue200, TextShade.WHITE);
+        
+            // Connect the database
+            string dbPath = "Data Source = ..//..//craman.sqlite";
+            conn = new SQLiteConnection(dbPath);
+            conn.Open();
+        
         }
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)
