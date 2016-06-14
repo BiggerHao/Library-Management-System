@@ -94,10 +94,5 @@ namespace LibraryManagementSystem
         {
 
         }
-
-        private void materialLabel13_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
