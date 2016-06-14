@@ -52,18 +52,15 @@ namespace LibraryManagementSystem
             SQLiteCommand comm = new SQLiteCommand("select * from Placement", LoginForm.conn);
             SQLiteDataReader read = comm.ExecuteReader();
             List<string[]> list = new List<string[]>();
-            while (read.Read())
-            {
-                string[] ss = { read["book_id"].ToString(), read["local"].ToString(),
-                                  read["real_local"].ToString() };
-                list.Add(ss);
-            }
+            
 
             foreach (string[] ss in list)
             {
                 ListViewItem item = new ListViewItem(ss);
                 inventoryListView.Items.Add(item);
             }
+            comm.Dispose();
+            read.Dispose();
         }
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)
@@ -667,6 +664,16 @@ namespace LibraryManagementSystem
             yearText.Visible = false;
 
             bookSearchButton.Visible = false;
+        }
+
+        private void borrowReturnList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inventoryListView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
