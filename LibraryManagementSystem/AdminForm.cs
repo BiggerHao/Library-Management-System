@@ -314,7 +314,7 @@ namespace LibraryManagementSystem
 
         private void bookInfoRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            optionalLabel1.Text = "题名";
+            optionalLabel1.Text = "*题名";
 
             optionalLabel2.Visible = true;
             optionalLabel3.Visible = true;
@@ -329,7 +329,7 @@ namespace LibraryManagementSystem
 
         private void bookEPCRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            optionalLabel1.Text = "EPC";
+            optionalLabel1.Text = "*EPC";
 
             optionalLabel2.Visible = false;
             optionalLabel3.Visible = false;
