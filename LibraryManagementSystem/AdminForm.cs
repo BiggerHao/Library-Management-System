@@ -311,5 +311,91 @@ namespace LibraryManagementSystem
         {
 
         }
+
+        private void shelfSearchButton_Click(object sender, EventArgs e)
+        {
+            string location = floorText.Text + "-" + roomText.Text + "-" + bookcaseText.Text
+                + "-" + shelfText.Text + "-" + unitText.Text;
+            string unit_epc = null;
+            
+            // Search unit epc
+            SQLiteCommand comm = new SQLiteCommand("select * from UnitEPC where unit_id = '"
+                + location + "'", LoginForm.conn);
+            SQLiteDataReader read = comm.ExecuteReader();
+            while (read.Read()) unit_epc = read["unit_epc"].ToString();
+            comm.Dispose();
+            read.Dispose();
+
+            if (unit_epc == null) unitEPCText.Text = "未找到对应的EPC";
+            else unitEPCText.Text = unit_epc;
+        }
+
+        private void shelfDeleteButton_Click(object sender, EventArgs e)
+        {
+            status_page4.Text = "";
+
+            string location = floorText.Text + "-" + roomText.Text + "-" + bookcaseText.Text
+                + "-" + shelfText.Text + "-" + unitText.Text;
+            string unit_epc = null;
+
+            // Search unit epc
+            SQLiteCommand comm = new SQLiteCommand("select * from UnitEPC where unit_id = '"
+                + location + "'", LoginForm.conn);
+            SQLiteDataReader read = comm.ExecuteReader();
+            while (read.Read()) unit_epc = read["unit_epc"].ToString();
+            comm.Dispose();
+            read.Dispose();
+
+            if (unit_epc == null) status_page4.Text = "删除失败，无书架ID对应的记录";
+            else
+            {
+                comm = new SQLiteCommand("delete from UnitEPC where unit_id = '" + location + "'",
+                    LoginForm.conn);
+                comm.ExecuteNonQuery();
+                comm.Dispose();
+                status_page4.Text = "删除成功";
+            }
+        }
+
+        private void shelfUpdateButton_Click(object sender, EventArgs e)
+        {
+            status_page4.Text = "";
+
+            string location = floorText.Text + "-" + roomText.Text + "-" + bookcaseText.Text
+                + "-" + shelfText.Text + "-" + unitText.Text;
+            string unit_epc = unitEPCText.Text;
+
+            // Search unit epc
+            SQLiteCommand comm = new SQLiteCommand("select * from UnitEPC where unit_id = '"
+                + location + "'", LoginForm.conn);
+            SQLiteDataReader read = comm.ExecuteReader();
+            bool hasFound = false;
+            while (read.Read()) hasFound = true;
+            comm.Dispose();
+            read.Dispose();
+
+            // Modify
+            if (hasFound)
+            {
+                comm = new SQLiteCommand("update UnitEPC set unit_epc = '" + unit_epc + "' where unit_id = '"
+                + location + "'", LoginForm.conn);
+                comm.ExecuteNonQuery();
+                comm.Dispose();
+
+                status_page4.Text = "修改成功";
+            }
+            // Insert
+            else
+            {
+                comm = new SQLiteCommand("insert into UnitEPC values ('" + location + "', '" + unit_epc + "')",
+                    LoginForm.conn);
+                comm.ExecuteNonQuery();
+                comm.Dispose();
+
+                status_page4.Text = "添加成功";
+            }
+            
+        }
+
     }
 }

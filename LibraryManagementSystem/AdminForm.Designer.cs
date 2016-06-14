@@ -1121,6 +1121,7 @@ namespace LibraryManagementSystem
             this.shelfUpdateButton.TabIndex = 6;
             this.shelfUpdateButton.Text = "更新";
             this.shelfUpdateButton.UseVisualStyleBackColor = true;
+            this.shelfUpdateButton.Click += new System.EventHandler(this.shelfUpdateButton_Click);
             // 
             // shelfDeleteButton
             // 
@@ -1133,6 +1134,7 @@ namespace LibraryManagementSystem
             this.shelfDeleteButton.TabIndex = 5;
             this.shelfDeleteButton.Text = "删除";
             this.shelfDeleteButton.UseVisualStyleBackColor = true;
+            this.shelfDeleteButton.Click += new System.EventHandler(this.shelfDeleteButton_Click);
             // 
             // shelfSearchButton
             // 
@@ -1145,6 +1147,7 @@ namespace LibraryManagementSystem
             this.shelfSearchButton.TabIndex = 4;
             this.shelfSearchButton.Text = "搜索";
             this.shelfSearchButton.UseVisualStyleBackColor = true;
+            this.shelfSearchButton.Click += new System.EventHandler(this.shelfSearchButton_Click);
             // 
             // materialLabel19
             // 
@@ -1437,7 +1440,6 @@ namespace LibraryManagementSystem
         private MaterialLabel status_page1;
         private MaterialLabel status_page2;
         private MaterialLabel status_page3;
-        private MaterialLabel status_page4;
         private Panel panel2;
         private MaterialRadioButton adminRadioButton;
         private MaterialRadioButton readerRadioButton;
@@ -1457,6 +1459,7 @@ namespace LibraryManagementSystem
         private MaterialSingleLineTextField unitText;
         private MaterialLabel materialLabel3;
         private MaterialSingleLineTextField unitEPCText;
+        private MaterialLabel status_page4;
     }
 }
 
