@@ -236,7 +236,7 @@ namespace LibraryManagementSystem
 
             while (read.Read())
             {
-                titleText.Text = read["book_name"].ToString();
+                optinalText.Text = read["book_name"].ToString();
                 typeText.Text = read["book_type"].ToString();
                 authorText.Text = read["book_author"].ToString();
                 publisherText.Text = read["book_pub"].ToString();
@@ -269,7 +269,7 @@ namespace LibraryManagementSystem
 
             while (read.Read())
             {
-                titleText.Text = read["book_name"].ToString();
+                optinalText.Text = read["book_name"].ToString();
                 typeText.Text = read["book_type"].ToString();
                 authorText.Text = read["book_author"].ToString();
                 publisherText.Text = read["book_pub"].ToString();
@@ -310,6 +310,36 @@ namespace LibraryManagementSystem
         private void usrUpdateButton_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void bookInfoRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            optionalLabel1.Text = "题名";
+
+            optionalLabel2.Visible = true;
+            optionalLabel3.Visible = true;
+            optionalLabel4.Visible = true;
+            optionalLabel5.Visible = true;
+
+            typeText.Visible = true;
+            authorText.Visible = true;
+            publisherText.Visible = true;
+            yearText.Visible = true;
+        }
+
+        private void bookEPCRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            optionalLabel1.Text = "EPC";
+
+            optionalLabel2.Visible = false;
+            optionalLabel3.Visible = false;
+            optionalLabel4.Visible = false;
+            optionalLabel5.Visible = false;
+
+            typeText.Visible = false;
+            authorText.Visible = false;
+            publisherText.Visible = false;
+            yearText.Visible = false;
         }
     }
 }
