@@ -264,10 +264,10 @@ namespace LibraryManagementSystem
             this.searchButton.Name = "searchButton";
             this.searchButton.Primary = true;
             this.searchButton.Size = new System.Drawing.Size(75, 30);
-            this.searchButton.TabIndex = 2;
+            this.searchButton.TabIndex = 30;
             this.searchButton.Text = "搜索";
             this.searchButton.UseVisualStyleBackColor = true;
-            this.searchButton.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // searchText
             // 
@@ -325,7 +325,7 @@ namespace LibraryManagementSystem
             this.columnHeader5});
             this.borrowmentList.Depth = 0;
             this.borrowmentList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.borrowmentList.Font = new System.Drawing.Font("微软雅黑", 24F);
+            this.borrowmentList.Font = new System.Drawing.Font("Microsoft YaHei", 24F);
             this.borrowmentList.FullRowSelect = true;
             this.borrowmentList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.borrowmentList.Location = new System.Drawing.Point(3, 3);
@@ -342,27 +342,27 @@ namespace LibraryManagementSystem
             // columnHeader1
             // 
             this.columnHeader1.Text = "编号";
-            this.columnHeader1.Width = 100;
+            this.columnHeader1.Width = 84;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "题名";
-            this.columnHeader2.Width = 120;
+            this.columnHeader2.Width = 246;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "责任者";
-            this.columnHeader3.Width = 150;
+            this.columnHeader3.Text = "借阅日期";
+            this.columnHeader3.Width = 143;
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "借阅日期";
-            this.columnHeader4.Width = 100;
+            this.columnHeader4.Text = "应还日期";
+            this.columnHeader4.Width = 144;
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Text = "应还日期";
-            this.columnHeader5.Width = 100;
+            this.columnHeader5.Text = "借还状态";
+            this.columnHeader5.Width = 143;
             // 
             // myProfile
             // 
@@ -406,7 +406,7 @@ namespace LibraryManagementSystem
             // 
             this.userTypeLabel.AutoSize = true;
             this.userTypeLabel.Depth = 0;
-            this.userTypeLabel.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.userTypeLabel.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.userTypeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.userTypeLabel.Location = new System.Drawing.Point(179, 285);
             this.userTypeLabel.MouseState = MaterialSkin.MouseState.HOVER;
@@ -420,7 +420,7 @@ namespace LibraryManagementSystem
             // 
             this.userAddressLabel.AutoSize = true;
             this.userAddressLabel.Depth = 0;
-            this.userAddressLabel.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.userAddressLabel.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.userAddressLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.userAddressLabel.Location = new System.Drawing.Point(179, 166);
             this.userAddressLabel.MouseState = MaterialSkin.MouseState.HOVER;
@@ -448,7 +448,7 @@ namespace LibraryManagementSystem
             // 
             this.userGenderLabel.AutoSize = true;
             this.userGenderLabel.Depth = 0;
-            this.userGenderLabel.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.userGenderLabel.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.userGenderLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.userGenderLabel.Location = new System.Drawing.Point(179, 126);
             this.userGenderLabel.MouseState = MaterialSkin.MouseState.HOVER;
@@ -462,7 +462,7 @@ namespace LibraryManagementSystem
             // 
             this.userNameLabel.AutoSize = true;
             this.userNameLabel.Depth = 0;
-            this.userNameLabel.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.userNameLabel.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.userNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.userNameLabel.Location = new System.Drawing.Point(164, 86);
             this.userNameLabel.MouseState = MaterialSkin.MouseState.HOVER;
@@ -584,7 +584,7 @@ namespace LibraryManagementSystem
             // 
             this.userIdLabel.AutoSize = true;
             this.userIdLabel.Depth = 0;
-            this.userIdLabel.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.userIdLabel.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.userIdLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.userIdLabel.Location = new System.Drawing.Point(164, 46);
             this.userIdLabel.MouseState = MaterialSkin.MouseState.HOVER;
@@ -656,7 +656,7 @@ namespace LibraryManagementSystem
             // 
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.materialLabel2.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel2.Location = new System.Drawing.Point(14, 70);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
@@ -696,7 +696,7 @@ namespace LibraryManagementSystem
             // 
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.materialLabel1.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel1.Location = new System.Drawing.Point(14, 14);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -779,7 +779,7 @@ namespace LibraryManagementSystem
             this.ClientSize = new System.Drawing.Size(800, 708);
             this.Controls.Add(this.userTab);
             this.Controls.Add(this.materialTabSelector1);
-            this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UserForm";
             this.Text = "图书馆管理系统-用户模式";
@@ -821,7 +821,6 @@ namespace LibraryManagementSystem
         private ColumnHeader columnHeader2;
         private ColumnHeader columnHeader3;
         private ColumnHeader columnHeader4;
-        private ColumnHeader columnHeader5;
         private TabPage setTheme;
         private MaterialLabel materialLabel1;
         private MaterialRaisedButton materialRaisedButton2;
@@ -846,10 +845,14 @@ namespace LibraryManagementSystem
         private TextBox showPageInfoText;
         private MaterialRaisedButton nextPageButton;
         private MaterialRaisedButton lastPageButton;
+<<<<<<< HEAD
         private MaterialLabel materialLabel3;
         private MaterialSingleLineTextField userValidateNewPwText;
         private MaterialRaisedButton chUserModeButton;
         private MaterialLabel chMode;
+=======
+        private ColumnHeader columnHeader5;
+>>>>>>> be8cba02033e00d39c375c69b904bd41b5c1bf34
     }
 }
 

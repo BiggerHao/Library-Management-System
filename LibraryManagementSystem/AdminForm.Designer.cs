@@ -108,6 +108,7 @@ namespace LibraryManagementSystem
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.organizingTab = new System.Windows.Forms.TabPage();
             this.inventoryListView = new MaterialSkin.Controls.MaterialListView();
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -121,7 +122,6 @@ namespace LibraryManagementSystem
             this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.materialTabControl1.SuspendLayout();
             this.bookBorrowReturnTab.SuspendLayout();
             this.bookManTab.SuspendLayout();
@@ -189,7 +189,7 @@ namespace LibraryManagementSystem
             // status_page1
             // 
             this.status_page1.Depth = 0;
-            this.status_page1.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.status_page1.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.status_page1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.status_page1.Location = new System.Drawing.Point(3, 313);
             this.status_page1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -235,7 +235,7 @@ namespace LibraryManagementSystem
             this.bookEPCLAbel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bookEPCLAbel.AutoSize = true;
             this.bookEPCLAbel.Depth = 0;
-            this.bookEPCLAbel.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.bookEPCLAbel.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.bookEPCLAbel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.bookEPCLAbel.Location = new System.Drawing.Point(237, 169);
             this.bookEPCLAbel.MouseState = MaterialSkin.MouseState.HOVER;
@@ -267,7 +267,7 @@ namespace LibraryManagementSystem
             this.userIDLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.userIDLabel.AutoSize = true;
             this.userIDLabel.Depth = 0;
-            this.userIDLabel.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.userIDLabel.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.userIDLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.userIDLabel.Location = new System.Drawing.Point(237, 119);
             this.userIDLabel.MouseState = MaterialSkin.MouseState.HOVER;
@@ -281,7 +281,7 @@ namespace LibraryManagementSystem
             this.returnRadioButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.returnRadioButton.AutoSize = true;
             this.returnRadioButton.Depth = 0;
-            this.returnRadioButton.Font = new System.Drawing.Font("微软雅黑", 10F);
+            this.returnRadioButton.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
             this.returnRadioButton.Location = new System.Drawing.Point(379, 64);
             this.returnRadioButton.Margin = new System.Windows.Forms.Padding(0);
             this.returnRadioButton.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -300,7 +300,7 @@ namespace LibraryManagementSystem
             this.borrowRadioButton.AutoSize = true;
             this.borrowRadioButton.Checked = true;
             this.borrowRadioButton.Depth = 0;
-            this.borrowRadioButton.Font = new System.Drawing.Font("微软雅黑", 10F);
+            this.borrowRadioButton.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
             this.borrowRadioButton.Location = new System.Drawing.Point(294, 64);
             this.borrowRadioButton.Margin = new System.Windows.Forms.Padding(0);
             this.borrowRadioButton.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -318,7 +318,7 @@ namespace LibraryManagementSystem
             this.borrowTypeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.borrowTypeLabel.AutoSize = true;
             this.borrowTypeLabel.Depth = 0;
-            this.borrowTypeLabel.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.borrowTypeLabel.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.borrowTypeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.borrowTypeLabel.Location = new System.Drawing.Point(237, 69);
             this.borrowTypeLabel.MouseState = MaterialSkin.MouseState.HOVER;
@@ -359,7 +359,7 @@ namespace LibraryManagementSystem
             // 
             this.bookEPCRadioButton.AutoSize = true;
             this.bookEPCRadioButton.Depth = 0;
-            this.bookEPCRadioButton.Font = new System.Drawing.Font("微软雅黑", 10F);
+            this.bookEPCRadioButton.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
             this.bookEPCRadioButton.Location = new System.Drawing.Point(402, 3);
             this.bookEPCRadioButton.Margin = new System.Windows.Forms.Padding(0);
             this.bookEPCRadioButton.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -377,7 +377,7 @@ namespace LibraryManagementSystem
             this.bookInfoRadioButton.AutoSize = true;
             this.bookInfoRadioButton.Checked = true;
             this.bookInfoRadioButton.Depth = 0;
-            this.bookInfoRadioButton.Font = new System.Drawing.Font("微软雅黑", 10F);
+            this.bookInfoRadioButton.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
             this.bookInfoRadioButton.Location = new System.Drawing.Point(258, 3);
             this.bookInfoRadioButton.Margin = new System.Windows.Forms.Padding(0);
             this.bookInfoRadioButton.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -523,7 +523,7 @@ namespace LibraryManagementSystem
             // 
             this.optionalLabel5.AutoSize = true;
             this.optionalLabel5.Depth = 0;
-            this.optionalLabel5.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.optionalLabel5.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.optionalLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.optionalLabel5.Location = new System.Drawing.Point(162, 242);
             this.optionalLabel5.MouseState = MaterialSkin.MouseState.HOVER;
@@ -536,7 +536,7 @@ namespace LibraryManagementSystem
             // 
             this.optionalLabel4.AutoSize = true;
             this.optionalLabel4.Depth = 0;
-            this.optionalLabel4.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.optionalLabel4.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.optionalLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.optionalLabel4.Location = new System.Drawing.Point(177, 202);
             this.optionalLabel4.MouseState = MaterialSkin.MouseState.HOVER;
@@ -549,7 +549,7 @@ namespace LibraryManagementSystem
             // 
             this.optionalLabel3.AutoSize = true;
             this.optionalLabel3.Depth = 0;
-            this.optionalLabel3.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.optionalLabel3.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.optionalLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.optionalLabel3.Location = new System.Drawing.Point(192, 162);
             this.optionalLabel3.MouseState = MaterialSkin.MouseState.HOVER;
@@ -562,7 +562,7 @@ namespace LibraryManagementSystem
             // 
             this.optionalLabel2.AutoSize = true;
             this.optionalLabel2.Depth = 0;
-            this.optionalLabel2.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.optionalLabel2.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.optionalLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.optionalLabel2.Location = new System.Drawing.Point(192, 122);
             this.optionalLabel2.MouseState = MaterialSkin.MouseState.HOVER;
@@ -575,7 +575,7 @@ namespace LibraryManagementSystem
             // 
             this.optionalLabel1.AutoSize = true;
             this.optionalLabel1.Depth = 0;
-            this.optionalLabel1.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.optionalLabel1.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.optionalLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.optionalLabel1.Location = new System.Drawing.Point(185, 82);
             this.optionalLabel1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -588,7 +588,7 @@ namespace LibraryManagementSystem
             // 
             this.ISBNLabel.AutoSize = true;
             this.ISBNLabel.Depth = 0;
-            this.ISBNLabel.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.ISBNLabel.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.ISBNLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.ISBNLabel.Location = new System.Drawing.Point(181, 42);
             this.ISBNLabel.MouseState = MaterialSkin.MouseState.HOVER;
@@ -613,7 +613,7 @@ namespace LibraryManagementSystem
             // status_page2
             // 
             this.status_page2.Depth = 0;
-            this.status_page2.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.status_page2.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.status_page2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.status_page2.Location = new System.Drawing.Point(3, 313);
             this.status_page2.MouseState = MaterialSkin.MouseState.HOVER;
@@ -660,7 +660,7 @@ namespace LibraryManagementSystem
             // 
             this.adminRadioButton.AutoSize = true;
             this.adminRadioButton.Depth = 0;
-            this.adminRadioButton.Font = new System.Drawing.Font("微软雅黑", 10F);
+            this.adminRadioButton.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
             this.adminRadioButton.Location = new System.Drawing.Point(112, 4);
             this.adminRadioButton.Margin = new System.Windows.Forms.Padding(0);
             this.adminRadioButton.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -677,7 +677,7 @@ namespace LibraryManagementSystem
             this.readerRadioButton.AutoSize = true;
             this.readerRadioButton.Checked = true;
             this.readerRadioButton.Depth = 0;
-            this.readerRadioButton.Font = new System.Drawing.Font("微软雅黑", 10F);
+            this.readerRadioButton.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
             this.readerRadioButton.Location = new System.Drawing.Point(6, 4);
             this.readerRadioButton.Margin = new System.Windows.Forms.Padding(0);
             this.readerRadioButton.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -703,7 +703,7 @@ namespace LibraryManagementSystem
             // 
             this.girlRadioButton.AutoSize = true;
             this.girlRadioButton.Depth = 0;
-            this.girlRadioButton.Font = new System.Drawing.Font("微软雅黑", 10F);
+            this.girlRadioButton.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
             this.girlRadioButton.Location = new System.Drawing.Point(112, 4);
             this.girlRadioButton.Margin = new System.Windows.Forms.Padding(0);
             this.girlRadioButton.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -720,7 +720,7 @@ namespace LibraryManagementSystem
             this.boyRadioButton.AutoSize = true;
             this.boyRadioButton.Checked = true;
             this.boyRadioButton.Depth = 0;
-            this.boyRadioButton.Font = new System.Drawing.Font("微软雅黑", 10F);
+            this.boyRadioButton.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
             this.boyRadioButton.Location = new System.Drawing.Point(6, 4);
             this.boyRadioButton.Margin = new System.Windows.Forms.Padding(0);
             this.boyRadioButton.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -844,7 +844,7 @@ namespace LibraryManagementSystem
             // 
             this.materialLabel17.AutoSize = true;
             this.materialLabel17.Depth = 0;
-            this.materialLabel17.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.materialLabel17.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.materialLabel17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel17.Location = new System.Drawing.Point(186, 242);
             this.materialLabel17.MouseState = MaterialSkin.MouseState.HOVER;
@@ -857,7 +857,7 @@ namespace LibraryManagementSystem
             // 
             this.materialLabel16.AutoSize = true;
             this.materialLabel16.Depth = 0;
-            this.materialLabel16.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.materialLabel16.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.materialLabel16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel16.Location = new System.Drawing.Point(193, 162);
             this.materialLabel16.MouseState = MaterialSkin.MouseState.HOVER;
@@ -870,7 +870,7 @@ namespace LibraryManagementSystem
             // 
             this.materialLabel15.AutoSize = true;
             this.materialLabel15.Depth = 0;
-            this.materialLabel15.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.materialLabel15.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.materialLabel15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel15.Location = new System.Drawing.Point(186, 202);
             this.materialLabel15.MouseState = MaterialSkin.MouseState.HOVER;
@@ -883,7 +883,7 @@ namespace LibraryManagementSystem
             // 
             this.materialLabel14.AutoSize = true;
             this.materialLabel14.Depth = 0;
-            this.materialLabel14.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.materialLabel14.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.materialLabel14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel14.Location = new System.Drawing.Point(186, 122);
             this.materialLabel14.MouseState = MaterialSkin.MouseState.HOVER;
@@ -896,7 +896,7 @@ namespace LibraryManagementSystem
             // 
             this.materialLabel13.AutoSize = true;
             this.materialLabel13.Depth = 0;
-            this.materialLabel13.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.materialLabel13.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.materialLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel13.Location = new System.Drawing.Point(171, 82);
             this.materialLabel13.MouseState = MaterialSkin.MouseState.HOVER;
@@ -909,7 +909,7 @@ namespace LibraryManagementSystem
             // 
             this.materialLabel12.AutoSize = true;
             this.materialLabel12.Depth = 0;
-            this.materialLabel12.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.materialLabel12.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.materialLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel12.Location = new System.Drawing.Point(171, 42);
             this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
@@ -921,7 +921,7 @@ namespace LibraryManagementSystem
             // status_page3
             // 
             this.status_page3.Depth = 0;
-            this.status_page3.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.status_page3.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.status_page3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.status_page3.Location = new System.Drawing.Point(3, 313);
             this.status_page3.MouseState = MaterialSkin.MouseState.HOVER;
@@ -982,7 +982,7 @@ namespace LibraryManagementSystem
             // status_page4
             // 
             this.status_page4.Depth = 0;
-            this.status_page4.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.status_page4.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.status_page4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.status_page4.Location = new System.Drawing.Point(3, 313);
             this.status_page4.MouseState = MaterialSkin.MouseState.HOVER;
@@ -1029,7 +1029,7 @@ namespace LibraryManagementSystem
             // 
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.materialLabel3.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel3.Location = new System.Drawing.Point(469, 42);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
@@ -1059,7 +1059,7 @@ namespace LibraryManagementSystem
             // 
             this.materialLabel6.AutoSize = true;
             this.materialLabel6.Depth = 0;
-            this.materialLabel6.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.materialLabel6.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel6.Location = new System.Drawing.Point(411, 41);
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
@@ -1089,7 +1089,7 @@ namespace LibraryManagementSystem
             // 
             this.materialLabel5.AutoSize = true;
             this.materialLabel5.Depth = 0;
-            this.materialLabel5.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.materialLabel5.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel5.Location = new System.Drawing.Point(353, 42);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
@@ -1119,7 +1119,7 @@ namespace LibraryManagementSystem
             // 
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.Depth = 0;
-            this.materialLabel4.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.materialLabel4.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel4.Location = new System.Drawing.Point(295, 41);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
@@ -1188,7 +1188,7 @@ namespace LibraryManagementSystem
             // 
             this.materialLabel19.AutoSize = true;
             this.materialLabel19.Depth = 0;
-            this.materialLabel19.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.materialLabel19.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.materialLabel19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel19.Location = new System.Drawing.Point(193, 87);
             this.materialLabel19.MouseState = MaterialSkin.MouseState.HOVER;
@@ -1201,7 +1201,7 @@ namespace LibraryManagementSystem
             // 
             this.materialLabel18.AutoSize = true;
             this.materialLabel18.Depth = 0;
-            this.materialLabel18.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.materialLabel18.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.materialLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel18.Location = new System.Drawing.Point(178, 42);
             this.materialLabel18.MouseState = MaterialSkin.MouseState.HOVER;
@@ -1231,7 +1231,7 @@ namespace LibraryManagementSystem
             this.columnHeader5});
             this.borrowReturnList.Depth = 0;
             this.borrowReturnList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.borrowReturnList.Font = new System.Drawing.Font("微软雅黑", 24F);
+            this.borrowReturnList.Font = new System.Drawing.Font("Microsoft YaHei", 24F);
             this.borrowReturnList.FullRowSelect = true;
             this.borrowReturnList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.borrowReturnList.Location = new System.Drawing.Point(0, 0);
@@ -1243,6 +1243,7 @@ namespace LibraryManagementSystem
             this.borrowReturnList.TabIndex = 0;
             this.borrowReturnList.UseCompatibleStateImageBehavior = false;
             this.borrowReturnList.View = System.Windows.Forms.View.Details;
+            this.borrowReturnList.SelectedIndexChanged += new System.EventHandler(this.borrowReturnList_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -1264,6 +1265,11 @@ namespace LibraryManagementSystem
             this.columnHeader4.Text = "时间";
             this.columnHeader4.Width = 190;
             // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "借/还";
+            this.columnHeader5.Width = 70;
+            // 
             // organizingTab
             // 
             this.organizingTab.Controls.Add(this.inventoryListView);
@@ -1283,7 +1289,7 @@ namespace LibraryManagementSystem
             this.columnHeader8});
             this.inventoryListView.Depth = 0;
             this.inventoryListView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.inventoryListView.Font = new System.Drawing.Font("微软雅黑", 24F);
+            this.inventoryListView.Font = new System.Drawing.Font("Microsoft YaHei", 24F);
             this.inventoryListView.FullRowSelect = true;
             this.inventoryListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.inventoryListView.Location = new System.Drawing.Point(0, 0);
@@ -1295,6 +1301,7 @@ namespace LibraryManagementSystem
             this.inventoryListView.TabIndex = 2;
             this.inventoryListView.UseCompatibleStateImageBehavior = false;
             this.inventoryListView.View = System.Windows.Forms.View.Details;
+            this.inventoryListView.SelectedIndexChanged += new System.EventHandler(this.inventoryListView_SelectedIndexChanged);
             // 
             // columnHeader6
             // 
@@ -1372,7 +1379,7 @@ namespace LibraryManagementSystem
             // 
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.materialLabel2.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel2.Location = new System.Drawing.Point(14, 70);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
@@ -1398,7 +1405,7 @@ namespace LibraryManagementSystem
             // 
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.materialLabel1.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel1.Location = new System.Drawing.Point(14, 14);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -1420,11 +1427,6 @@ namespace LibraryManagementSystem
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
             this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
             // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "借/还";
-            this.columnHeader5.Width = 70;
-            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -1432,7 +1434,7 @@ namespace LibraryManagementSystem
             this.ClientSize = new System.Drawing.Size(800, 500);
             this.Controls.Add(this.materialTabControl1);
             this.Controls.Add(this.materialTabSelector1);
-            this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "AdminForm";

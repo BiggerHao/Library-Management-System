@@ -59,8 +59,17 @@ namespace LibraryManagementSystem
 
             if (name != null)
             {
-                if (type.Equals("管理员")) { Hide(); new AdminForm().Show(); }
-                else if (type.Equals("读者")) { Hide(); new UserForm().Show(); }
+                if (type.Equals("管理员")) {
+                    Hide();
+                    new AdminForm().Show();
+                }
+                else if (type.Equals("读者")) {
+                    Hide();
+                    UserForm user = new UserForm();
+                    user.set_user_id(id);
+                    user.Show();
+                    user.Visible = true;
+                }
             }
             else
                 MessageBox.Show("用户名或密码错误！", "提示", MessageBoxButtons.OK,
