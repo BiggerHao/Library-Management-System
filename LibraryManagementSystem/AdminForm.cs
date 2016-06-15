@@ -182,7 +182,7 @@ namespace LibraryManagementSystem
                 DateTime due = dt.AddDays(20);
                 string borrow_time = dt.ToString("yyyy-MM-dd");
                 string due_time = due.ToString("yyyy-MM-dd");
-                string borrow_way = dt.Second % 2 == 0 ? "门禁" : "借换台";
+                string borrow_way = dt.Second % 2 == 0 ? "门禁" : "借还台";
                 comm = new SQLiteCommand("insert into BorrowRecord (number, user_id, book_epc, borrow_time, due_time,"
                     + " borrow_way) values (null, '" + user_id + "', '" + book_epc + "', '" + borrow_time + "', '"
                     + due_time + "', '" + borrow_way + "')", LoginForm.conn);
@@ -703,17 +703,7 @@ namespace LibraryManagementSystem
 
             bookSearchButton.Visible = false;
         }
-
-        private void borrowReturnList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void inventoryListView_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void adminModeButton_Click(object sender, EventArgs e)
         {
             if (userForm == null)
@@ -724,6 +714,27 @@ namespace LibraryManagementSystem
             }
             Hide();
             userForm.Show();
+        }
+
+        private void inventoryListView_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if (inventoryListView.SelectedItems == null) return;
+            var item = inventoryListView.SelectedItems[0];
+
+            string book_id = item.SubItems[0].Text;
+            string local = item.SubItems[1].Text;
+            string real = item.SubItems[2].Text;
+
+            if (local.Equals(real)) return;
+
+            SQLiteCommand comm = new SQLiteCommand("update Placement set real_local = '"
+                + local + "' where book_id = '" + book_id + "' and local = '" + local
+                + "'", LoginForm.conn);
+            comm.ExecuteNonQuery();
+            comm.Dispose();
+
+            item.SubItems[2].Text = local;
+
         }
     }
 }
