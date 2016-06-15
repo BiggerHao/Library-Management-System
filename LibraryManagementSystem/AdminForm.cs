@@ -194,7 +194,8 @@ namespace LibraryManagementSystem
                 if (result == 2)
                 {
                     status_page1.Text = "借阅成功";
-                    string[] ss = { user_id, book_id, borrow_way, dt.GetDateTimeFormats('s')[0].ToString(), "借" };
+                    string[] ss = { user_id, book_id, borrow_way,
+                                      dt.GetDateTimeFormats('s')[0].ToString().Replace('T', ' '), "借" };
                     borrowReturnList.Items.Add(new ListViewItem(ss));
                 }
                 else status_page1.Text = "借阅失败";
@@ -251,7 +252,8 @@ namespace LibraryManagementSystem
                 if (result == 2)
                 {
                     status_page1.Text = "归还成功";
-                    string[] ss = { user_id, book_id, borrow_way, dt.GetDateTimeFormats('s')[0].ToString(), "还" };
+                    string[] ss = { user_id, book_id, borrow_way,
+                                      dt.GetDateTimeFormats('s')[0].ToString().Replace('T', ' '), "还" };
                     borrowReturnList.Items.Add(new ListViewItem(ss));
                 }
                 if (DateTime.Compare(dt, due) > 0) status_page1.Text += "，超期请交罚款";
