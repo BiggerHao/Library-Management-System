@@ -57,6 +57,8 @@ namespace LibraryManagementSystem
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.myProfile = new System.Windows.Forms.TabPage();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.userValidateNewPwText = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.updateProfileButton = new MaterialSkin.Controls.MaterialRaisedButton();
             this.userTypeLabel = new MaterialSkin.Controls.MaterialLabel();
             this.userAddressLabel = new MaterialSkin.Controls.MaterialLabel();
@@ -71,6 +73,8 @@ namespace LibraryManagementSystem
             this.userIDText = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.userIdLabel = new MaterialSkin.Controls.MaterialLabel();
             this.setTheme = new System.Windows.Forms.TabPage();
+            this.chUserModeButton = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.chMode = new MaterialSkin.Controls.MaterialLabel();
             this.materialRaisedButton6 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton5 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton4 = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -79,10 +83,6 @@ namespace LibraryManagementSystem
             this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.userValidateNewPwText = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.chMode = new MaterialSkin.Controls.MaterialLabel();
-            this.chUserModeButton = new MaterialSkin.Controls.MaterialRaisedButton();
             this.userTab.SuspendLayout();
             this.bookQuery.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -325,7 +325,7 @@ namespace LibraryManagementSystem
             this.columnHeader5});
             this.borrowmentList.Depth = 0;
             this.borrowmentList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.borrowmentList.Font = new System.Drawing.Font("Microsoft YaHei", 24F);
+            this.borrowmentList.Font = new System.Drawing.Font("微软雅黑", 24F);
             this.borrowmentList.FullRowSelect = true;
             this.borrowmentList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.borrowmentList.Location = new System.Drawing.Point(3, 3);
@@ -389,6 +389,36 @@ namespace LibraryManagementSystem
             this.myProfile.Text = "我的资料";
             this.myProfile.Click += new System.EventHandler(this.myProfile_Click);
             // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel3.Location = new System.Drawing.Point(164, 246);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(84, 20);
+            this.materialLabel3.TabIndex = 27;
+            this.materialLabel3.Text = "确认新密码";
+            // 
+            // userValidateNewPwText
+            // 
+            this.userValidateNewPwText.Depth = 0;
+            this.userValidateNewPwText.Hint = "";
+            this.userValidateNewPwText.Location = new System.Drawing.Point(261, 241);
+            this.userValidateNewPwText.MaxLength = 32767;
+            this.userValidateNewPwText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.userValidateNewPwText.Name = "userValidateNewPwText";
+            this.userValidateNewPwText.PasswordChar = '\0';
+            this.userValidateNewPwText.SelectedText = "";
+            this.userValidateNewPwText.SelectionLength = 0;
+            this.userValidateNewPwText.SelectionStart = 0;
+            this.userValidateNewPwText.Size = new System.Drawing.Size(255, 25);
+            this.userValidateNewPwText.TabIndex = 26;
+            this.userValidateNewPwText.TabStop = false;
+            this.userValidateNewPwText.UseSystemPasswordChar = false;
+            // 
             // updateProfileButton
             // 
             this.updateProfileButton.Depth = 0;
@@ -406,7 +436,7 @@ namespace LibraryManagementSystem
             // 
             this.userTypeLabel.AutoSize = true;
             this.userTypeLabel.Depth = 0;
-            this.userTypeLabel.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
+            this.userTypeLabel.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.userTypeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.userTypeLabel.Location = new System.Drawing.Point(179, 285);
             this.userTypeLabel.MouseState = MaterialSkin.MouseState.HOVER;
@@ -420,7 +450,7 @@ namespace LibraryManagementSystem
             // 
             this.userAddressLabel.AutoSize = true;
             this.userAddressLabel.Depth = 0;
-            this.userAddressLabel.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
+            this.userAddressLabel.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.userAddressLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.userAddressLabel.Location = new System.Drawing.Point(179, 166);
             this.userAddressLabel.MouseState = MaterialSkin.MouseState.HOVER;
@@ -448,7 +478,7 @@ namespace LibraryManagementSystem
             // 
             this.userGenderLabel.AutoSize = true;
             this.userGenderLabel.Depth = 0;
-            this.userGenderLabel.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
+            this.userGenderLabel.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.userGenderLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.userGenderLabel.Location = new System.Drawing.Point(179, 126);
             this.userGenderLabel.MouseState = MaterialSkin.MouseState.HOVER;
@@ -462,7 +492,7 @@ namespace LibraryManagementSystem
             // 
             this.userNameLabel.AutoSize = true;
             this.userNameLabel.Depth = 0;
-            this.userNameLabel.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
+            this.userNameLabel.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.userNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.userNameLabel.Location = new System.Drawing.Point(164, 86);
             this.userNameLabel.MouseState = MaterialSkin.MouseState.HOVER;
@@ -584,7 +614,7 @@ namespace LibraryManagementSystem
             // 
             this.userIdLabel.AutoSize = true;
             this.userIdLabel.Depth = 0;
-            this.userIdLabel.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
+            this.userIdLabel.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.userIdLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.userIdLabel.Location = new System.Drawing.Point(164, 46);
             this.userIdLabel.MouseState = MaterialSkin.MouseState.HOVER;
@@ -612,6 +642,31 @@ namespace LibraryManagementSystem
             this.setTheme.Text = "其他设置";
             this.setTheme.UseVisualStyleBackColor = true;
             this.setTheme.Click += new System.EventHandler(this.setTheme_Click);
+            // 
+            // chUserModeButton
+            // 
+            this.chUserModeButton.Depth = 0;
+            this.chUserModeButton.Location = new System.Drawing.Point(100, 128);
+            this.chUserModeButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.chUserModeButton.Name = "chUserModeButton";
+            this.chUserModeButton.Primary = true;
+            this.chUserModeButton.Size = new System.Drawing.Size(130, 40);
+            this.chUserModeButton.TabIndex = 11;
+            this.chUserModeButton.Text = "管理员模式";
+            this.chUserModeButton.UseVisualStyleBackColor = true;
+            // 
+            // chMode
+            // 
+            this.chMode.AutoSize = true;
+            this.chMode.Depth = 0;
+            this.chMode.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.chMode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.chMode.Location = new System.Drawing.Point(14, 137);
+            this.chMode.MouseState = MaterialSkin.MouseState.HOVER;
+            this.chMode.Name = "chMode";
+            this.chMode.Size = new System.Drawing.Size(69, 20);
+            this.chMode.TabIndex = 10;
+            this.chMode.Text = "切换模式";
             // 
             // materialRaisedButton6
             // 
@@ -656,7 +711,7 @@ namespace LibraryManagementSystem
             // 
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
+            this.materialLabel2.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel2.Location = new System.Drawing.Point(14, 70);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
@@ -696,7 +751,7 @@ namespace LibraryManagementSystem
             // 
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
+            this.materialLabel1.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel1.Location = new System.Drawing.Point(14, 14);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -717,61 +772,6 @@ namespace LibraryManagementSystem
             this.textBox4.TabIndex = 0;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
-            // materialLabel3
-            // 
-            this.materialLabel3.AutoSize = true;
-            this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("微软雅黑", 11F);
-            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(164, 246);
-            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(84, 20);
-            this.materialLabel3.TabIndex = 27;
-            this.materialLabel3.Text = "确认新密码";
-            // 
-            // userValidateNewPwText
-            // 
-            this.userValidateNewPwText.Depth = 0;
-            this.userValidateNewPwText.Hint = "";
-            this.userValidateNewPwText.Location = new System.Drawing.Point(261, 241);
-            this.userValidateNewPwText.MaxLength = 32767;
-            this.userValidateNewPwText.MouseState = MaterialSkin.MouseState.HOVER;
-            this.userValidateNewPwText.Name = "userValidateNewPwText";
-            this.userValidateNewPwText.PasswordChar = '\0';
-            this.userValidateNewPwText.SelectedText = "";
-            this.userValidateNewPwText.SelectionLength = 0;
-            this.userValidateNewPwText.SelectionStart = 0;
-            this.userValidateNewPwText.Size = new System.Drawing.Size(255, 25);
-            this.userValidateNewPwText.TabIndex = 26;
-            this.userValidateNewPwText.TabStop = false;
-            this.userValidateNewPwText.UseSystemPasswordChar = false;
-            // 
-            // chMode
-            // 
-            this.chMode.AutoSize = true;
-            this.chMode.Depth = 0;
-            this.chMode.Font = new System.Drawing.Font("微软雅黑", 11F);
-            this.chMode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.chMode.Location = new System.Drawing.Point(14, 137);
-            this.chMode.MouseState = MaterialSkin.MouseState.HOVER;
-            this.chMode.Name = "chMode";
-            this.chMode.Size = new System.Drawing.Size(69, 20);
-            this.chMode.TabIndex = 10;
-            this.chMode.Text = "切换模式";
-            // 
-            // chUserModeButton
-            // 
-            this.chUserModeButton.Depth = 0;
-            this.chUserModeButton.Location = new System.Drawing.Point(100, 128);
-            this.chUserModeButton.MouseState = MaterialSkin.MouseState.HOVER;
-            this.chUserModeButton.Name = "chUserModeButton";
-            this.chUserModeButton.Primary = true;
-            this.chUserModeButton.Size = new System.Drawing.Size(130, 40);
-            this.chUserModeButton.TabIndex = 11;
-            this.chUserModeButton.Text = "用户模式";
-            this.chUserModeButton.UseVisualStyleBackColor = true;
-            // 
             // UserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -779,7 +779,7 @@ namespace LibraryManagementSystem
             this.ClientSize = new System.Drawing.Size(800, 708);
             this.Controls.Add(this.userTab);
             this.Controls.Add(this.materialTabSelector1);
-            this.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UserForm";
             this.Text = "图书馆管理系统-用户模式";
