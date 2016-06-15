@@ -73,14 +73,14 @@ namespace LibraryManagementSystem
             this.userIDText = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.userIdLabel = new MaterialSkin.Controls.MaterialLabel();
             this.setTheme = new System.Windows.Forms.TabPage();
-            this.chUserModeButton = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.adminModeButton = new MaterialSkin.Controls.MaterialRaisedButton();
             this.chMode = new MaterialSkin.Controls.MaterialLabel();
-            this.materialRaisedButton6 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton5 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton4 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.bluegreySchemeButton = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.greenSchemeButton = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.blueSchemeButton = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.nightModeButton = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.dayModeButton = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.userTab.SuspendLayout();
@@ -626,14 +626,14 @@ namespace LibraryManagementSystem
             // 
             // setTheme
             // 
-            this.setTheme.Controls.Add(this.chUserModeButton);
+            this.setTheme.Controls.Add(this.adminModeButton);
             this.setTheme.Controls.Add(this.chMode);
-            this.setTheme.Controls.Add(this.materialRaisedButton6);
-            this.setTheme.Controls.Add(this.materialRaisedButton5);
-            this.setTheme.Controls.Add(this.materialRaisedButton4);
+            this.setTheme.Controls.Add(this.bluegreySchemeButton);
+            this.setTheme.Controls.Add(this.greenSchemeButton);
+            this.setTheme.Controls.Add(this.blueSchemeButton);
             this.setTheme.Controls.Add(this.materialLabel2);
-            this.setTheme.Controls.Add(this.materialRaisedButton3);
-            this.setTheme.Controls.Add(this.materialRaisedButton2);
+            this.setTheme.Controls.Add(this.nightModeButton);
+            this.setTheme.Controls.Add(this.dayModeButton);
             this.setTheme.Controls.Add(this.materialLabel1);
             this.setTheme.Location = new System.Drawing.Point(4, 26);
             this.setTheme.Name = "setTheme";
@@ -643,17 +643,19 @@ namespace LibraryManagementSystem
             this.setTheme.UseVisualStyleBackColor = true;
             this.setTheme.Click += new System.EventHandler(this.setTheme_Click);
             // 
-            // chUserModeButton
+            // adminModeButton
             // 
-            this.chUserModeButton.Depth = 0;
-            this.chUserModeButton.Location = new System.Drawing.Point(100, 128);
-            this.chUserModeButton.MouseState = MaterialSkin.MouseState.HOVER;
-            this.chUserModeButton.Name = "chUserModeButton";
-            this.chUserModeButton.Primary = true;
-            this.chUserModeButton.Size = new System.Drawing.Size(130, 40);
-            this.chUserModeButton.TabIndex = 11;
-            this.chUserModeButton.Text = "管理员模式";
-            this.chUserModeButton.UseVisualStyleBackColor = true;
+            this.adminModeButton.Depth = 0;
+            this.adminModeButton.Enabled = false;
+            this.adminModeButton.Location = new System.Drawing.Point(100, 117);
+            this.adminModeButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.adminModeButton.Name = "adminModeButton";
+            this.adminModeButton.Primary = true;
+            this.adminModeButton.Size = new System.Drawing.Size(130, 40);
+            this.adminModeButton.TabIndex = 11;
+            this.adminModeButton.Text = "管理员模式";
+            this.adminModeButton.UseVisualStyleBackColor = true;
+            this.adminModeButton.Click += new System.EventHandler(this.adminModeButton_Click);
             // 
             // chMode
             // 
@@ -661,51 +663,51 @@ namespace LibraryManagementSystem
             this.chMode.Depth = 0;
             this.chMode.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.chMode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.chMode.Location = new System.Drawing.Point(14, 137);
+            this.chMode.Location = new System.Drawing.Point(14, 126);
             this.chMode.MouseState = MaterialSkin.MouseState.HOVER;
             this.chMode.Name = "chMode";
             this.chMode.Size = new System.Drawing.Size(69, 20);
             this.chMode.TabIndex = 10;
             this.chMode.Text = "切换模式";
             // 
-            // materialRaisedButton6
+            // bluegreySchemeButton
             // 
-            this.materialRaisedButton6.Depth = 0;
-            this.materialRaisedButton6.Location = new System.Drawing.Point(410, 60);
-            this.materialRaisedButton6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton6.Name = "materialRaisedButton6";
-            this.materialRaisedButton6.Primary = true;
-            this.materialRaisedButton6.Size = new System.Drawing.Size(130, 40);
-            this.materialRaisedButton6.TabIndex = 9;
-            this.materialRaisedButton6.Text = "蓝灰色";
-            this.materialRaisedButton6.UseVisualStyleBackColor = true;
-            this.materialRaisedButton6.Click += new System.EventHandler(this.materialRaisedButton6_Click);
+            this.bluegreySchemeButton.Depth = 0;
+            this.bluegreySchemeButton.Location = new System.Drawing.Point(410, 60);
+            this.bluegreySchemeButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.bluegreySchemeButton.Name = "bluegreySchemeButton";
+            this.bluegreySchemeButton.Primary = true;
+            this.bluegreySchemeButton.Size = new System.Drawing.Size(130, 40);
+            this.bluegreySchemeButton.TabIndex = 9;
+            this.bluegreySchemeButton.Text = "蓝灰色";
+            this.bluegreySchemeButton.UseVisualStyleBackColor = true;
+            this.bluegreySchemeButton.Click += new System.EventHandler(this.materialRaisedButton6_Click);
             // 
-            // materialRaisedButton5
+            // greenSchemeButton
             // 
-            this.materialRaisedButton5.Depth = 0;
-            this.materialRaisedButton5.Location = new System.Drawing.Point(255, 60);
-            this.materialRaisedButton5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton5.Name = "materialRaisedButton5";
-            this.materialRaisedButton5.Primary = true;
-            this.materialRaisedButton5.Size = new System.Drawing.Size(130, 40);
-            this.materialRaisedButton5.TabIndex = 8;
-            this.materialRaisedButton5.Text = "绿色";
-            this.materialRaisedButton5.UseVisualStyleBackColor = true;
-            this.materialRaisedButton5.Click += new System.EventHandler(this.materialRaisedButton5_Click);
+            this.greenSchemeButton.Depth = 0;
+            this.greenSchemeButton.Location = new System.Drawing.Point(255, 60);
+            this.greenSchemeButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.greenSchemeButton.Name = "greenSchemeButton";
+            this.greenSchemeButton.Primary = true;
+            this.greenSchemeButton.Size = new System.Drawing.Size(130, 40);
+            this.greenSchemeButton.TabIndex = 8;
+            this.greenSchemeButton.Text = "绿色";
+            this.greenSchemeButton.UseVisualStyleBackColor = true;
+            this.greenSchemeButton.Click += new System.EventHandler(this.materialRaisedButton5_Click);
             // 
-            // materialRaisedButton4
+            // blueSchemeButton
             // 
-            this.materialRaisedButton4.Depth = 0;
-            this.materialRaisedButton4.Location = new System.Drawing.Point(100, 60);
-            this.materialRaisedButton4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton4.Name = "materialRaisedButton4";
-            this.materialRaisedButton4.Primary = true;
-            this.materialRaisedButton4.Size = new System.Drawing.Size(130, 40);
-            this.materialRaisedButton4.TabIndex = 7;
-            this.materialRaisedButton4.Text = "蓝色";
-            this.materialRaisedButton4.UseVisualStyleBackColor = true;
-            this.materialRaisedButton4.Click += new System.EventHandler(this.materialRaisedButton4_Click);
+            this.blueSchemeButton.Depth = 0;
+            this.blueSchemeButton.Location = new System.Drawing.Point(100, 60);
+            this.blueSchemeButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.blueSchemeButton.Name = "blueSchemeButton";
+            this.blueSchemeButton.Primary = true;
+            this.blueSchemeButton.Size = new System.Drawing.Size(130, 40);
+            this.blueSchemeButton.TabIndex = 7;
+            this.blueSchemeButton.Text = "蓝色";
+            this.blueSchemeButton.UseVisualStyleBackColor = true;
+            this.blueSchemeButton.Click += new System.EventHandler(this.materialRaisedButton4_Click);
             // 
             // materialLabel2
             // 
@@ -721,31 +723,31 @@ namespace LibraryManagementSystem
             this.materialLabel2.Text = "更换配色";
             this.materialLabel2.Click += new System.EventHandler(this.materialLabel2_Click);
             // 
-            // materialRaisedButton3
+            // nightModeButton
             // 
-            this.materialRaisedButton3.Depth = 0;
-            this.materialRaisedButton3.Location = new System.Drawing.Point(255, 5);
-            this.materialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton3.Name = "materialRaisedButton3";
-            this.materialRaisedButton3.Primary = true;
-            this.materialRaisedButton3.Size = new System.Drawing.Size(130, 40);
-            this.materialRaisedButton3.TabIndex = 5;
-            this.materialRaisedButton3.Text = "夜间模式";
-            this.materialRaisedButton3.UseVisualStyleBackColor = true;
-            this.materialRaisedButton3.Click += new System.EventHandler(this.materialRaisedButton3_Click);
+            this.nightModeButton.Depth = 0;
+            this.nightModeButton.Location = new System.Drawing.Point(255, 5);
+            this.nightModeButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.nightModeButton.Name = "nightModeButton";
+            this.nightModeButton.Primary = true;
+            this.nightModeButton.Size = new System.Drawing.Size(130, 40);
+            this.nightModeButton.TabIndex = 5;
+            this.nightModeButton.Text = "夜间模式";
+            this.nightModeButton.UseVisualStyleBackColor = true;
+            this.nightModeButton.Click += new System.EventHandler(this.materialRaisedButton3_Click);
             // 
-            // materialRaisedButton2
+            // dayModeButton
             // 
-            this.materialRaisedButton2.Depth = 0;
-            this.materialRaisedButton2.Location = new System.Drawing.Point(100, 5);
-            this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton2.Name = "materialRaisedButton2";
-            this.materialRaisedButton2.Primary = true;
-            this.materialRaisedButton2.Size = new System.Drawing.Size(130, 40);
-            this.materialRaisedButton2.TabIndex = 4;
-            this.materialRaisedButton2.Text = "日间模式";
-            this.materialRaisedButton2.UseVisualStyleBackColor = true;
-            this.materialRaisedButton2.Click += new System.EventHandler(this.materialRaisedButton2_Click);
+            this.dayModeButton.Depth = 0;
+            this.dayModeButton.Location = new System.Drawing.Point(100, 5);
+            this.dayModeButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.dayModeButton.Name = "dayModeButton";
+            this.dayModeButton.Primary = true;
+            this.dayModeButton.Size = new System.Drawing.Size(130, 40);
+            this.dayModeButton.TabIndex = 4;
+            this.dayModeButton.Text = "日间模式";
+            this.dayModeButton.UseVisualStyleBackColor = true;
+            this.dayModeButton.Click += new System.EventHandler(this.materialRaisedButton2_Click);
             // 
             // materialLabel1
             // 
@@ -823,12 +825,12 @@ namespace LibraryManagementSystem
         private ColumnHeader columnHeader4;
         private TabPage setTheme;
         private MaterialLabel materialLabel1;
-        private MaterialRaisedButton materialRaisedButton2;
-        private MaterialRaisedButton materialRaisedButton3;
+        private MaterialRaisedButton dayModeButton;
+        private MaterialRaisedButton nightModeButton;
         private MaterialLabel materialLabel2;
-        private MaterialRaisedButton materialRaisedButton4;
-        private MaterialRaisedButton materialRaisedButton5;
-        private MaterialRaisedButton materialRaisedButton6;
+        private MaterialRaisedButton blueSchemeButton;
+        private MaterialRaisedButton greenSchemeButton;
+        private MaterialRaisedButton bluegreySchemeButton;
         private MaterialLabel userIdLabel;
         private MaterialSingleLineTextField userTypeText;
         private MaterialSingleLineTextField userPwText;
@@ -845,14 +847,11 @@ namespace LibraryManagementSystem
         private TextBox showPageInfoText;
         private MaterialRaisedButton nextPageButton;
         private MaterialRaisedButton lastPageButton;
-<<<<<<< HEAD
         private MaterialLabel materialLabel3;
         private MaterialSingleLineTextField userValidateNewPwText;
-        private MaterialRaisedButton chUserModeButton;
+        private MaterialRaisedButton adminModeButton;
         private MaterialLabel chMode;
-=======
         private ColumnHeader columnHeader5;
->>>>>>> be8cba02033e00d39c375c69b904bd41b5c1bf34
     }
 }
 

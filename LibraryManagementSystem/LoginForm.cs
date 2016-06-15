@@ -61,7 +61,9 @@ namespace LibraryManagementSystem
             {
                 if (type.Equals("管理员")) {
                     Hide();
-                    new AdminForm().Show();
+                    AdminForm admin = new AdminForm();
+                    admin.set_user_id(id);
+                    admin.Show();
                 }
                 else if (type.Equals("读者")) {
                     Hide();

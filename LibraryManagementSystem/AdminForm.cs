@@ -16,6 +16,13 @@ namespace LibraryManagementSystem
     public partial class AdminForm : MaterialForm
     {
         private readonly MaterialSkinManager materialSkinManager;
+        private string user_id;
+        private UserForm userForm = null;
+
+        public void set_user_id(string user_id)
+        {
+            this.user_id = user_id;
+        }
 
         public AdminForm()
         {
@@ -24,9 +31,9 @@ namespace LibraryManagementSystem
             materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialRaisedButton1.Enabled = false;
+            dayModeButton.Enabled = false;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.LightBlue700, Primary.LightBlue900, Primary.LightBlue500, Accent.LightBlue200, TextShade.WHITE);
-            materialRaisedButton3.Enabled = false;
+            blueSchemeButton.Enabled = false;
 
             // Add dummy data to the listview
             seedListView();
@@ -66,39 +73,39 @@ namespace LibraryManagementSystem
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialRaisedButton1.Enabled = false;
-            materialRaisedButton2.Enabled = true;
+            dayModeButton.Enabled = false;
+            nightModeButton.Enabled = true;
         }
 
         private void materialRaisedButton2_Click(object sender, EventArgs e)
         {
             materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
-            materialRaisedButton1.Enabled = true;
-            materialRaisedButton2.Enabled = false;
+            dayModeButton.Enabled = true;
+            nightModeButton.Enabled = false;
         }
 
         private void materialRaisedButton3_Click(object sender, EventArgs e)
         {
             materialSkinManager.ColorScheme = new ColorScheme(Primary.LightBlue700, Primary.LightBlue900, Primary.LightBlue500, Accent.LightBlue200, TextShade.WHITE);
-            materialRaisedButton3.Enabled = false;
-            materialRaisedButton4.Enabled = true;
-            materialRaisedButton5.Enabled = true;
+            blueSchemeButton.Enabled = false;
+            greenSchemeButton.Enabled = true;
+            bluegreySchemeButton.Enabled = true;
         }
 
         private void materialRaisedButton4_Click(object sender, EventArgs e)
         {
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Green600, Primary.Green700, Primary.Green200, Accent.Red100, TextShade.WHITE);
-            materialRaisedButton3.Enabled = true;
-            materialRaisedButton4.Enabled = false;
-            materialRaisedButton5.Enabled = true;
+            blueSchemeButton.Enabled = true;
+            greenSchemeButton.Enabled = false;
+            bluegreySchemeButton.Enabled = true;
         }
 
         private void materialRaisedButton5_Click(object sender, EventArgs e)
         {
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
-            materialRaisedButton3.Enabled = true;
-            materialRaisedButton4.Enabled = true;
-            materialRaisedButton5.Enabled = false;
+            blueSchemeButton.Enabled = true;
+            greenSchemeButton.Enabled = true;
+            bluegreySchemeButton.Enabled = false;
         }
 
         private void AdminForm_FormClosed(object sender, FormClosedEventArgs e)
@@ -674,6 +681,18 @@ namespace LibraryManagementSystem
         private void inventoryListView_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void adminModeButton_Click(object sender, EventArgs e)
+        {
+            if (userForm == null)
+            {
+                userForm = new UserForm();
+                userForm.set_user_id(user_id);
+                userForm.setAdminForm(this);
+            }
+            Hide();
+            userForm.Show();
         }
     }
 }

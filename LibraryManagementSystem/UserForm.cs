@@ -17,6 +17,14 @@ namespace LibraryManagementSystem
     {
         private readonly MaterialSkinManager materialSkinManager;
         private string user_id;
+        private AdminForm adminForm = null;
+
+        public void setAdminForm(AdminForm adminForm)
+        {
+            this.adminForm = adminForm;
+            adminModeButton.Enabled = true;
+        }
+
         public void set_user_id(string user_id)
         {
             this.user_id = user_id;
@@ -29,10 +37,9 @@ namespace LibraryManagementSystem
             materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            searchButton.Enabled = false;
-            materialRaisedButton2.Enabled = false;
+            dayModeButton.Enabled = false;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.LightBlue700, Primary.LightBlue900, Primary.LightBlue500, Accent.LightBlue200, TextShade.WHITE);
-            materialRaisedButton4.Enabled = false;
+            blueSchemeButton.Enabled = false;
 
             // Add dummy data to the listview
             
@@ -146,39 +153,39 @@ namespace LibraryManagementSystem
         private void materialRaisedButton2_Click(object sender, EventArgs e)
         {
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialRaisedButton2.Enabled = false;
-            materialRaisedButton3.Enabled = true;
+            dayModeButton.Enabled = false;
+            nightModeButton.Enabled = true;
         }
 
         private void materialRaisedButton3_Click(object sender, EventArgs e)
         {
             materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
-            materialRaisedButton2.Enabled = true;
-            materialRaisedButton3.Enabled = false;
+            dayModeButton.Enabled = true;
+            nightModeButton.Enabled = false;
         }
 
         private void materialRaisedButton4_Click(object sender, EventArgs e)
         {
             materialSkinManager.ColorScheme = new ColorScheme(Primary.LightBlue700, Primary.LightBlue900, Primary.LightBlue500, Accent.LightBlue200, TextShade.WHITE);
-            materialRaisedButton4.Enabled = false;
-            materialRaisedButton5.Enabled = true;
-            materialRaisedButton6.Enabled = true;
+            blueSchemeButton.Enabled = false;
+            greenSchemeButton.Enabled = true;
+            bluegreySchemeButton.Enabled = true;
         }
 
         private void materialRaisedButton5_Click(object sender, EventArgs e)
         {
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Green600, Primary.Green700, Primary.Green200, Accent.Red100, TextShade.WHITE);
-            materialRaisedButton4.Enabled = true;
-            materialRaisedButton5.Enabled = false;
-            materialRaisedButton6.Enabled = true;
+            blueSchemeButton.Enabled = true;
+            greenSchemeButton.Enabled = false;
+            bluegreySchemeButton.Enabled = true;
         }
 
         private void materialRaisedButton6_Click(object sender, EventArgs e)
         {
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
-            materialRaisedButton4.Enabled = true;
-            materialRaisedButton5.Enabled = true;
-            materialRaisedButton6.Enabled = false;
+            blueSchemeButton.Enabled = true;
+            greenSchemeButton.Enabled = true;
+            bluegreySchemeButton.Enabled = false;
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
@@ -344,6 +351,12 @@ namespace LibraryManagementSystem
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void adminModeButton_Click(object sender, EventArgs e)
+        {
+            Hide();
+            adminForm.Show();
         }
     }
 }
