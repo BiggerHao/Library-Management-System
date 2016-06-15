@@ -183,9 +183,9 @@ namespace LibraryManagementSystem
                 string borrow_time = dt.ToString("yyyy-MM-dd");
                 string due_time = due.ToString("yyyy-MM-dd");
                 string borrow_way = dt.Second % 2 == 0 ? "门禁" : "借换台";
-                comm = new SQLiteCommand("insert into BorrowRecord values ('" + user_id + "', '"
-                    + book_epc + "', '" + borrow_time + "', '" + due_time + "', null, '" + borrow_way
-                    + "')", LoginForm.conn);
+                comm = new SQLiteCommand("insert into BorrowRecord (number, user_id, book_epc, borrow_time, due_time,"
+                    + " borrow_way) values (null, '" + user_id + "', '" + book_epc + "', '" + borrow_time + "', '"
+                    + due_time + "', '" + borrow_way + "')", LoginForm.conn);
                 int result = comm.ExecuteNonQuery();
                 comm.Dispose();
                 comm = new SQLiteCommand("update BookEPC set isBorrowed = 1 where book_epc = '"
@@ -204,16 +204,19 @@ namespace LibraryManagementSystem
             {
                 // Check record existence
                 SQLiteCommand comm = new SQLiteCommand("select * from BorrowRecord where user_id = '"
-                    + user_id + "' and book_epc = '" + book_epc + "'", LoginForm.conn);
+                    + user_id + "' and book_epc = '" + book_epc + "' ORDER BY number DESC", LoginForm.conn);
                 SQLiteDataReader read = comm.ExecuteReader();
                 string return_time = null;
                 string due_time = null;
                 string borrow_way = null;
+                int number = -1;
                 while (read.Read())
                 {
                     return_time = read["return_time"].ToString();
                     due_time = read["due_time"].ToString();
                     borrow_way = read["borrow_way"].ToString();
+                    number = Int32.Parse(read["number"].ToString());
+                    break;
                 }
                 comm.Dispose();
                 read.Dispose();
@@ -236,7 +239,7 @@ namespace LibraryManagementSystem
                 // Return book
                 DateTime dt = DateTime.Now;
                 comm = new SQLiteCommand("update BorrowRecord set return_time = '" + dt.ToString("yyyy-MM-dd")
-                    + "' where book_epc = '" + book_epc + "'", LoginForm.conn);
+                    + "' where book_epc = '" + book_epc + "' and number = " + number, LoginForm.conn);
                 int result = comm.ExecuteNonQuery();
                 comm.Dispose();
                 comm = new SQLiteCommand("update BookEPC set isBorrowed = 0 where book_epc = '" + book_epc + "'",
