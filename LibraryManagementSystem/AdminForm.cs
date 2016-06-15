@@ -427,9 +427,9 @@ namespace LibraryManagementSystem
             while (read.Read())
             {
                 usrNameText.Text = read["user_name"].ToString();
-                if ((int)read["user_gender"] == 0) girlRadioButton.Checked = true;
+                if (Int32.Parse(read["user_gender"].ToString()) == 0) girlRadioButton.Checked = true;
                 else boyRadioButton.Checked = true;
-                usrPwText.Text = read["book_pwd"].ToString();
+                usrPwText.Text = read["user_pwd"].ToString();
                 if (read["user_type"].ToString().Equals("读者")) readerRadioButton.Checked = true;
                 else adminRadioButton.Checked = true;
 
@@ -581,6 +581,13 @@ namespace LibraryManagementSystem
         {
             status_page4.Text = "";
 
+            if (floorText.Text.Equals("") || roomText.Text.Equals("") || bookcaseText.Text.Equals("")
+                || shelfText.Text.Equals("") || unitText.Text.Equals(""))
+            {
+                status_page4.Text = "请输入完整的书架ID";
+                return;
+            }
+
             string location = floorText.Text + "-" + roomText.Text + "-" + bookcaseText.Text
                 + "-" + shelfText.Text + "-" + unitText.Text;
             string unit_epc = null;
@@ -596,6 +603,7 @@ namespace LibraryManagementSystem
             if (unit_epc == null) status_page4.Text = "删除失败，无书架ID对应的记录";
             else
             {
+                unitEPCText.Text = unit_epc;
                 comm = new SQLiteCommand("delete from UnitEPC where unit_id = '" + location + "'",
                     LoginForm.conn);
                 comm.ExecuteNonQuery();
@@ -607,6 +615,13 @@ namespace LibraryManagementSystem
         private void shelfUpdateButton_Click(object sender, EventArgs e)
         {
             status_page4.Text = "";
+
+            if (floorText.Text.Equals("") || roomText.Text.Equals("") || bookcaseText.Text.Equals("")
+                || shelfText.Text.Equals("") || unitText.Text.Equals("") || unitEPCText.Text.Equals(""))
+            {
+                status_page4.Text = "请输入完整的书架ID和EPC";
+                return;
+            }
 
             string location = floorText.Text + "-" + roomText.Text + "-" + bookcaseText.Text
                 + "-" + shelfText.Text + "-" + unitText.Text;
@@ -666,6 +681,10 @@ namespace LibraryManagementSystem
         {
             optionalLabel1.Text = "*EPC";
             optionalText.Text = "";
+            typeText.Text = "";
+            authorText.Text = "";
+            publisherText.Text = "";
+            yearText.Text = "";
 
             optionalLabel2.Visible = false;
             optionalLabel3.Visible = false;
