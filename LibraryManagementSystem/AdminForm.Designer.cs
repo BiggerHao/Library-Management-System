@@ -73,11 +73,9 @@ namespace LibraryManagementSystem
             this.usrDeleteButton = new MaterialSkin.Controls.MaterialRaisedButton();
             this.usrSearchButton = new MaterialSkin.Controls.MaterialRaisedButton();
             this.usrPwText = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.usrAddressText = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.usrNameText = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.usrIDText = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel17 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel16 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
@@ -230,6 +228,7 @@ namespace LibraryManagementSystem
             this.bookEPCText.Size = new System.Drawing.Size(287, 25);
             this.bookEPCText.TabIndex = 9;
             this.bookEPCText.TabStop = false;
+            this.bookEPCText.Text = "000069C5000042E300006E76";
             this.bookEPCText.UseSystemPasswordChar = false;
             // 
             // bookEPCLAbel
@@ -262,6 +261,7 @@ namespace LibraryManagementSystem
             this.userIDText.Size = new System.Drawing.Size(162, 25);
             this.userIDText.TabIndex = 7;
             this.userIDText.TabStop = false;
+            this.userIDText.Text = "13061050";
             this.userIDText.UseSystemPasswordChar = false;
             // 
             // userIDLabel
@@ -519,6 +519,7 @@ namespace LibraryManagementSystem
             this.ISBNLabelText.Size = new System.Drawing.Size(255, 25);
             this.ISBNLabelText.TabIndex = 9;
             this.ISBNLabelText.TabStop = false;
+            this.ISBNLabelText.Text = "978-7-80655-335-0";
             this.ISBNLabelText.UseSystemPasswordChar = false;
             // 
             // optionalLabel5
@@ -633,11 +634,9 @@ namespace LibraryManagementSystem
             this.userManTab.Controls.Add(this.usrDeleteButton);
             this.userManTab.Controls.Add(this.usrSearchButton);
             this.userManTab.Controls.Add(this.usrPwText);
-            this.userManTab.Controls.Add(this.usrAddressText);
             this.userManTab.Controls.Add(this.usrNameText);
             this.userManTab.Controls.Add(this.usrIDText);
             this.userManTab.Controls.Add(this.materialLabel17);
-            this.userManTab.Controls.Add(this.materialLabel16);
             this.userManTab.Controls.Add(this.materialLabel15);
             this.userManTab.Controls.Add(this.materialLabel14);
             this.userManTab.Controls.Add(this.materialLabel13);
@@ -653,7 +652,7 @@ namespace LibraryManagementSystem
             // 
             this.panel2.Controls.Add(this.adminRadioButton);
             this.panel2.Controls.Add(this.readerRadioButton);
-            this.panel2.Location = new System.Drawing.Point(258, 233);
+            this.panel2.Location = new System.Drawing.Point(258, 193);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(255, 43);
             this.panel2.TabIndex = 28;
@@ -738,7 +737,7 @@ namespace LibraryManagementSystem
             // usrUpdateButton
             // 
             this.usrUpdateButton.Depth = 0;
-            this.usrUpdateButton.Location = new System.Drawing.Point(438, 285);
+            this.usrUpdateButton.Location = new System.Drawing.Point(438, 245);
             this.usrUpdateButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.usrUpdateButton.Name = "usrUpdateButton";
             this.usrUpdateButton.Primary = true;
@@ -751,7 +750,7 @@ namespace LibraryManagementSystem
             // usrDeleteButton
             // 
             this.usrDeleteButton.Depth = 0;
-            this.usrDeleteButton.Location = new System.Drawing.Point(258, 285);
+            this.usrDeleteButton.Location = new System.Drawing.Point(258, 245);
             this.usrDeleteButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.usrDeleteButton.Name = "usrDeleteButton";
             this.usrDeleteButton.Primary = true;
@@ -778,7 +777,7 @@ namespace LibraryManagementSystem
             // 
             this.usrPwText.Depth = 0;
             this.usrPwText.Hint = "";
-            this.usrPwText.Location = new System.Drawing.Point(258, 202);
+            this.usrPwText.Location = new System.Drawing.Point(258, 162);
             this.usrPwText.MaxLength = 32767;
             this.usrPwText.MouseState = MaterialSkin.MouseState.HOVER;
             this.usrPwText.Name = "usrPwText";
@@ -790,23 +789,6 @@ namespace LibraryManagementSystem
             this.usrPwText.TabIndex = 10;
             this.usrPwText.TabStop = false;
             this.usrPwText.UseSystemPasswordChar = false;
-            // 
-            // usrAddressText
-            // 
-            this.usrAddressText.Depth = 0;
-            this.usrAddressText.Hint = "";
-            this.usrAddressText.Location = new System.Drawing.Point(258, 162);
-            this.usrAddressText.MaxLength = 32767;
-            this.usrAddressText.MouseState = MaterialSkin.MouseState.HOVER;
-            this.usrAddressText.Name = "usrAddressText";
-            this.usrAddressText.PasswordChar = '\0';
-            this.usrAddressText.SelectedText = "";
-            this.usrAddressText.SelectionLength = 0;
-            this.usrAddressText.SelectionStart = 0;
-            this.usrAddressText.Size = new System.Drawing.Size(255, 25);
-            this.usrAddressText.TabIndex = 9;
-            this.usrAddressText.TabStop = false;
-            this.usrAddressText.UseSystemPasswordChar = false;
             // 
             // usrNameText
             // 
@@ -840,6 +822,7 @@ namespace LibraryManagementSystem
             this.usrIDText.Size = new System.Drawing.Size(255, 25);
             this.usrIDText.TabIndex = 6;
             this.usrIDText.TabStop = false;
+            this.usrIDText.Text = "13061155";
             this.usrIDText.UseSystemPasswordChar = false;
             // 
             // materialLabel17
@@ -848,25 +831,12 @@ namespace LibraryManagementSystem
             this.materialLabel17.Depth = 0;
             this.materialLabel17.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.materialLabel17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel17.Location = new System.Drawing.Point(186, 242);
+            this.materialLabel17.Location = new System.Drawing.Point(186, 202);
             this.materialLabel17.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel17.Name = "materialLabel17";
             this.materialLabel17.Size = new System.Drawing.Size(46, 20);
             this.materialLabel17.TabIndex = 5;
             this.materialLabel17.Text = "*类型";
-            // 
-            // materialLabel16
-            // 
-            this.materialLabel16.AutoSize = true;
-            this.materialLabel16.Depth = 0;
-            this.materialLabel16.Font = new System.Drawing.Font("微软雅黑", 11F);
-            this.materialLabel16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel16.Location = new System.Drawing.Point(193, 162);
-            this.materialLabel16.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel16.Name = "materialLabel16";
-            this.materialLabel16.Size = new System.Drawing.Size(39, 20);
-            this.materialLabel16.TabIndex = 4;
-            this.materialLabel16.Text = "地址";
             // 
             // materialLabel15
             // 
@@ -874,7 +844,7 @@ namespace LibraryManagementSystem
             this.materialLabel15.Depth = 0;
             this.materialLabel15.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.materialLabel15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel15.Location = new System.Drawing.Point(186, 202);
+            this.materialLabel15.Location = new System.Drawing.Point(186, 162);
             this.materialLabel15.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel15.Name = "materialLabel15";
             this.materialLabel15.Size = new System.Drawing.Size(46, 20);
@@ -1535,14 +1505,12 @@ namespace LibraryManagementSystem
         private MaterialSkin.Controls.MaterialLabel materialLabel12;
         private MaterialSkin.Controls.MaterialSingleLineTextField usrIDText;
         private MaterialSkin.Controls.MaterialLabel materialLabel17;
-        private MaterialSkin.Controls.MaterialLabel materialLabel16;
         private MaterialSkin.Controls.MaterialLabel materialLabel15;
         private MaterialSkin.Controls.MaterialLabel materialLabel14;
         private MaterialSkin.Controls.MaterialRaisedButton usrUpdateButton;
         private MaterialSkin.Controls.MaterialRaisedButton usrDeleteButton;
         private MaterialSkin.Controls.MaterialRaisedButton usrSearchButton;
         private MaterialSkin.Controls.MaterialSingleLineTextField usrPwText;
-        private MaterialSkin.Controls.MaterialSingleLineTextField usrAddressText;
         private MaterialSkin.Controls.MaterialSingleLineTextField usrNameText;
         private MaterialSkin.Controls.MaterialRaisedButton shelfUpdateButton;
         private MaterialSkin.Controls.MaterialRaisedButton shelfDeleteButton;
