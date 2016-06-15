@@ -267,7 +267,7 @@ namespace LibraryManagementSystem
 
             while (read.Read())
             {
-                optinalText.Text = read["book_name"].ToString();
+                optionalText.Text = read["book_name"].ToString();
                 typeText.Text = read["book_type"].ToString();
                 authorText.Text = read["book_author"].ToString();
                 publisherText.Text = read["book_pub"].ToString();
@@ -297,7 +297,7 @@ namespace LibraryManagementSystem
 
                 while (read.Read())
                 {
-                    optinalText.Text = read["book_name"].ToString();
+                    optionalText.Text = read["book_name"].ToString();
                     typeText.Text = read["book_type"].ToString();
                     authorText.Text = read["book_author"].ToString();
                     publisherText.Text = read["book_pub"].ToString();
@@ -319,7 +319,7 @@ namespace LibraryManagementSystem
             }
             else
             {
-                string book_epc = optinalText.Text;
+                string book_epc = optionalText.Text;
                 SQLiteCommand comm = new SQLiteCommand("delete from BookEPC where book_id = '"
                     + isbn + "' and book_epc = '" + book_epc + "'", LoginForm.conn);
                 int result = comm.ExecuteNonQuery();
@@ -335,7 +335,7 @@ namespace LibraryManagementSystem
         {
             status_page2.Text = "";
             string isbn = ISBNLabelText.Text;
-            string optinal = optinalText.Text;
+            string optinal = optionalText.Text;
 
             if (optinal.Equals(""))
             {
@@ -647,6 +647,7 @@ namespace LibraryManagementSystem
         private void bookInfoRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             optionalLabel1.Text = "*题名";
+            optionalText.Text = "";
 
             optionalLabel2.Visible = true;
             optionalLabel3.Visible = true;
@@ -664,6 +665,7 @@ namespace LibraryManagementSystem
         private void bookEPCRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             optionalLabel1.Text = "*EPC";
+            optionalText.Text = "";
 
             optionalLabel2.Visible = false;
             optionalLabel3.Visible = false;

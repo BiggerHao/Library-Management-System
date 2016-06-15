@@ -52,7 +52,7 @@ namespace LibraryManagementSystem
             this.publisherText = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.authorText = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.typeText = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.optinalText = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.optionalText = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.ISBNLabelText = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.optionalLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.optionalLabel4 = new MaterialSkin.Controls.MaterialLabel();
@@ -227,9 +227,10 @@ namespace LibraryManagementSystem
             this.bookEPCText.SelectedText = "";
             this.bookEPCText.SelectionLength = 0;
             this.bookEPCText.SelectionStart = 0;
-            this.bookEPCText.Size = new System.Drawing.Size(287, 25);
+            this.bookEPCText.Size = new System.Drawing.Size(232, 25);
             this.bookEPCText.TabIndex = 9;
             this.bookEPCText.TabStop = false;
+            this.bookEPCText.Text = "000047020000749C0000184D";
             this.bookEPCText.UseSystemPasswordChar = false;
             // 
             // bookEPCLAbel
@@ -262,6 +263,7 @@ namespace LibraryManagementSystem
             this.userIDText.Size = new System.Drawing.Size(162, 25);
             this.userIDText.TabIndex = 7;
             this.userIDText.TabStop = false;
+            this.userIDText.Text = "13061190";
             this.userIDText.UseSystemPasswordChar = false;
             // 
             // userIDLabel
@@ -340,7 +342,7 @@ namespace LibraryManagementSystem
             this.bookManTab.Controls.Add(this.publisherText);
             this.bookManTab.Controls.Add(this.authorText);
             this.bookManTab.Controls.Add(this.typeText);
-            this.bookManTab.Controls.Add(this.optinalText);
+            this.bookManTab.Controls.Add(this.optionalText);
             this.bookManTab.Controls.Add(this.ISBNLabelText);
             this.bookManTab.Controls.Add(this.optionalLabel5);
             this.bookManTab.Controls.Add(this.optionalLabel4);
@@ -487,22 +489,22 @@ namespace LibraryManagementSystem
             this.typeText.TabStop = false;
             this.typeText.UseSystemPasswordChar = false;
             // 
-            // optinalText
+            // optionalText
             // 
-            this.optinalText.Depth = 0;
-            this.optinalText.Hint = "";
-            this.optinalText.Location = new System.Drawing.Point(258, 82);
-            this.optinalText.MaxLength = 32767;
-            this.optinalText.MouseState = MaterialSkin.MouseState.HOVER;
-            this.optinalText.Name = "optinalText";
-            this.optinalText.PasswordChar = '\0';
-            this.optinalText.SelectedText = "";
-            this.optinalText.SelectionLength = 0;
-            this.optinalText.SelectionStart = 0;
-            this.optinalText.Size = new System.Drawing.Size(255, 25);
-            this.optinalText.TabIndex = 10;
-            this.optinalText.TabStop = false;
-            this.optinalText.UseSystemPasswordChar = false;
+            this.optionalText.Depth = 0;
+            this.optionalText.Hint = "";
+            this.optionalText.Location = new System.Drawing.Point(258, 82);
+            this.optionalText.MaxLength = 32767;
+            this.optionalText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.optionalText.Name = "optionalText";
+            this.optionalText.PasswordChar = '\0';
+            this.optionalText.SelectedText = "";
+            this.optionalText.SelectionLength = 0;
+            this.optionalText.SelectionStart = 0;
+            this.optionalText.Size = new System.Drawing.Size(255, 25);
+            this.optionalText.TabIndex = 10;
+            this.optionalText.TabStop = false;
+            this.optionalText.UseSystemPasswordChar = false;
             // 
             // ISBNLabelText
             // 
@@ -519,6 +521,7 @@ namespace LibraryManagementSystem
             this.ISBNLabelText.Size = new System.Drawing.Size(255, 25);
             this.ISBNLabelText.TabIndex = 9;
             this.ISBNLabelText.TabStop = false;
+            this.ISBNLabelText.Text = "978-7-5133-1292-9";
             this.ISBNLabelText.UseSystemPasswordChar = false;
             // 
             // optionalLabel5
@@ -1527,7 +1530,7 @@ namespace LibraryManagementSystem
         private MaterialSkin.Controls.MaterialSingleLineTextField publisherText;
         private MaterialSkin.Controls.MaterialSingleLineTextField authorText;
         private MaterialSkin.Controls.MaterialSingleLineTextField typeText;
-        private MaterialSkin.Controls.MaterialSingleLineTextField optinalText;
+        private MaterialSkin.Controls.MaterialSingleLineTextField optionalText;
         private MaterialSkin.Controls.MaterialSingleLineTextField ISBNLabelText;
         private MaterialSkin.Controls.MaterialRaisedButton bookUpdateButton;
         private MaterialSkin.Controls.MaterialRaisedButton bookDeleteButton;
