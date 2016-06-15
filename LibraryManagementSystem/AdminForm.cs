@@ -59,7 +59,12 @@ namespace LibraryManagementSystem
             SQLiteCommand comm = new SQLiteCommand("select * from Placement", LoginForm.conn);
             SQLiteDataReader read = comm.ExecuteReader();
             List<string[]> list = new List<string[]>();
-            
+            while (read.Read())
+            {
+                string[] ss = { read["book_id"].ToString(), read["local"].ToString(),
+                                  read["real_local"].ToString() };
+                list.Add(ss);
+            }
 
             foreach (string[] ss in list)
             {
