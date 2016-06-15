@@ -1216,7 +1216,6 @@ namespace LibraryManagementSystem
             this.borrowReturnList.TabIndex = 0;
             this.borrowReturnList.UseCompatibleStateImageBehavior = false;
             this.borrowReturnList.View = System.Windows.Forms.View.Details;
-            this.borrowReturnList.SelectedIndexChanged += new System.EventHandler(this.borrowReturnList_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -1274,7 +1273,7 @@ namespace LibraryManagementSystem
             this.inventoryListView.TabIndex = 2;
             this.inventoryListView.UseCompatibleStateImageBehavior = false;
             this.inventoryListView.View = System.Windows.Forms.View.Details;
-            this.inventoryListView.SelectedIndexChanged += new System.EventHandler(this.inventoryListView_SelectedIndexChanged);
+            this.inventoryListView.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.inventoryListView_MouseDoubleClick);
             // 
             // columnHeader6
             // 

@@ -703,17 +703,7 @@ namespace LibraryManagementSystem
 
             bookSearchButton.Visible = false;
         }
-
-        private void borrowReturnList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void inventoryListView_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void adminModeButton_Click(object sender, EventArgs e)
         {
             if (userForm == null)
@@ -724,6 +714,27 @@ namespace LibraryManagementSystem
             }
             Hide();
             userForm.Show();
+        }
+
+        private void inventoryListView_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if (inventoryListView.SelectedItems == null) return;
+            var item = inventoryListView.SelectedItems[0];
+
+            string book_id = item.SubItems[0].Text;
+            string local = item.SubItems[1].Text;
+            string real = item.SubItems[2].Text;
+
+            if (local.Equals(real)) return;
+
+            SQLiteCommand comm = new SQLiteCommand("update Placement set real_local = '"
+                + local + "' where book_id = '" + book_id + "' and local = '" + local
+                + "'", LoginForm.conn);
+            comm.ExecuteNonQuery();
+            comm.Dispose();
+
+            item.SubItems[2].Text = local;
+
         }
     }
 }
