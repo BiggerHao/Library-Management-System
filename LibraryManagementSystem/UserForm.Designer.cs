@@ -505,6 +505,7 @@ namespace LibraryManagementSystem
             // userTypeText
             // 
             this.userTypeText.Depth = 0;
+            this.userTypeText.Enabled = false;
             this.userTypeText.Hint = "";
             this.userTypeText.Location = new System.Drawing.Point(261, 280);
             this.userTypeText.MaxLength = 32767;
@@ -559,6 +560,7 @@ namespace LibraryManagementSystem
             // userGenderText
             // 
             this.userGenderText.Depth = 0;
+            this.userGenderText.Enabled = false;
             this.userGenderText.Hint = "";
             this.userGenderText.Location = new System.Drawing.Point(261, 121);
             this.userGenderText.MaxLength = 32767;
@@ -577,6 +579,7 @@ namespace LibraryManagementSystem
             // userNameText
             // 
             this.userNameText.Depth = 0;
+            this.userNameText.Enabled = false;
             this.userNameText.Hint = "";
             this.userNameText.Location = new System.Drawing.Point(261, 81);
             this.userNameText.MaxLength = 32767;
@@ -595,6 +598,7 @@ namespace LibraryManagementSystem
             // userIDText
             // 
             this.userIDText.Depth = 0;
+            this.userIDText.Enabled = false;
             this.userIDText.Hint = "";
             this.userIDText.Location = new System.Drawing.Point(261, 41);
             this.userIDText.MaxLength = 32767;
