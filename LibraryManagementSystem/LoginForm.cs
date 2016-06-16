@@ -59,13 +59,15 @@ namespace LibraryManagementSystem
 
             if (name != null)
             {
-                if (type.Equals("管理员")) {
+                if (type.Equals("管理员"))
+                {
                     Hide();
                     AdminForm admin = new AdminForm();
                     admin.set_user_id(id);
                     admin.Show();
                 }
-                else if (type.Equals("读者")) {
+                else if (type.Equals("读者"))
+                {
                     Hide();
                     UserForm user = new UserForm();
                     user.set_user_id(id);
@@ -75,7 +77,7 @@ namespace LibraryManagementSystem
             }
             else
                 MessageBox.Show("用户名或密码错误！", "提示", MessageBoxButtons.OK,
-                MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
+                    MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
         }
 
         private void loginPwText_KeyDown(object sender, KeyEventArgs e)

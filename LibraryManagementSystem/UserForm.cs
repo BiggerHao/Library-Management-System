@@ -21,6 +21,7 @@ namespace LibraryManagementSystem
         int pagenum = 0;
 
         List<string[]> listG;
+
         public void setAdminForm(AdminForm adminForm)
         {
             this.adminForm = adminForm;
@@ -32,6 +33,7 @@ namespace LibraryManagementSystem
             this.user_id = user_id;
             seedListView();
         }
+
         public UserForm()
         {
             InitializeComponent();
@@ -44,49 +46,35 @@ namespace LibraryManagementSystem
             blueSchemeButton.Enabled = false;
 
             listG = new List<string[]>();
-
-            // Add dummy data to the listview
-
         }
 
         private void seedListView()
         {
             //借阅信息表
-            //SQLiteCommand comm = new SQLiteCommand("select * from BorrowRecord where user_id = '" + user_id +"';", LoginForm.conn);
-
             SQLiteCommand comm = new SQLiteCommand("select * from BorrowRecord, BookEPC, Book where BorrowRecord.user_id = '" + user_id + "'and BorrowRecord.book_epc = BookEPC.book_epc and BookEPC.book_id = Book.book_id;", LoginForm.conn);
             SQLiteDataReader read = comm.ExecuteReader();
             List<string[]> list = new List<string[]>();
             int num = 1;
             while (read.Read())
             {
-
-                /* string name = read["user_id"].ToString();//sdf
-                 string bokk = read["book_id"].ToString();
-                 string time1 = read["borrow_time"].ToString();
-                 string time2 = read["due_time"].ToString();*/
-
-                /*string time2 = read["return_time"].ToString();
-
-                string aa = read["book_name"].ToString();*/
-               
                 this.borrowmentList.BeginUpdate();
-                if (read["return_time"].ToString()=="")
+                if (read["return_time"].ToString() == "")
                 {
-                    string[] ss = { num.ToString(),read["book_name"].ToString(), read["borrow_time"].ToString(),
-                                  read["due_time"].ToString(),"No"};
+                    string[] ss = { num.ToString(),read["book_name"].ToString(),
+                                      read["borrow_time"].ToString(), read["due_time"].ToString(),"No"};
                     list.Add(ss);
                 }
                 else
                 {
-                    string[] ss = { num.ToString(),read["book_name"].ToString(), read["borrow_time"].ToString(),
-                                  read["due_time"].ToString(),"Yes"};
+                    string[] ss = { num.ToString(),read["book_name"].ToString(),
+                                      read["borrow_time"].ToString(), read["due_time"].ToString(),"Yes"};
                     list.Add(ss);
                 }
                 num++;
             }
             comm.Dispose();
             read.Dispose();
+
             foreach (string[] ss in list)
             {
                 ListViewItem item = new ListViewItem(ss);
@@ -99,26 +87,15 @@ namespace LibraryManagementSystem
                    LoginForm.conn);
             read = comm.ExecuteReader();
 
-            if(read.Read())
+            if (read.Read())
             {
                 userIDText.Text = read["user_id"].ToString();
                 userNameText.Text = read["user_name"].ToString();
-                userGenderText.Text = read["user_gender"].ToString() == "0" ? "女":"男" ;
+                userGenderText.Text = read["user_gender"].ToString() == "0" ? "女" : "男";
                 userTypeText.Text = read["user_type"].ToString();
-
             }
             comm.Dispose();
             read.Dispose();
-
-        }
-
-        private void UserForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void materialTabSelector1_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -135,30 +112,32 @@ namespace LibraryManagementSystem
 
             string keyword = searchText.Text;
             listG.Clear();
-            if (searchCombo.Text=="作者")
+            if (searchCombo.Text == "作者")
             {
-                SQLiteCommand comm = new SQLiteCommand("select * from Book where book_author = '" +
-              searchText.Text + "';", LoginForm.conn);
+                SQLiteCommand comm = new SQLiteCommand("select * from Book where book_author = '"
+                    + searchText.Text + "';", LoginForm.conn);
                 SQLiteDataReader read = comm.ExecuteReader();
-                while(read.Read())
+                while (read.Read())
                 {
-                    string[] ss = { read["book_name"].ToString(), read["book_author"].ToString(),read["book_type"].ToString(),
-                              read["book_pub"].ToString(),read["book_pubdate"].ToString()};
-                    listG.Add(ss);      
+                    string[] ss = { read["book_name"].ToString(), read["book_author"].ToString(),
+                                      read["book_type"].ToString(), read["book_pub"].ToString(),
+                                      read["book_pubdate"].ToString()};
+                    listG.Add(ss);
                 }
                 comm.Dispose();
                 read.Dispose();
 
             }
-            else if(searchCombo.Text == "ISBN")
+            else if (searchCombo.Text == "ISBN")
             {
-                SQLiteCommand comm = new SQLiteCommand("select * from Book where book_id = '" +
-             searchText.Text + "';", LoginForm.conn);
+                SQLiteCommand comm = new SQLiteCommand("select * from Book where book_id = '"
+                    + searchText.Text + "';", LoginForm.conn);
                 SQLiteDataReader read = comm.ExecuteReader();
                 while (read.Read())
                 {
-                    string[] ss = { read["book_name"].ToString(), read["book_author"].ToString(),read["book_type"].ToString(),
-                              read["book_pub"].ToString(),read["book_pubdate"].ToString()};
+                    string[] ss = { read["book_name"].ToString(), read["book_author"].ToString(),
+                                      read["book_type"].ToString(), read["book_pub"].ToString(),
+                                      read["book_pubdate"].ToString() };
                     listG.Add(ss);
                 }
                 comm.Dispose();
@@ -166,13 +145,13 @@ namespace LibraryManagementSystem
             }
             else//其他默认都按题名来查询
             {
-                SQLiteCommand comm = new SQLiteCommand("select * from Book where book_name = '" +
-             searchText.Text + "';", LoginForm.conn);
+                SQLiteCommand comm = new SQLiteCommand("select * from Book where book_name = '" + searchText.Text + "';", LoginForm.conn);
                 SQLiteDataReader read = comm.ExecuteReader();
                 while (read.Read())
                 {
-                    string[] ss = { read["book_name"].ToString(), read["book_author"].ToString(),read["book_type"].ToString(),
-                              read["book_pub"].ToString(),read["book_pubdate"].ToString()};
+                    string[] ss = { read["book_name"].ToString(), read["book_author"].ToString(),
+                                      read["book_type"].ToString(), read["book_pub"].ToString(),
+                                      read["book_pubdate"].ToString() };
                     listG.Add(ss);
                 }
                 comm.Dispose();
@@ -184,19 +163,22 @@ namespace LibraryManagementSystem
             {
                 if (num >= 1 && num <= 3)
                 {
-                    if(num==1)
+                    if (num == 1)
                     {
-                        bookInfo1.Text ="书名： " +ss[0]+" 作者： " + ss[1]+" 书籍类型： " + ss[2] +" 出版社： "+ ss[3]+" 出版时间： " + ss[4];
+                        bookInfo1.Text = "书名： " + ss[0] + " 作者： " + ss[1] + " 书籍类型： "
+                            + ss[2] + " 出版社： " + ss[3] + " 出版时间： " + ss[4];
                     }
-                    else if(num==2)
+                    else if (num == 2)
                     {
-                        bookInfo2.Text = "书名： " + ss[0] + " 作者： " + ss[1] + " 书籍类型： " + ss[2] + " 出版社： " + ss[3] + " 出版时间： " + ss[4];
+                        bookInfo2.Text = "书名： " + ss[0] + " 作者： " + ss[1] + " 书籍类型： "
+                            + ss[2] + " 出版社： " + ss[3] + " 出版时间： " + ss[4];
                     }
                     else//num==3
                     {
-                        bookInfo3.Text = "书名： " + ss[0] + " 作者： " + ss[1] + " 书籍类型： " + ss[2] + " 出版社： " + ss[3] + " 出版时间： " + ss[4];
+                        bookInfo3.Text = "书名： " + ss[0] + " 作者： " + ss[1] + " 书籍类型： "
+                            + ss[2] + " 出版社： " + ss[3] + " 出版时间： " + ss[4];
                     }
-                   
+
                 }
                 else
                     break;
@@ -248,29 +230,9 @@ namespace LibraryManagementSystem
             bluegreySchemeButton.Enabled = false;
         }
 
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void myProfile_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void materialTabControl1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bookQuery_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void nextPageButton_Click(object sender, EventArgs e)
         {
-            if(pagenum<5)
+            if (pagenum < 5)
                 pagenum++;
             showPageInfoText.Text = pagenum + "/5";
             bookInfo1.Clear();
@@ -279,19 +241,22 @@ namespace LibraryManagementSystem
             int num = 1;
             foreach (string[] ss in listG)
             {
-                if (num >= (pagenum-1)*3+1 && num <= (pagenum - 1) * 3 + 3)
+                if (num >= (pagenum - 1) * 3 + 1 && num <= (pagenum - 1) * 3 + 3)
                 {
                     if (num == (pagenum - 1) * 3 + 1)
                     {
-                        bookInfo1.Text = "书名： " + ss[0] + " 作者： " + ss[1] + " 书籍类型： " + ss[2] + " 出版社： " + ss[3] + " 出版时间： " + ss[4];
+                        bookInfo1.Text = "书名： " + ss[0] + " 作者： " + ss[1] + " 书籍类型： "
+                            + ss[2] + " 出版社： " + ss[3] + " 出版时间： " + ss[4];
                     }
                     else if (num == (pagenum - 1) * 3 + 2)
                     {
-                        bookInfo2.Text = "书名： " + ss[0] + " 作者： " + ss[1] + " 书籍类型： " + ss[2] + " 出版社： " + ss[3] + " 出版时间： " + ss[4];
+                        bookInfo2.Text = "书名： " + ss[0] + " 作者： " + ss[1] + " 书籍类型： "
+                            + ss[2] + " 出版社： " + ss[3] + " 出版时间： " + ss[4];
                     }
                     else//num==3
                     {
-                        bookInfo3.Text = "书名： " + ss[0] + " 作者： " + ss[1] + " 书籍类型： " + ss[2] + " 出版社： " + ss[3] + " 出版时间： " + ss[4];
+                        bookInfo3.Text = "书名： " + ss[0] + " 作者： " + ss[1] + " 书籍类型： "
+                            + ss[2] + " 出版社： " + ss[3] + " 出版时间： " + ss[4];
                     }
 
                 }
@@ -315,15 +280,18 @@ namespace LibraryManagementSystem
                 {
                     if (num == (pagenum - 1) * 3 + 1)
                     {
-                        bookInfo1.Text = "书名： " + ss[0] + " 作者： " + ss[1] + " 书籍类型： " + ss[2] + " 出版社： " + ss[3] + " 出版时间： " + ss[4];
+                        bookInfo1.Text = "书名： " + ss[0] + " 作者： " + ss[1] + " 书籍类型： "
+                            + ss[2] + " 出版社： " + ss[3] + " 出版时间： " + ss[4];
                     }
                     else if (num == (pagenum - 1) * 3 + 2)
                     {
-                        bookInfo2.Text = "书名： " + ss[0] + " 作者： " + ss[1] + " 书籍类型： " + ss[2] + " 出版社： " + ss[3] + " 出版时间： " + ss[4];
+                        bookInfo2.Text = "书名： " + ss[0] + " 作者： " + ss[1] + " 书籍类型： "
+                            + ss[2] + " 出版社： " + ss[3] + " 出版时间： " + ss[4];
                     }
                     else//num==3
                     {
-                        bookInfo3.Text = "书名： " + ss[0] + " 作者： " + ss[1] + " 书籍类型： " + ss[2] + " 出版社： " + ss[3] + " 出版时间： " + ss[4];
+                        bookInfo3.Text = "书名： " + ss[0] + " 作者： " + ss[1] + " 书籍类型： "
+                            + ss[2] + " 出版社： " + ss[3] + " 出版时间： " + ss[4];
                     }
 
                 }
@@ -331,90 +299,34 @@ namespace LibraryManagementSystem
             }
         }
 
-        private void bookInfo3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bookInfo2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bookInfo1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void searchText_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void searchCombo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void myBorrow_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void borrowmentList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void materialSingleLineTextField10_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void materialRaisedButton12_Click(object sender, EventArgs e)
         {
-            //
-            if(userOldPwText.Text!="" && userPwText.Text!="" && userValidateNewPwText.Text!="")
+            if (userOldPwText.Text != "" && userPwText.Text != "" && userValidateNewPwText.Text != "")
             {
-                SQLiteCommand comm = new SQLiteCommand("select user_pwd from User where user_id = '" +
-            user_id + "' and user_pwd= '"+ userOldPwText.Text+"'; ", LoginForm.conn);
+                SQLiteCommand comm = new SQLiteCommand("select user_pwd from User where user_id = '"
+                    + user_id + "' and user_pwd= '" + userOldPwText.Text + "'; ", LoginForm.conn);
                 SQLiteDataReader read = comm.ExecuteReader();
                 if (read.Read())
                 {
-                    if(userPwText.Text== userValidateNewPwText.Text)
+                    if (userPwText.Text == userValidateNewPwText.Text)
                     {
                         comm = new SQLiteCommand("update User set user_pwd = '" + userPwText.Text
-                   + "' where user_id = '" + user_id+ "'", LoginForm.conn);
+                            + "' where user_id = '" + user_id + "'", LoginForm.conn);
                         comm.ExecuteNonQuery();
                         MessageBox.Show("密码修改成功", "提示", MessageBoxButtons.OK,
-              MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
+                            MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
                     }
                     else
                     {
                         MessageBox.Show("新密码两次输入不一致，无法更新哦~", "提示", MessageBoxButtons.OK,
-              MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
+                            MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
                     }
 
-                }       
+                }
                 else
                 {
                     MessageBox.Show("旧密码输入不正确，无法更新哦~", "提示", MessageBoxButtons.OK,
-               MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
+                        MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
                 }
 
                 comm.Dispose();
@@ -423,86 +335,11 @@ namespace LibraryManagementSystem
             else
             {
                 MessageBox.Show("密码更改步骤不正确，无法更新哦~", "提示", MessageBoxButtons.OK,
-               MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
+                    MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
             }
             userOldPwText.Clear();
             userPwText.Clear();
             userValidateNewPwText.Clear();
-
-        }
-
-        private void userTypeLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void userAddressLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void userPwLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void userGenderLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void userNameLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void userTypeText_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void userPwText_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void userAddressText_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void userGenderText_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void materialSingleLineTextField3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void userIdLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void setTheme_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void materialLabel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void materialLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
 
         }
 

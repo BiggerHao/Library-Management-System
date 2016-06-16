@@ -105,7 +105,6 @@ namespace LibraryManagementSystem
             this.materialTabSelector1.Size = new System.Drawing.Size(800, 44);
             this.materialTabSelector1.TabIndex = 17;
             this.materialTabSelector1.Text = "materialTabSelector1";
-            this.materialTabSelector1.Click += new System.EventHandler(this.materialTabSelector1_Click);
             // 
             // userTab
             // 
@@ -123,7 +122,6 @@ namespace LibraryManagementSystem
             this.userTab.SelectedIndex = 0;
             this.userTab.Size = new System.Drawing.Size(776, 713);
             this.userTab.TabIndex = 18;
-            this.userTab.SelectedIndexChanged += new System.EventHandler(this.materialTabControl1_SelectedIndexChanged);
             // 
             // bookQuery
             // 
@@ -146,7 +144,6 @@ namespace LibraryManagementSystem
             this.bookQuery.Size = new System.Drawing.Size(768, 683);
             this.bookQuery.TabIndex = 0;
             this.bookQuery.Text = "图书查阅";
-            this.bookQuery.Click += new System.EventHandler(this.bookQuery_Click);
             // 
             // showPageInfoText
             // 
@@ -157,7 +154,6 @@ namespace LibraryManagementSystem
             this.showPageInfoText.TabIndex = 13;
             this.showPageInfoText.Text = "1/5";
             this.showPageInfoText.Visible = false;
-            this.showPageInfoText.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // nextPageButton
             // 
@@ -197,7 +193,6 @@ namespace LibraryManagementSystem
             this.bookInfo3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.bookInfo3.Size = new System.Drawing.Size(496, 120);
             this.bookInfo3.TabIndex = 10;
-            this.bookInfo3.TextChanged += new System.EventHandler(this.bookInfo3_TextChanged);
             // 
             // bookInfo2
             // 
@@ -209,7 +204,6 @@ namespace LibraryManagementSystem
             this.bookInfo2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.bookInfo2.Size = new System.Drawing.Size(496, 120);
             this.bookInfo2.TabIndex = 9;
-            this.bookInfo2.TextChanged += new System.EventHandler(this.bookInfo2_TextChanged);
             // 
             // bookInfo1
             // 
@@ -221,7 +215,6 @@ namespace LibraryManagementSystem
             this.bookInfo1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.bookInfo1.Size = new System.Drawing.Size(496, 120);
             this.bookInfo1.TabIndex = 8;
-            this.bookInfo1.TextChanged += new System.EventHandler(this.bookInfo1_TextChanged);
             // 
             // pictureBox2
             // 
@@ -232,7 +225,6 @@ namespace LibraryManagementSystem
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox4
             // 
@@ -243,7 +235,6 @@ namespace LibraryManagementSystem
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 6;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox1
             // 
@@ -254,7 +245,6 @@ namespace LibraryManagementSystem
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // searchButton
             // 
@@ -286,7 +276,6 @@ namespace LibraryManagementSystem
             this.searchText.TabStop = false;
             this.searchText.Text = "请输入关键字";
             this.searchText.UseSystemPasswordChar = false;
-            this.searchText.Click += new System.EventHandler(this.searchText_Click);
             // 
             // searchCombo
             // 
@@ -300,7 +289,6 @@ namespace LibraryManagementSystem
             this.searchCombo.Size = new System.Drawing.Size(121, 25);
             this.searchCombo.TabIndex = 0;
             this.searchCombo.Text = "请选择";
-            this.searchCombo.SelectedIndexChanged += new System.EventHandler(this.searchCombo_SelectedIndexChanged);
             // 
             // myBorrow
             // 
@@ -312,7 +300,6 @@ namespace LibraryManagementSystem
             this.myBorrow.TabIndex = 1;
             this.myBorrow.Text = "我的借阅";
             this.myBorrow.UseVisualStyleBackColor = true;
-            this.myBorrow.Click += new System.EventHandler(this.myBorrow_Click);
             // 
             // borrowmentList
             // 
@@ -337,7 +324,6 @@ namespace LibraryManagementSystem
             this.borrowmentList.TabIndex = 0;
             this.borrowmentList.UseCompatibleStateImageBehavior = false;
             this.borrowmentList.View = System.Windows.Forms.View.Details;
-            this.borrowmentList.SelectedIndexChanged += new System.EventHandler(this.borrowmentList_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -387,7 +373,6 @@ namespace LibraryManagementSystem
             this.myProfile.Size = new System.Drawing.Size(768, 683);
             this.myProfile.TabIndex = 2;
             this.myProfile.Text = "我的资料";
-            this.myProfile.Click += new System.EventHandler(this.myProfile_Click);
             // 
             // materialLabel3
             // 
@@ -395,7 +380,7 @@ namespace LibraryManagementSystem
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(164, 246);
+            this.materialLabel3.Location = new System.Drawing.Point(134, 241);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(84, 20);
@@ -438,13 +423,12 @@ namespace LibraryManagementSystem
             this.userTypeLabel.Depth = 0;
             this.userTypeLabel.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.userTypeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.userTypeLabel.Location = new System.Drawing.Point(179, 285);
+            this.userTypeLabel.Location = new System.Drawing.Point(179, 280);
             this.userTypeLabel.MouseState = MaterialSkin.MouseState.HOVER;
             this.userTypeLabel.Name = "userTypeLabel";
             this.userTypeLabel.Size = new System.Drawing.Size(39, 20);
             this.userTypeLabel.TabIndex = 24;
             this.userTypeLabel.Text = "类型";
-            this.userTypeLabel.Click += new System.EventHandler(this.userTypeLabel_Click);
             // 
             // userAddressLabel
             // 
@@ -452,13 +436,12 @@ namespace LibraryManagementSystem
             this.userAddressLabel.Depth = 0;
             this.userAddressLabel.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.userAddressLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.userAddressLabel.Location = new System.Drawing.Point(179, 166);
+            this.userAddressLabel.Location = new System.Drawing.Point(164, 161);
             this.userAddressLabel.MouseState = MaterialSkin.MouseState.HOVER;
             this.userAddressLabel.Name = "userAddressLabel";
             this.userAddressLabel.Size = new System.Drawing.Size(54, 20);
             this.userAddressLabel.TabIndex = 23;
             this.userAddressLabel.Text = "旧密码";
-            this.userAddressLabel.Click += new System.EventHandler(this.userAddressLabel_Click);
             // 
             // userNewPwLabel
             // 
@@ -466,13 +449,12 @@ namespace LibraryManagementSystem
             this.userNewPwLabel.Depth = 0;
             this.userNewPwLabel.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.userNewPwLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.userNewPwLabel.Location = new System.Drawing.Point(179, 206);
+            this.userNewPwLabel.Location = new System.Drawing.Point(164, 201);
             this.userNewPwLabel.MouseState = MaterialSkin.MouseState.HOVER;
             this.userNewPwLabel.Name = "userNewPwLabel";
             this.userNewPwLabel.Size = new System.Drawing.Size(54, 20);
             this.userNewPwLabel.TabIndex = 22;
             this.userNewPwLabel.Text = "新密码";
-            this.userNewPwLabel.Click += new System.EventHandler(this.userPwLabel_Click);
             // 
             // userGenderLabel
             // 
@@ -480,13 +462,12 @@ namespace LibraryManagementSystem
             this.userGenderLabel.Depth = 0;
             this.userGenderLabel.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.userGenderLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.userGenderLabel.Location = new System.Drawing.Point(179, 126);
+            this.userGenderLabel.Location = new System.Drawing.Point(179, 121);
             this.userGenderLabel.MouseState = MaterialSkin.MouseState.HOVER;
             this.userGenderLabel.Name = "userGenderLabel";
             this.userGenderLabel.Size = new System.Drawing.Size(39, 20);
             this.userGenderLabel.TabIndex = 21;
             this.userGenderLabel.Text = "性别";
-            this.userGenderLabel.Click += new System.EventHandler(this.userGenderLabel_Click);
             // 
             // userNameLabel
             // 
@@ -494,13 +475,12 @@ namespace LibraryManagementSystem
             this.userNameLabel.Depth = 0;
             this.userNameLabel.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.userNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.userNameLabel.Location = new System.Drawing.Point(164, 86);
+            this.userNameLabel.Location = new System.Drawing.Point(164, 81);
             this.userNameLabel.MouseState = MaterialSkin.MouseState.HOVER;
             this.userNameLabel.Name = "userNameLabel";
             this.userNameLabel.Size = new System.Drawing.Size(54, 20);
             this.userNameLabel.TabIndex = 20;
             this.userNameLabel.Text = "用户名";
-            this.userNameLabel.Click += new System.EventHandler(this.userNameLabel_Click);
             // 
             // userTypeText
             // 
@@ -519,7 +499,6 @@ namespace LibraryManagementSystem
             this.userTypeText.TabIndex = 18;
             this.userTypeText.TabStop = false;
             this.userTypeText.UseSystemPasswordChar = false;
-            this.userTypeText.Click += new System.EventHandler(this.userTypeText_Click);
             // 
             // userPwText
             // 
@@ -537,7 +516,6 @@ namespace LibraryManagementSystem
             this.userPwText.TabIndex = 17;
             this.userPwText.TabStop = false;
             this.userPwText.UseSystemPasswordChar = false;
-            this.userPwText.Click += new System.EventHandler(this.userPwText_Click);
             // 
             // userOldPwText
             // 
@@ -555,7 +533,6 @@ namespace LibraryManagementSystem
             this.userOldPwText.TabIndex = 16;
             this.userOldPwText.TabStop = false;
             this.userOldPwText.UseSystemPasswordChar = false;
-            this.userOldPwText.Click += new System.EventHandler(this.userAddressText_Click);
             // 
             // userGenderText
             // 
@@ -574,7 +551,6 @@ namespace LibraryManagementSystem
             this.userGenderText.TabIndex = 15;
             this.userGenderText.TabStop = false;
             this.userGenderText.UseSystemPasswordChar = false;
-            this.userGenderText.Click += new System.EventHandler(this.userGenderText_Click);
             // 
             // userNameText
             // 
@@ -593,7 +569,6 @@ namespace LibraryManagementSystem
             this.userNameText.TabIndex = 14;
             this.userNameText.TabStop = false;
             this.userNameText.UseSystemPasswordChar = false;
-            this.userNameText.Click += new System.EventHandler(this.materialSingleLineTextField10_Click);
             // 
             // userIDText
             // 
@@ -612,7 +587,6 @@ namespace LibraryManagementSystem
             this.userIDText.TabIndex = 13;
             this.userIDText.TabStop = false;
             this.userIDText.UseSystemPasswordChar = false;
-            this.userIDText.Click += new System.EventHandler(this.materialSingleLineTextField3_Click);
             // 
             // userIdLabel
             // 
@@ -620,13 +594,12 @@ namespace LibraryManagementSystem
             this.userIdLabel.Depth = 0;
             this.userIdLabel.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.userIdLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.userIdLabel.Location = new System.Drawing.Point(164, 46);
+            this.userIdLabel.Location = new System.Drawing.Point(164, 41);
             this.userIdLabel.MouseState = MaterialSkin.MouseState.HOVER;
             this.userIdLabel.Name = "userIdLabel";
             this.userIdLabel.Size = new System.Drawing.Size(54, 20);
             this.userIdLabel.TabIndex = 1;
             this.userIdLabel.Text = "用户ID";
-            this.userIdLabel.Click += new System.EventHandler(this.userIdLabel_Click);
             // 
             // setTheme
             // 
@@ -645,7 +618,6 @@ namespace LibraryManagementSystem
             this.setTheme.TabIndex = 3;
             this.setTheme.Text = "其他设置";
             this.setTheme.UseVisualStyleBackColor = true;
-            this.setTheme.Click += new System.EventHandler(this.setTheme_Click);
             // 
             // adminModeButton
             // 
@@ -725,7 +697,6 @@ namespace LibraryManagementSystem
             this.materialLabel2.Size = new System.Drawing.Size(69, 20);
             this.materialLabel2.TabIndex = 6;
             this.materialLabel2.Text = "更换配色";
-            this.materialLabel2.Click += new System.EventHandler(this.materialLabel2_Click);
             // 
             // nightModeButton
             // 
@@ -765,7 +736,6 @@ namespace LibraryManagementSystem
             this.materialLabel1.Size = new System.Drawing.Size(69, 20);
             this.materialLabel1.TabIndex = 3;
             this.materialLabel1.Text = "更换主题";
-            this.materialLabel1.Click += new System.EventHandler(this.materialLabel1_Click);
             // 
             // textBox4
             // 
@@ -776,7 +746,6 @@ namespace LibraryManagementSystem
             this.textBox4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox4.Size = new System.Drawing.Size(724, 513);
             this.textBox4.TabIndex = 0;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // UserForm
             // 
